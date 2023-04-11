@@ -1,6 +1,7 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import '../components/style/navbar.css'
 
 const navigation = [
   { name: 'Wadokan', href: '#', current: true },
@@ -15,12 +16,12 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function Navbar() {
   return (
     <Disclosure as="nav" className="bg-wadokanBlue">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl px-2 sm:px-3 lg:px-4">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -33,16 +34,16 @@ export default function Example() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex flex-1 items- justify-end sm:items-stretch sm:justify-start">
-                <div className="flex flex-shrink-0 items-center">
+              <div className="flex flex-1 justify-around sm:items-stretch" >
+                <div className="flex flex-shrink-0 items-center" >
                   <img
-                    className="block h-8 w-auto lg:hidden"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                    className="block h-12 w-auto lg:hidden"
+                    src="src\assets\logo wadokan rect.png"
                     alt="Your Company"
                   />
                   <img
-                    className="hidden h-8 w-auto lg:block"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                    className="hidden h-12 w-auto lg:block"
+                    src="src\assets\logo wadokan rect.png"
                     alt="Your Company"
                   />
                 </div>
