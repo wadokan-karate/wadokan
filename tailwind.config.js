@@ -6,6 +6,11 @@ export default {
   ],
   theme: {
     extend: {},
+    colors:{
+      'wadokanBlue':'#2196F3',
+      'grey':'#3E3E3E',
+      'white':'#ffffff'
+    }
   },
   plugins: [],
 }
