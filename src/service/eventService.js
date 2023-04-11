@@ -27,4 +27,7 @@ export const eventService = {
             alert("Upsi...hubo un error al insertar el evento");
         }
     },
+   /* async deleteProduct(id){
+                await apiClient.delete("/Event/DeleteById? + id)
+             },*/
 }

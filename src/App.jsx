@@ -47,7 +47,7 @@ const handleSubmitBase64 = (event) => {
 
       <div className="mb-3">
         <label htmlFor="imgBase64" className="form-label">Image Base 64</label>
-        <input name="imgBase64" type="file" className="form-control" placeholder="Upload a picture" onChange={handleImgBase64Change} required />
+        <input name="imgBase64" type="file" className="form-control" placeholder="Upload a picture" onChange={handleImgBase64Change} required multiple />
       </div>
       <button onClick={handleSubmitBase64} className="btn btn-primary" id="btn">Upload con img en Base 64</button>
 
