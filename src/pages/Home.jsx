@@ -1,20 +1,14 @@
 import { useState } from 'react';
-import Carousel from '../components/Carousel';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import MiCarousel from '../components/Carousel';
-
-
+import Carousel from '../components/Carousel.jsx';
 
 
 
 function Home () {
-
+ 
   
     return (    
       <> 
         <Carousel></Carousel> 
-
-
       </> 
     );
 };
