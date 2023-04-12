@@ -3,13 +3,21 @@ import Carousel from '../components/Carousel.jsx';
 
 
 
-function Home () {
+// function Home () {
  
   
-    return (    
-      <> 
-        <Carousel></Carousel> 
-      </> 
+//     return (    
+//       <> 
+//         <Carousel></Carousel> 
+//       </> 
+// import Navbar from "../components/Navbar";
+
+const Home = () => {
+
+    return (
+        <>
+           {/* <Navbar/> */}
+        </>
     );
 };
 

@@ -8,11 +8,14 @@ import Contact from "../pages/Contact";
 import Licenses from "../pages/Licenses";
 import SeeNew from "../pages/SeeNew";
 import SeeResource from "../pages/SeeResource";
-//import PhotoHandler from '../handler/PhotoHandler';
-//import ScheduleHandler from '../handler/ScheduleHandler';
-//import EventHandler from '../handler/EventHandler';
-//import ResourceHandler from '../handler/ResourceHandler';
-//import DocumentHandler from '../handler/DocumentHandler';
+//import PhotoHandler from '../handlers/PhotoHandler';
+//import ScheduleHandler from '../handlers/ScheduleHandler';
+//import eventHandler from '../handlers/eventHandler';
+//import ResourceHandler from '../handlers/ResourceHandler';
+//import DocumentHandler from '../handlers/DocumentHandler';
+import Cookies from "../pages/Cookies";
+import Privacy from "../pages/Privacy";
+import Legal from "../pages/Legal";
 
 
 export const router = createBrowserRouter([
@@ -59,7 +62,19 @@ export const router = createBrowserRouter([
                     {
                         path: '/contacto',
                         element: <Contact />,
-                    },   
+                    },
+                    {
+                        path: '/aviso-legal',
+                        element: <Legal />,
+                    },
+                    {
+                        path: '/politica-cookies',
+                        element: <Cookies />,
+                    },
+                    {
+                        path: '/politica-privacidad',
+                        element: <Privacy />,
+                    },  
                 ]
             },
         ]
