@@ -16,6 +16,7 @@ const Home = () => {
 
     return (
         <>
+          <Carousel></Carousel> 
            {/* <Navbar/> */}
         </>
     );
