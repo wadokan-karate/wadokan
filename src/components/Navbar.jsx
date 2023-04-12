@@ -4,12 +4,12 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import '../components/style/navbar.css'
 
 const navigation = [
-  { name: 'Wadokan', href: '#', current: true },
-  { name: 'Calendario', href: '#', current: false },
-  { name: 'Nuestro club', href: '#', current: false },
-  { name: 'Blog y recursos', href: '#', current: false },
-  { name: 'Licencias', href: '#', current: false },
-  { name: 'Contacto', href: '#', current: false }
+  { name: 'Wadokan', href: '/', current: true },
+  { name: 'Calendario', href: '/calendario', current: false },
+  { name: 'Nuestro club', href: '/nuestro-club', current: false },
+  { name: 'Blog y recursos', href: '/blog-recursos', current: false },
+  { name: 'Licencias', href: '/licencias', current: false },
+  { name: 'Contacto', href: '/contacto', current: false }
 ]
 
 function classNames(...classes) {
