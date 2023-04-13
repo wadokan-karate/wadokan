@@ -1,8 +1,10 @@
+import Cardblog from "../components/Cardblog";
+
 const Blog = () => {
 
     return (
         <>
-           
+           <Cardblog/>
         </>
     );
 };
