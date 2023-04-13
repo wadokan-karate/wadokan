@@ -1,18 +1,20 @@
-
-
-
-
 const FakeTimeTable = () => {
 
 return (
 
-    <div className=" ml-24 shadow hover:shadow-lg">
+    <div className=" flex-col mb-16">
 
-    <img src="src\assets\img\FakeTimeTable.png" alt="" />
-    
+        
+        <h1 className=" mb-8 text-dark text-4xl ">NUESTROS HORARIOS</h1>
+
+        <div className=" mb-0 ml-60">
+
+           <img src="src\assets\img\FakeTimeTable.png" alt="" />
+
+        </div>
     </div>
 )
-x
+
 }
 
 export default FakeTimeTable;

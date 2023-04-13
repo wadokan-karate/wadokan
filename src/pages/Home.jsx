@@ -7,13 +7,14 @@ import FakeTimeTable from   '../components/FakeTimeTable.jsx';
 const Home = () => {
 
     return (
-        <>
+        <div className=''>
+        
           <Carousel></Carousel> 
           <FakeTimeTable></FakeTimeTable>
          <BottomCarousel></BottomCarousel>
          
            {/* <Navbar/> */}
-        </>
+        </div>
     );
 };
 

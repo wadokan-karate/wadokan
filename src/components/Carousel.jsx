@@ -6,11 +6,13 @@ import LogoName from '../assets/img/SlideHome/Foto2.png';
 import Equipation from '../assets/img/SlideHome/Foto3.png';
 import CintoBlack from '../assets/img/SlideHome/Foto5.png';
 import CintoYellow from '../assets/img/SlideHome/Foto4.png';
+// import PalaciosDojo from '../assets/img/SlideHome/PalaciosDojo.jpg';
 
 
 
 function Carousel() {
   const slides = [
+
     {
       url: CintoBlack,
     },
@@ -49,11 +51,11 @@ function Carousel() {
   };
 
   return (
-    <div className='CarouselBox max-w-[1400px] h-[480px] w-full m-0 relative group'>
+    <div className=' CarouselBox max-w-[1400px] h-[480px] w-full m-0 relative group'>
       
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        className='w-full h-[86%] bg-center bg-cover duration-300' >
+        className=' shadow-xl w-full h-[86%] bg-center bg-cover duration-300' >
       </div>
 
       {/* Left Arrow */}

@@ -21,7 +21,7 @@ export default function Navbar() {
     <Disclosure as="nav" className=" bg-wadokanBlue ">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-3 lg:px-4">
+          <div className=" mx-auto max-w-7xl px-2 sm:px-3 lg:px-4">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
