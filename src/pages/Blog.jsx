@@ -4,7 +4,10 @@ const Blog = () => {
 
     return (
         <>
-           <Cardblog/>
+        <div id="banner">RECURSOS</div>
+            <Cardblog/>
+        <div id="banner">BLOG</div>
+            <Cardblog/>
         </>
     );
 };
