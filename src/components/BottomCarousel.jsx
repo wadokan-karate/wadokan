@@ -9,7 +9,7 @@ const BottomCarousel = () => {
     
   return (
     <>
-    <div className="container mx-auto">
+    <div className=" container mx-auto">
             <div className="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4">
                 {/* Carousel for desktop and large size devices */}
                 <CarouselProvider className="lg:block hidden" naturalSlideWidth={100} isIntrinsicHeight={true} totalSlides={12} visibleSlides={4} step={1} infinite={true}>
@@ -34,7 +34,7 @@ const BottomCarousel = () => {
                                         </div>
                                     </Slide>
                                     <Slide index={1}>
-                                        <div className="flex flex-shrink-0 relative w-full sm:w-auto">
+                                        <div className=" flex flex-shrink-0 relative w-full sm:w-auto">
                                             <img src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="sitting area" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                 <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">Catalog 2</h2>

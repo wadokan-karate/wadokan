@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Carousel from '../components/Carousel.jsx';
 import BottomCarousel from '../components/BottomCarousel.jsx';
-
+import FakeTimeTable from   '../components/FakeTimeTable.jsx';
 
 
 const Home = () => {
@@ -9,7 +9,9 @@ const Home = () => {
     return (
         <>
           <Carousel></Carousel> 
+          <FakeTimeTable></FakeTimeTable>
          <BottomCarousel></BottomCarousel>
+         
            {/* <Navbar/> */}
         </>
     );
