@@ -8,8 +8,7 @@ import Contact from "../pages/Contact";
 import Licenses from "../pages/Licenses";
 import SeeNew from "../pages/SeeNew";
 import SeeResource from "../pages/SeeResource";
-//import PhotoHandler from '../handlers/PhotoHandler';
-//import ScheduleHandler from '../handlers/ScheduleHandler';
+import scheduleHandler from '../handlers/scheduleHandler';
 //import eventHandler from '../handlers/eventHandler';
 //import ResourceHandler from '../handlers/ResourceHandler';
 //import DocumentHandler from '../handlers/DocumentHandler';
@@ -27,12 +26,12 @@ export const router = createBrowserRouter([
                         index: true,
                         element: <Home />,
                         //loader: fetchPhotos,
-                        //loader: fetchSchedules,
+                        loader: fetchSchedules,
                     },
                     {
                         path: '/calendario',
                         element: <Calendar />,
-                        //loader: fetchSchedules,
+                        loader: fetchSchedules,
                     },
                     {
                         path: '/nuestro-club',
@@ -90,15 +89,15 @@ async function fetchPhoto({ params }) {
     return { Photo };
 } */
 
-/* async function fetchSchedules() {
-    const Schedules = await ScheduleHandler.loadSchedules();
+async function fetchSchedules() {
+    const Schedules = await scheduleHandler.loadSchedules();
     return { Schedules };
 }
 
 async function fetchSchedule({ params }) {
     const Schedule = await ScheduleHandler.loadSchedule(params.id);
     return { Schedule };
-} */
+}
 
 /* async function fetchEvents() {
     const Events = await EventHandler.loadEvents();
