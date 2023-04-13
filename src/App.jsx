@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { eventHandler } from './handlers/eventHandler';
 import './App.css'
+import Header from './components/Navbar'
 import Images from './images';
 
 function App() {

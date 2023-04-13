@@ -22,7 +22,9 @@
 }
 
 #social{
-    text-align: right;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
     margin-right: 7.2vw;
 }
 
