@@ -5,12 +5,6 @@
 
 
 
-
-:root {
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @font-face {
   font-family: "Montserrat";
   src: url("./assets/font/Montserrat.ttf") format("truetype");
