@@ -1,0 +1,19 @@
+.ContactUsInfoContainer{
+    width: 75%;
+    height: 35vw;
+    background-color: lightgray;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#InfoMapContainer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+}
+
+.wadokanContactInfo{
+    width: 45%;
+    text-align: center;
+}
