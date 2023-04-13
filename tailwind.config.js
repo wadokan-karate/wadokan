@@ -8,8 +8,8 @@ module.exports = {
   theme: {
     extend: {
     colors: {
-      
-      
+      'wadokanBlue':'#2196F3',
+      'grey':'#3E3E3E',
       'white':'#FFFFFF',
       'List': '#FFFAFA',
       'gris': '#A79A9A',
