@@ -16,9 +16,11 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
+// navbar fixed top-0 left-0 right-0 z-50 transition duration-500
+
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className=" bg-wadokanBlue ">
+    <Disclosure as="nav" className="bg-wadokanBlue ">
       {({ open }) => (
         <>
           <div className=" mx-auto max-w-7xl px-2 sm:px-3 lg:px-4">

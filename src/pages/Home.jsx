@@ -13,7 +13,7 @@ const Home = () => {
           <FakeTimeTable></FakeTimeTable>
          <BottomCarousel></BottomCarousel>
          
-           {/* <Navbar/> */}
+           
         </div>
     );
 };
