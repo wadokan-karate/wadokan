@@ -1,0 +1,40 @@
+.bannerClub{
+    margin-left: 2.5%;
+}
+
+.ourHistoryContainer{
+    width: 90%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 2% !important;
+    margin: 0 auto;
+    margin-bottom: 2%;
+}
+
+#OurHistPhoto{
+    margin-left: 2%;
+    margin-right: 2%;
+    
+}
+
+.OurHistoryText{
+    width: 60%;
+    text-align: justify; 
+    background-color: grey;
+}
+
+h1{
+    color: white;
+    margin-top: 2%;
+}
+p{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+
+#Gearh1{
+    color: black;
+}
