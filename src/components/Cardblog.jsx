@@ -24,15 +24,14 @@ import {
         </CardHeader>
         <CardBody>
           <Typography variant="h4" color="blue-gray">
-            UI/UX Review Check
+            Blog Tittle
           </Typography>
           <Typography variant="lead" color="gray" className="mt-3 font-normal">
-            Because it&apos;s about motivating the doers. Because I&apos;m here to
-            follow my dreams and inspire others.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In, id nemo dolores doloribus odit sequi!
           </Typography>
         </CardBody>
         <CardFooter className="flex items-center justify-between">
-          <div className="flex items-center -space-x-3">
+          {/* <div className="flex items-center -space-x-3">
             <Tooltip content="Natali Craig">
               <Avatar
                 size="sm"
@@ -51,7 +50,7 @@ import {
                 className="border-2 border-white hover:z-10"
               />
             </Tooltip>
-          </div>
+          </div> */}
           <Typography className="font-normal">January 10</Typography>
         </CardFooter>
       </Card>
