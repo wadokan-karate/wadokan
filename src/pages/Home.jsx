@@ -1,22 +1,15 @@
 import { useState } from 'react';
 import Carousel from '../components/Carousel.jsx';
+import BottomCarousel from '../components/BottomCarousel.jsx';
 
 
-
-// function Home () {
- 
-  
-//     return (    
-//       <> 
-//         <Carousel></Carousel> 
-//       </> 
-// import Navbar from "../components/Navbar";
 
 const Home = () => {
 
     return (
         <>
           <Carousel></Carousel> 
+         <BottomCarousel></BottomCarousel>
            {/* <Navbar/> */}
         </>
     );

@@ -15,7 +15,7 @@ export default {
       'white':'#ffffff'
     }
   },
-  plugins: [require("tw-elements/dist/plugin.cjs"), ('flowbite/plugin') ],
+  plugins: [require("tw-elements/dist/plugin.cjs"), ('flowbite/plugin'), ('autoprefixer'),],
   
   darkMode: "class"
 }   
