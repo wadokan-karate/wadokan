@@ -1,9 +1,10 @@
 import { useState } from 'react'
-import { eventHandler } from './handlers/eventHandler';
-import './App.css'
-import Images from './images';
+import { eventHandler } from '../handlers/eventHandler';
+import Images from '../images';
 
-function App() {
+
+
+function Event() {
   const [name, setName] = useState("");
 const [description, setDescription] = useState("");
 
@@ -62,4 +63,4 @@ const handleSubmitBase64 = (event) => {
 )
 }
 
-export default App;
+export default Event;
