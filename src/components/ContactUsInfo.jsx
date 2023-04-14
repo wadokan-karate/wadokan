@@ -4,7 +4,7 @@ const ContactUsInfo = () => {
 
     return (
         <div className="ContactUsInfoContainer">
-            <h1>¡Encuentranos!</h1>
+            <h1 className='pt-4 pb-3'>¡Encuentranos!</h1>
             <div id='InfoMapContainer'>
                 <div className='wadokanContactInfo'>
                     <h3>Dirección</h3>
