@@ -1,8 +1,10 @@
+import Schedule from "../components/Schedule";
+
 const Home = () => {
 
     return (
         <>
-           
+           <Schedule />
         </>
     );
 };

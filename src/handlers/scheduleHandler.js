@@ -1,4 +1,4 @@
-import scheduleService from "../services/scheduleService";
+import scheduleService from "../service/scheduleService";
 
 const scheduleHandler = {
     addSchedule(newSchedule) {

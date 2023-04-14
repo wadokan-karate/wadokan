@@ -95,7 +95,7 @@ async function fetchSchedules() {
 }
 
 async function fetchSchedule({ params }) {
-    const Schedule = await ScheduleHandler.loadSchedule(params.id);
+    const Schedule = await scheduleHandler.loadSchedule(params.id);
     return { Schedule };
 }
 
