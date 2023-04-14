@@ -16,7 +16,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-// navbar fixed top-0 left-0 right-0 z-50 transition duration-500
+// navbar fixed top-0 left-0 right-0 z-50 transition duration-500 bg-opacity-80
 
 export default function Navbar() {
   return (
