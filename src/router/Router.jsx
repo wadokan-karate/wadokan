@@ -16,6 +16,7 @@ import SeeResource from "../pages/SeeResource";
 import Cookies from "../pages/Cookies";
 import Privacy from "../pages/Privacy";
 import Legal from "../pages/Legal";
+import Login from "../pages/Login";
 
 
 export const router = createBrowserRouter([
@@ -75,6 +76,10 @@ export const router = createBrowserRouter([
                         path: '/politica-privacidad',
                         element: <Privacy />,
                     },  
+                    {
+                        path: '/login',
+                        element: <Login />,
+                    }
                 ]
             },
         ]
