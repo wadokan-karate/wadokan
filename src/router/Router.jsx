@@ -13,6 +13,9 @@ import SeeResource from "../pages/SeeResource";
 //import eventHandler from '../handlers/eventHandler';
 //import ResourceHandler from '../handlers/ResourceHandler';
 //import DocumentHandler from '../handlers/DocumentHandler';
+import Cookies from "../pages/Cookies";
+import Privacy from "../pages/Privacy";
+import Legal from "../pages/Legal";
 
 
 export const router = createBrowserRouter([
@@ -22,7 +25,7 @@ export const router = createBrowserRouter([
         children: [
                     {
                         index: true,
-                        element: <Home />,
+                        element: <Home/>,
                         //loader: fetchPhotos,
                         //loader: fetchSchedules,
                     },
@@ -59,7 +62,19 @@ export const router = createBrowserRouter([
                     {
                         path: '/contacto',
                         element: <Contact />,
-                    },   
+                    },
+                    {
+                        path: '/aviso-legal',
+                        element: <Legal />,
+                    },
+                    {
+                        path: '/politica-cookies',
+                        element: <Cookies />,
+                    },
+                    {
+                        path: '/politica-privacidad',
+                        element: <Privacy />,
+                    },  
                 ]
             },
         ]
