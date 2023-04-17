@@ -1,0 +1,21 @@
+.gearContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+  #Gearh1{
+    text-align: left;
+    margin-left: 15%;
+    margin-top: 8%;
+}
+.gearPContainer{
+    width: 70%;
+    text-align: justify;
+}
+
+.gearPhoto{
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    margin-right: 2%;
+}
