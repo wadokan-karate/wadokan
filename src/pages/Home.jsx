@@ -13,9 +13,9 @@ const Home = () => {
        
         <div className=''>
             
-          <Schedule />        
+                
           <Carousel></Carousel> 
-          <FakeTimeTable></FakeTimeTable>
+          <Schedule />  
          <BottomCarousel></BottomCarousel>
          
            
