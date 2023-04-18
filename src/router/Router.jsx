@@ -8,14 +8,14 @@ import Contact from "../pages/Contact";
 import Licenses from "../pages/Licenses";
 import SeeNew from "../pages/SeeNew";
 import SeeResource from "../pages/SeeResource";
-//import PhotoHandler from '../handlers/PhotoHandler';
-//import ScheduleHandler from '../handlers/ScheduleHandler';
+import scheduleHandler from '../handlers/scheduleHandler';
 //import eventHandler from '../handlers/eventHandler';
 //import ResourceHandler from '../handlers/ResourceHandler';
 //import DocumentHandler from '../handlers/DocumentHandler';
 import Cookies from "../pages/Cookies";
 import Privacy from "../pages/Privacy";
 import Legal from "../pages/Legal";
+import Login from "../pages/Login";
 
 
 export const router = createBrowserRouter([
@@ -27,12 +27,12 @@ export const router = createBrowserRouter([
                         index: true,
                         element: <Home/>,
                         //loader: fetchPhotos,
-                        //loader: fetchSchedules,
+                        loader: fetchSchedules,
                     },
                     {
                         path: '/calendario',
                         element: <Calendar />,
-                        //loader: fetchSchedules,
+                        loader: fetchSchedules,
                     },
                     {
                         path: '/nuestro-club',
@@ -75,6 +75,10 @@ export const router = createBrowserRouter([
                         path: '/politica-privacidad',
                         element: <Privacy />,
                     },  
+                    {
+                        path: '/login',
+                        element: <Login />,
+                    }
                 ]
             },
         ]
@@ -90,15 +94,15 @@ async function fetchPhoto({ params }) {
     return { Photo };
 } */
 
-/* async function fetchSchedules() {
-    const Schedules = await ScheduleHandler.loadSchedules();
+async function fetchSchedules() {
+    const Schedules = await scheduleHandler.loadSchedules();
     return { Schedules };
 }
 
 async function fetchSchedule({ params }) {
-    const Schedule = await ScheduleHandler.loadSchedule(params.id);
+    const Schedule = await scheduleHandler.loadSchedule(params.id);
     return { Schedule };
-} */
+}
 
 /* async function fetchEvents() {
     const Events = await EventHandler.loadEvents();

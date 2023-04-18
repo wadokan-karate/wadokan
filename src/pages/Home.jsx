@@ -1,3 +1,4 @@
+import Schedule from "../components/Schedule";
 import { useState } from 'react';
 import Carousel from '../components/Carousel.jsx';
 import BottomCarousel from '../components/BottomCarousel.jsx';
@@ -7,10 +8,14 @@ import FakeTimeTable from   '../components/FakeTimeTable.jsx';
 const Home = () => {
 
     return (
-        <div className=''>
         
+           
+       
+        <div className=''>
+            
+                
           <Carousel></Carousel> 
-          <FakeTimeTable></FakeTimeTable>
+          <Schedule />  
          <BottomCarousel></BottomCarousel>
          
            
