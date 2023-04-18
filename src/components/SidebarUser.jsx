@@ -10,7 +10,7 @@ const SidebarUser = () => {
                 <li className="categories">Categorías</li>
             
                 <li>
-                    <Link to="/">Seguro médico</Link>
+                    <Link to="/licencias/seguro">Seguro médico</Link>
                 </li>
                 <li>
                     <Link to="/">Exámenes de citurón</Link>
