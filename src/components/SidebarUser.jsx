@@ -22,10 +22,10 @@ const SidebarUser = () => {
                     <Link to="/"> Inscripción Campeonato IMD</Link>
                 </li>
                 <li>
-                    <Link to="/">Inscripciones FAK</Link>
+                    <Link to="/licencias/inscripcionfak">Inscripciones FAK</Link>
                 </li>
                 <li>
-                    <Link to="/">Derechos de Imagen</Link>
+                    <Link to="/licencias/derechosdeimagen">Derechos de Imagen</Link>
                 </li>
 
             </ul>
