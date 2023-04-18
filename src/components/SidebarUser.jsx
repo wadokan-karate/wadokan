@@ -7,19 +7,19 @@ const SidebarUser = () => {
         <div className="sidebar-user">
             <ul>
 
-                <li className="categories">Categorias</li>
+                <li className="categories">Categorías</li>
             
                 <li>
                     <Link to="/">Seguro médico</Link>
                 </li>
                 <li>
-                    <Link to="/">Exames de citurón</Link>
+                    <Link to="/">Exámenes de citurón</Link>
                 </li>
                 <li>
                     <Link to="/">Licencias</Link>
                 </li>
                 <li>
-                    <Link to="/"> Incripción Campeonato IMD</Link>
+                    <Link to="/"> Inscripción Campeonato IMD</Link>
                 </li>
                 <li>
                     <Link to="/">Inscripciones FAK</Link>
