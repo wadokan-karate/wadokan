@@ -1,5 +1,5 @@
 #schedulesTitle{
-;
+
     text-align: center;
     font-family: 'Shojumaru';
     font-size: 40px;
@@ -9,6 +9,7 @@
 
 
 #containerSchedule{
+    
     background-color: #2196F3;
     text-align: center;
     padding-top:1vh;

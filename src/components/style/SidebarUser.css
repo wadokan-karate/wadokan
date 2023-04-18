@@ -1,5 +1,7 @@
 
-
+.categories{
+    text-decoration: underline solid #2196F3 3px;
+}
 
 
 .sidebar-user {

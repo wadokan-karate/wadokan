@@ -6,7 +6,7 @@ import "../style/Licenses.css"
         return (
             
             <>
-<div className="container-licence">
+                <div className="container-licence">
                 <SidebarUser />
                 </div> 
                 <div className="container-info"> 
