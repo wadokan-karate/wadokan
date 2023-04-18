@@ -1,0 +1,16 @@
+.h1Calendar{
+    color: black;
+}
+
+#iframe{
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.scheduleContainer{
+    height: 20vw;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
