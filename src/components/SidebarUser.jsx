@@ -19,7 +19,7 @@ const SidebarUser = () => {
                     <Link to="/">Licencias</Link>
                 </li>
                 <li>
-                    <Link to="/"> Inscripción Campeonato IMD</Link>
+                    <Link to="/licencias/inscripcionImd"> Inscripción Campeonato IMD</Link>
                 </li>
                 <li>
                     <Link to="/licencias/inscripcionfak">Inscripciones FAK</Link>

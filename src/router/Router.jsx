@@ -19,6 +19,7 @@ import Privacy from "../pages/Privacy";
 import Legal from "../pages/Legal";
 import Login from "../pages/Login";
 import LicensesInscriptionFak from "../pages/LicensesInscriptionFak";
+import LicensesInscriptionImd from "../pages/LicensesInscriptionImd";
 
 
 
@@ -76,6 +77,11 @@ export const router = createBrowserRouter([
                     {
                         path: '/licencias/inscripcionfak',
                         element: <LicensesInscriptionFak/>,
+                        //loader: fetchDocuments,
+                    },
+                    {
+                        path: '/licencias/inscripcionImd',
+                        element: <LicensesInscriptionImd/>,
                         //loader: fetchDocuments,
                     },
                     {
