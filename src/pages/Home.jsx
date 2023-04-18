@@ -1,8 +1,6 @@
 import Schedule from "../components/Schedule";
-import { useState } from 'react';
 import Carousel from '../components/Carousel.jsx';
 import BottomCarousel from '../components/BottomCarousel.jsx';
-import FakeTimeTable from   '../components/FakeTimeTable.jsx';
 
 
 const Home = () => {
@@ -16,7 +14,7 @@ const Home = () => {
                 
           <Carousel></Carousel> 
           <Schedule />  
-         <BottomCarousel></BottomCarousel>
+          <BottomCarousel></BottomCarousel>
          
            
         </div>
