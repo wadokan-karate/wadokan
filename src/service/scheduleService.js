@@ -22,7 +22,7 @@ const scheduleService = {
     },
     async submitSchedule(newSchedule){
         try {
-           const response = await apiClient.post("/InsertSchedule", newSchedule);
+           const response = await apiClient.post("/Post", newSchedule);
            return response.data;
         } catch (error) {
            console.error(error);

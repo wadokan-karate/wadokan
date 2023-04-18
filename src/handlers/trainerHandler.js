@@ -5,7 +5,7 @@ const trainerHandler = {
 
         let trainer = { 
             "name": newTrainer.name,
-            "photo": newTrainer.photo,
+            "photo": newTrainer.picture,
             "isActive": true,
         }
         console.log(trainer)

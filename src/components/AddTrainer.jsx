@@ -1,11 +1,11 @@
 import { useForm } from 'react-hook-form';
 import React, { useState, useRef } from 'react';
 import Alert from 'react-bootstrap/Alert';
-import PhotoHandlerC from '../handler/PhotoHandlerC';
+import trainerHandler from '../handlers/trainerHandler';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import '../../src/index.css';
-import '../styles/Form.css';
+import '../style/Form.css';
 
 function AddTrainer() {
 
@@ -37,7 +37,7 @@ function AddTrainer() {
   };
 
   const onSubmit = async (data) => {
-    const response = await PhotoHandlerC.addPhoto(data);
+    const response = await trainerHandler.addTrainer(data);
     console.log(response);
     setShowAlert(true);
     formRef.current.reset();
@@ -47,14 +47,16 @@ function AddTrainer() {
   const [alertMessage, setAlertMessage] = useState("");
 
   return (
-    <div id='container'>
+    <div className='containerForm'>
+      <h2>Añadir Monitor</h2>
       <form ref={formRef} onSubmit={handleSubmit(onSubmit)} className="form">
         <fieldset>
-          <label className='name' htmlFor="name">Título de la foto</label>
+          <label className='name' htmlFor="name">Nombre del monitor</label>
           <input id="name" {...register("name", { required: true })} />
-          {errors.title && <span>Debe rellenar este campo</span>}
+          {errors.name && <span>Debe rellenar este campo</span>}
 
           <fieldset>
+            <label className='photo' htmlFor="photo">Foto del monitor</label>
             <input id="img" placeholder='Foto del monitor' type="file" onChange={handleImageChange} />
             {errors.img && <span>Debe rellenar este campo</span>}
           </fieldset>
@@ -66,7 +68,7 @@ function AddTrainer() {
           <Link to="/" style={{textDecoration:'none'}}><input id="return" type="button" value="VOLVER" /></Link>
         </div>
       <Alert show={showAlert} variant={alertVariant} onClose={handleAlertClose} dismissible>
-        <Alert.Heading style={{ color: 'white', textAlign: 'center' }}>{alertVariant === 'success' ? 'Foto añadida a la base de datos' : 'Error'}</Alert.Heading>
+        <Alert.Heading style={{ color: 'white', textAlign: 'center' }}>{alertVariant === 'success' ? 'Monitor añadido a la base de datos' : 'Error'}</Alert.Heading>
         <p style={{ color: 'white' }}>
           {alertMessage}
         </p>

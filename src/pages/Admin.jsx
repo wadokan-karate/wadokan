@@ -1,12 +1,14 @@
-import AddTriner from "../components/AddTrainer";
+import AddTrainer from "../components/AddTrainer";
+import AddSchedule from "../components/AddSchedule";
 
-const Blog = () => {
+const Admin = () => {
 
     return (
         <>
-           <AddTriner />
+            <AddTrainer />
+            <AddSchedule /> 
         </>
     );
 };
 
-export default Blog;
+export default Admin;

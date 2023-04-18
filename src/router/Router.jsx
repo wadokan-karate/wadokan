@@ -7,10 +7,10 @@ import Home from "../pages/Home";
 import Contact from "../pages/Contact";
 import Licenses from "../pages/Licenses";
 import SeeNew from "../pages/SeeNew";
+import Admin from "../pages/Admin";
 import SeeResource from "../pages/SeeResource";
 import scheduleHandler from '../handlers/scheduleHandler';
-//import eventHandler from '../handlers/eventHandler';
-//import ResourceHandler from '../handlers/ResourceHandler';
+import trainerHandler from '../handlers/trainerHandler';
 //import DocumentHandler from '../handlers/DocumentHandler';
 import Cookies from "../pages/Cookies";
 import Privacy from "../pages/Privacy";
@@ -37,6 +37,7 @@ export const router = createBrowserRouter([
                     {
                         path: '/nuestro-club',
                         element: <Club/>,
+                        loader: fetchTrainers,
                     },    
                     {
                         path: '/blog-recursos',
@@ -78,21 +79,15 @@ export const router = createBrowserRouter([
                     {
                         path: '/login',
                         element: <Login />,
+                    },
+                    {
+                        path: '/admin',
+                        element: <Admin />,
                     }
                 ]
             },
         ]
 );
-
-/* async function fetchPhotos() {
-    const Photos = await PhotoHandler.loadPhotos();
-    return { Photos };
-}
-
-async function fetchPhoto({ params }) {
-    const Photo = await PhotoHandler.loadPhoto(params.id);
-    return { Photo };
-} */
 
 async function fetchSchedules() {
     const Schedules = await scheduleHandler.loadSchedules();
@@ -104,25 +99,15 @@ async function fetchSchedule({ params }) {
     return { Schedule };
 }
 
-/* async function fetchEvents() {
-    const Events = await EventHandler.loadEvents();
-    return { Events };
+async function fetchTrainers() {
+    const Trainers = await trainerHandler.loadTrainers();
+    return { Trainers };
 }
 
-async function fetchEvent({ params }) {
-    const Event = await EventHandler.loadEvent(params.id);
-    return { Event };
-} */
-
-/* async function fetchResources() {
-    const Resources = await ResourceHandler.loadResources();
-    return { Resources };
+async function fetchTrainer({ params }) {
+    const Trainer = await trainerHandler.loadTrainer(params.id);
+    return { Trainer };
 }
-
-async function fetchResource({ params }) {
-    const Resource = await ResourceHandler.loadResource(params.id);
-    return { Resource };
-} */
 
 /* async function fetchDocuments() {
     const Documents = await DocumentHandler.loadDocuments();

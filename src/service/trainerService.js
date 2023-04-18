@@ -22,7 +22,7 @@ const trainerService = {
     },
     async submitTrainer(newTrainer){
         try {
-           const response = await apiClient.post("/InsertTrainer", newTrainer);
+           const response = await apiClient.post("/Post", newTrainer);
            return response.data;
         } catch (error) {
            console.error(error);
