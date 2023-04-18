@@ -5,8 +5,9 @@ import Logo from '../assets/img/SlideHome/Foto1.png';
 import LogoName from '../assets/img/SlideHome/Foto2.png';
 import CintoBlack from '../assets/img/SlideHome/Foto5.png';
 import CintoYellow from '../assets/img/SlideHome/Foto4.png';
-import LosPalaciosDojo from '../assets/img/SlideHome/LosPalaciosDojo.png';
+import FraseFoto from '../assets/img/SlideHome/FraseFoto.png';
 import ImgDojoLogo from '../assets/img/SlideHome/LogoDojo.png';
+import DojoMontequinto from '../assets/img/SlideHome/DojoMontequinto.png';
 
 
 
@@ -17,20 +18,17 @@ function Carousel() {
       url: CintoBlack,
     },
     {
-      url: LogoName,
-    },
-    {
-      url: LosPalaciosDojo,
+      url:ImgDojoLogo,
     },
 
     {
-      url: ImgDojoLogo,
+      url: DojoMontequinto,
     },
     {
-        url: Logo,
+        url: FraseFoto,
     },    
     {
-        url: CintoYellow,
+        url: LogoName,
     },
   ];
 
