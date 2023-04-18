@@ -53,7 +53,7 @@ function Carousel() {
   };
 
   return (
-    <div className=' CarouselBox max-w-[1400px] h-[480px] w-full m-0 mb-3 '>
+    <div className=' CarouselBox max-w-[1400px] h-[480px] w-full'>
       
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
