@@ -94,56 +94,42 @@ export default function Footer(){
             
           <div className='Options'>
             
-            <ul className="text-dark font-light">
+            <ul className="text-dark font-semibold">
               <li className="mb-4">
                 <a href="/nuestro-club">
                 <h2>INFORMACION</h2>
                 </a>
                 
               </li>
-              <li className="mb-4">
-                <a href="#" className="hover:underline">Purchase conditions</a>
-              </li>
-              <li className="mb-4">
-                <a href="#" className="hover:underline">Privacy Policy</a>
-              </li>
-              <li className="mb-4">
-                <a href="#" className="hover:underline">Legal warning</a>
-              </li>
+             
             </ul>
           </div>
 
           <div className='Options'>
            
-            <ul className="text-dark font-light">
+            <ul className="text-dark font-semibold">
                 
               <li className="mb-4">
                 <a href="/licencias">
                  <h2>LINKS DE INTERES</h2>
                 </a>
               </li>
-              <li className="mb-4">
-                <a href="#" className="hover:underline">Purchase history</a>
-              </li>
-              <li className="mb-4">
-                <a href="#" className="hover:underline">Personal information</a>
-              </li>
             </ul>
           </div>
           <div className='Options'>
          
-            <ul className="text-dark text-xl font-light">
+            <ul className="text-dark text-xl font-semibold">
               <li className="mb-4">
                 <a href="/contacto">
               <h2>CONTACTO</h2>
               </a>
               </li>
-              <li className="mb-4">
+              {/* <li className="mb-4">
                 <a href="#" className="hover:underline">Contact us</a>
               </li>
               <li className="mb-4">
                 <a href="#" className="hover:underline">Discounts & promotions</a>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -168,11 +154,21 @@ export default function Footer(){
           <a href="https://www.youtube.com/@KarateWadokanSevilla/featured" target='_blank' className="text-dark hover:text-gray-900 dark:hover:text-white">
             <svg xmlns="http://www.w3.org/2000/svg"class="h-10 w-10" fill="currentColor" viewBox="0 0 24 24">
              <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
-</svg>
+            </svg>
           </a>
         </div>
-        <span className="text-sm text-black sm:text-center ">© 2023 Karate Wadokan | All Rights Reserved.</span>
+        
+        <div className='flex justify-between'>
+          <span className="text-sm text-black sm:text-center ">©Copyright 2023 Karate Wadokan | Todos los derechos reservados.</span>
+          <div id="legal" className=' space-x-9 items-end'>
+               <Link to="/aviso-legal" id="politica">Aviso Legal</Link>
+                <Link to="/politica-privacidad" id="privacidad">Política de Privacidad</Link>
+               <Link to="/politica-cookies" id="cookies">Política de Cookies</Link>
+          </div>
+        </div>
+     
       </div>
+    
     </footer>
        </>
     )
