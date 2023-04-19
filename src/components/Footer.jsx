@@ -90,7 +90,13 @@ export default function Footer(){
       
     <footer className=" bg-wadokanBlue">
       <div className="mx-auto w-full container">
+
+        <div className='flex-row'>
+         <img className=' ImgFooter pt-9' src="src\assets\LogoFooter.png" alt="" />
+        
+
         <div className="grid grid-cols-1 gap-8 px-6 py-8 md:grid-cols-3">
+            
             
           <div className='Options'>
             
@@ -134,7 +140,7 @@ export default function Footer(){
           </div>
 
         </div>
-
+</div>
       </div>
 
 
@@ -157,8 +163,8 @@ export default function Footer(){
             </svg>
           </a>
         </div>
-        
-        <div className='flex justify-between'>
+
+        <div className='Leagalidad flex justify-between'>
           <span className="text-sm text-black sm:text-center ">©Copyright 2023 Karate Wadokan | Todos los derechos reservados.</span>
           <div id="legal" className=' space-x-9 items-end'>
                <Link to="/aviso-legal" id="politica">Aviso Legal</Link>
