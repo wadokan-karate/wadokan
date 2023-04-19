@@ -1,0 +1,27 @@
+.categories{
+  padding: 3%;
+  padding-bottom: 6%;
+  margin-left: 6%;
+  text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 640px) {
+    /* esconde el aside */
+    aside {
+      display: none;
+    }
+    
+    /* muestra el botón de dropdown */
+    #dropdownDefaultButton {
+      display: block;
+    }
+  }
+
+ @media (min-width: 768px) {
+    #dropdownDefaultButton {
+      display: none;
+    }
+  }
+    
