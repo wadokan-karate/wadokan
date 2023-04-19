@@ -4,13 +4,14 @@ import Pruebasidebar from '../components/pruebasidebar.jsx';
 import '../components/style/HealthInsurance.css';
 import "../style/Licenses.css"
 
-    const Licenses = () => {
+    const LicensesView = () => {
 
         return (
             
             <> 
-              <div className="container-health float-left ">
-                <div className='flex justify-center'>
+              <div className="MainBackground"> 
+             
+                <div className=' flex'>
                     
                        <Pruebasidebar></Pruebasidebar>
                         {/* <SidebarUser /> */} 
@@ -22,4 +23,4 @@ import "../style/Licenses.css"
         )
     }
     
-    export default Licenses;
+    export default LicensesView;
