@@ -22,6 +22,11 @@ import Cookies from "../pages/Cookies";
 import Privacy from "../pages/Privacy";
 import Legal from "../pages/Legal";
 import Login from "../pages/Login";
+import AdminView from "../pages/AdminView";
+import AVevents from "../pages/AVeventes";
+import AVourteam from "../pages/AVourteam";
+import AVresources from "../pages/AVresources";
+import AVschedule from "../pages/AVschedule";
 
 
 
@@ -116,7 +121,29 @@ export const router = createBrowserRouter([
                     {
                         path: '/login',
                         element: <Login />,
+                    },
+                    {
+                        path: '/admin',
+                        element: <AdminView />,
+                    },
+                    {
+                        path: '/admin/noticias',
+                        element: <AVevents />,
+                    },
+                    {
+                        path: '/admin/nuestroequipo',
+                        element: <AVourteam />,
+                    },
+                    {
+                        path: '/admin/recursos',
+                        element: <AVresources />,
+                    },
+                    {
+                        path: '/admin/horario',
+                        element: <AVschedule />,
                     }
+
+                    
                 ]
             },
         ]
