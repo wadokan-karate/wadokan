@@ -13,10 +13,10 @@ const SidebarUser = () => {
                     <Link to="/licencias/seguro">Seguro médico</Link>
                 </li>
                 <li>
-                    <Link to="/">Exámenes de citurón</Link>
+                    <Link to="/licencias/examenescinturon">Exámenes de citurón</Link>
                 </li>
                 <li>
-                    <Link to="/">Licencias</Link>
+                    <Link to="/licencias/licensesinfo">Licencias</Link>
                 </li>
                 <li>
                     <Link to="/licencias/inscripcionImd"> Inscripción Campeonato IMD</Link>
