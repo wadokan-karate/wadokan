@@ -7,12 +7,11 @@ import "../style/Licenses.css"
         return (
             
             <>
-                <div className="container-licence">
-                   <Pruebasidebar/>
-                {/* <SidebarUser /> */}
-                </div> 
-                <div className="container-info"> 
-                </div>        
+             <div className='flex'>               
+                <Pruebasidebar/>     
+                <img src="src\assets\img\SlideHome\LogoDojo.png" alt="" className='w-full'/>                 
+                {/* <SidebarUser /> */}           
+             </div>
             </>
         
         )

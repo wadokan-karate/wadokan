@@ -8,17 +8,15 @@ import "../style/Licenses.css"
         return (
             
             <>
-                <div className="container-licence">
                     <div className="flex"> 
                     <Pruebasidebar></Pruebasidebar>
                         {/* <SidebarUser /> */}
                         <HealthInsurance/>
-                    </div>   
-                </div> 
+                    </div>            
                      
             </>
         
         )
     }
     
-    export default Licenses
+    export default Licenses;
