@@ -1,8 +1,18 @@
+.h2Style{
+    font-family: 'Montserrat';
+    border-bottom: solid 5px #2196F3;
+    margin-right: 14%;
+
+}
+
 .categories{
+  font-family: 'Montserrat';
   padding: 3%;
-  padding-bottom: 6%;
+  padding-bottom: 6%;   
   margin-left: 6%;
   text-decoration: none;
+
+  
 }
 
 
