@@ -6,6 +6,12 @@ import Club from "../pages/Club";
 import Home from "../pages/Home";
 import Contact from "../pages/Contact";
 import Licenses from "../pages/Licenses";
+import LicensesHealthInsurance from "../pages/LicensesHealthInsurance";
+import LicensesImageRights from "../pages/LicensesImageRights ";
+import LicensesInscriptionFak from "../pages/LicensesInscriptionFak";
+import LicensesInscriptionImd from "../pages/LicensesInscriptionImd";
+import LicensesInfoPage from "../pages/LicensesInfoPage";
+import LicensesBeltExam from "../pages/LicensesBeltExam";
 import SeeNew from "../pages/SeeNew";
 import SeeResource from "../pages/SeeResource";
 import scheduleHandler from '../handlers/scheduleHandler';
@@ -16,6 +22,8 @@ import Cookies from "../pages/Cookies";
 import Privacy from "../pages/Privacy";
 import Legal from "../pages/Legal";
 import Login from "../pages/Login";
+
+
 
 
 export const router = createBrowserRouter([
@@ -59,6 +67,36 @@ export const router = createBrowserRouter([
                         element: <Licenses />,
                         //loader: fetchDocuments,
                     }, 
+                    {
+                        path: '/licencias/seguro',
+                        element: <LicensesHealthInsurance/>,
+                        //loader: fetchDocuments,
+                    },
+                    {
+                        path: '/licencias/derechosdeimagen',
+                        element: <LicensesImageRights/>,
+                        //loader: fetchDocuments,
+                    },
+                    {
+                        path: '/licencias/inscripcionfak',
+                        element: <LicensesInscriptionFak/>,
+                        //loader: fetchDocuments,
+                    },
+                    {
+                        path: '/licencias/inscripcionImd',
+                        element: <LicensesInscriptionImd/>,
+                        //loader: fetchDocuments,
+                    },
+                    {
+                        path: '/licencias/licensesinfo',
+                        element: <LicensesInfoPage/>,
+                        //loader: fetchDocuments,
+                    },
+                    {
+                        path: '/licencias/examenescinturon',
+                        element: <LicensesBeltExam/>,
+                        //loader: fetchDocuments,
+                    },
                     {
                         path: '/contacto',
                         element: <Contact />,
