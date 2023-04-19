@@ -1,0 +1,72 @@
+#schedulesTitle{
+    text-align: center;
+    font-family: 'Shojumaru';
+    font-size: 40px;
+    margin-top: 3vh;
+}
+
+#containerSchedule{
+    background-color: #2196F3;
+    text-align: center;
+    padding: 3vh;
+    margin: 2vh 0vw;
+}
+
+#containerSchedule p{
+    font-family: 'Montserrat';
+    color: white;
+    font-size: large;
+    margin-bottom: 2vh;
+    margin-top: 3vh;
+}
+
+select {
+    margin-bottom: 5vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    height: 4vh;
+    width: 19vw;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-size: medium;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+table{
+    background-color: white;
+    border: solid 2px black;
+    width: 80vw;
+    margin: auto;
+    font-family: 'Montserrat';
+    font-size:large;
+}
+
+#cityTitle{
+    background-color: #3E3E3E;
+    color: white;
+    height: 6vh;
+    font-size: x-large;
+    text-transform: uppercase;
+}
+
+#locationTitle{
+    background-color: #878787;
+    color: white;
+    height: 5vh;
+    font-size: larger;
+    text-transform: uppercase;
+}
+
+.dayTitle{
+    background-color: #2196F3;
+    color: white;
+    height: 5vh;
+    text-transform: uppercase;
+}
+
+td{
+    border: solid 1px #2196F3;
+    height: 7vh;
+    width: 6vw;
+}

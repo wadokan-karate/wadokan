@@ -7,15 +7,15 @@ import Home from "../pages/Home";
 import Contact from "../pages/Contact";
 import Licenses from "../pages/Licenses";
 import SeeNew from "../pages/SeeNew";
+import Admin from "../pages/Admin";
 import SeeResource from "../pages/SeeResource";
-//import PhotoHandler from '../handlers/PhotoHandler';
-//import ScheduleHandler from '../handlers/ScheduleHandler';
-//import eventHandler from '../handlers/eventHandler';
-//import ResourceHandler from '../handlers/ResourceHandler';
+import scheduleHandler from '../handlers/scheduleHandler';
+import trainerHandler from '../handlers/trainerHandler';
 //import DocumentHandler from '../handlers/DocumentHandler';
 import Cookies from "../pages/Cookies";
 import Privacy from "../pages/Privacy";
 import Legal from "../pages/Legal";
+import Login from "../pages/Login";
 
 
 export const router = createBrowserRouter([
@@ -27,16 +27,17 @@ export const router = createBrowserRouter([
                         index: true,
                         element: <Home/>,
                         //loader: fetchPhotos,
-                        //loader: fetchSchedules,
+                        loader: fetchSchedules,
                     },
                     {
                         path: '/calendario',
                         element: <Calendar />,
-                        //loader: fetchSchedules,
+                        loader: fetchSchedules,
                     },
                     {
                         path: '/nuestro-club',
                         element: <Club/>,
+                        loader: fetchTrainers,
                     },    
                     {
                         path: '/blog-recursos',
@@ -75,50 +76,38 @@ export const router = createBrowserRouter([
                         path: '/politica-privacidad',
                         element: <Privacy />,
                     },  
+                    {
+                        path: '/login',
+                        element: <Login />,
+                    },
+                    {
+                        path: '/admin',
+                        element: <Admin />,
+                    }
                 ]
             },
         ]
 );
 
-/* async function fetchPhotos() {
-    const Photos = await PhotoHandler.loadPhotos();
-    return { Photos };
-}
-
-async function fetchPhoto({ params }) {
-    const Photo = await PhotoHandler.loadPhoto(params.id);
-    return { Photo };
-} */
-
-/* async function fetchSchedules() {
-    const Schedules = await ScheduleHandler.loadSchedules();
+async function fetchSchedules() {
+    const Schedules = await scheduleHandler.loadSchedules();
     return { Schedules };
 }
 
 async function fetchSchedule({ params }) {
-    const Schedule = await ScheduleHandler.loadSchedule(params.id);
+    const Schedule = await scheduleHandler.loadSchedule(params.id);
     return { Schedule };
-} */
-
-/* async function fetchEvents() {
-    const Events = await EventHandler.loadEvents();
-    return { Events };
 }
 
-async function fetchEvent({ params }) {
-    const Event = await EventHandler.loadEvent(params.id);
-    return { Event };
-} */
-
-/* async function fetchResources() {
-    const Resources = await ResourceHandler.loadResources();
-    return { Resources };
+async function fetchTrainers() {
+    const Trainers = await trainerHandler.loadTrainers();
+    return { Trainers };
 }
 
-async function fetchResource({ params }) {
-    const Resource = await ResourceHandler.loadResource(params.id);
-    return { Resource };
-} */
+async function fetchTrainer({ params }) {
+    const Trainer = await trainerHandler.loadTrainer(params.id);
+    return { Trainer };
+}
 
 /* async function fetchDocuments() {
     const Documents = await DocumentHandler.loadDocuments();
