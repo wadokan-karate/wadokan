@@ -1,6 +1,7 @@
 
 import LicensesInfo from '../components/LicensesInfo.jsx';
 import SidebarUser from '../components/SidebarUser.jsx';
+import Pruebasidebar from '../components/pruebasidebar.jsx';
 import "../style/Licenses.css"
 
     const LicensesInfoPage  = () => {
@@ -10,7 +11,8 @@ import "../style/Licenses.css"
             <>
                 <div className="container-licence">
                     <div className="flex"> 
-                        <SidebarUser />
+                    <Pruebasidebar></Pruebasidebar>
+                        {/* <SidebarUser /> */}
                         <LicensesInfo/>
                     </div>   
                 </div> 

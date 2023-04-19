@@ -1,5 +1,6 @@
 import InscriptionFak from '../components/InscriptionFak.jsx';
 import SidebarUser from '../components/SidebarUser.jsx';
+import Pruebasidebar from '../components/pruebasidebar.jsx';
 import "../style/Licenses.css"
 
     const LicensesInscriptionFak  = () => {
@@ -9,7 +10,8 @@ import "../style/Licenses.css"
             <>
                 <div className="container-licence">
                     <div className="flex"> 
-                        <SidebarUser />
+                    <Pruebasidebar></Pruebasidebar>
+                        {/* <SidebarUser /> */}
                         <InscriptionFak/>
                     </div>   
                 </div> 

@@ -1,5 +1,6 @@
 import HealthInsurance from '../components/HealthInsurance.jsx';
 import SidebarUser from '../components/SidebarUser.jsx';
+import Pruebasidebar from '../components/pruebasidebar.jsx';
 import "../style/Licenses.css"
 
     const Licenses = () => {
@@ -9,7 +10,8 @@ import "../style/Licenses.css"
             <>
                 <div className="container-licence">
                     <div className="flex"> 
-                        <SidebarUser />
+                    <Pruebasidebar></Pruebasidebar>
+                        {/* <SidebarUser /> */}
                         <HealthInsurance/>
                     </div>   
                 </div> 

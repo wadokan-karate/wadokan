@@ -1,4 +1,5 @@
 import SidebarUser from '../components/SidebarUser.jsx';
+import Pruebasidebar from '../components/pruebasidebar.jsx';
 import "../style/Licenses.css"
 
     const Licenses = () => {
@@ -7,7 +8,8 @@ import "../style/Licenses.css"
             
             <>
                 <div className="container-licence">
-                <SidebarUser />
+                   <Pruebasidebar/>
+                {/* <SidebarUser /> */}
                 </div> 
                 <div className="container-info"> 
                 </div>        
@@ -16,4 +18,4 @@ import "../style/Licenses.css"
         )
     }
     
-    export default Licenses
+    export default Licenses;

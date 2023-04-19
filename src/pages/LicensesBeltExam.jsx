@@ -1,5 +1,6 @@
 import BeltExams from '../components/BeltExams.jsx';
 import SidebarUser from '../components/SidebarUser.jsx';
+import Pruebasidebar from '../components/pruebasidebar.jsx';
 import "../style/Licenses.css"
 
     const LicensesBeltExam = () => {
@@ -9,7 +10,8 @@ import "../style/Licenses.css"
             <>
                 <div className="container-licence">
                     <div className="flex"> 
-                        <SidebarUser />
+                        <Pruebasidebar></Pruebasidebar>
+                        {/* <SidebarUser /> */}
                         <BeltExams/>
                     </div>   
                 </div> 

@@ -5,6 +5,7 @@ import "../index.css"
 const SidebarUser = () => {
     return (
         <div className="sidebar-user">
+            
             <ul>
 
                 <li className="categories">Categorías</li>
