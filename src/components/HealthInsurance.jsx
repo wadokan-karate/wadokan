@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import SeguroMedico from "../assets/img/seguroMedico.png";
+
 
 const HealthInsurance = () => {
   
@@ -7,8 +8,11 @@ const HealthInsurance = () => {
 
      
       <div className=" ContainerHealth bg-brown-300 text-center w-full">
-       <h1 className="text-black">ESTA ES LA INFO DEL SEGURO MÉDICO</h1>
-       <p>ljvnrievpervin </p>
+         <img src={SeguroMedico} alt="Descripción de la imagen" />
+         
+       <h1 className="text-black mt-8">SEGURO DEPORTIVO</h1>
+       <h2>PROTOCOLO DE ACTUACIÓN EN CASO DE ACCIDENTES</h2>
+       <p></p>
       </div>
 
     );

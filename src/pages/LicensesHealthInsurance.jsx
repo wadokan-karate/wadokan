@@ -1,9 +1,9 @@
 import React from "react";
 import HealthInsurance from '../components/HealthInsurance.jsx';
-import SidebarUser from '../components/SidebarUser.jsx';
 import Pruebasidebar from '../components/pruebasidebar.jsx';
 import '../components/style/HealthInsurance.css';
 import "../style/Licenses.css";
+import SeguroMedico from "../assets/img/seguroMedico.png";
 
     const LicensesView = () => {
 
@@ -11,9 +11,10 @@ import "../style/Licenses.css";
             
             <> 
               <div className="MainBackground"> 
+                
              
                 <div className=' flex'>
-                    
+                       
                        <Pruebasidebar></Pruebasidebar>
                         {/* <SidebarUser /> */} 
                        <HealthInsurance/>                

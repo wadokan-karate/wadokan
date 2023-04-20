@@ -20,7 +20,6 @@ function Carousel() {
     {
       url:ImgDojoLogo,
     },
-
     {
       url: DojoMontequinto,
     },
