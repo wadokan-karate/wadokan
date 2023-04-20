@@ -1,5 +1,4 @@
 import ImageRights from '../components/ImageRights.jsx';
-import SidebarUser from '../components/SidebarUser.jsx';
 import Pruebasidebar from '../components/pruebasidebar.jsx';
 import "../style/Licenses.css"
 
@@ -10,9 +9,8 @@ import "../style/Licenses.css"
             <>
                 <div className="container-licence">
                     <div className="flex"> 
-                     <Pruebasidebar></Pruebasidebar>
-                        {/* <SidebarUser /> */}
-                        <ImageRights/>
+                     <Pruebasidebar></Pruebasidebar>                   
+                     <ImageRights/>
                     </div>   
                 </div> 
                      

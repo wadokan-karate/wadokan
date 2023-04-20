@@ -12,8 +12,7 @@ import "../style/Licenses.css"
                 <div className="container-licence">
                     <div className="flex"> 
                     <Pruebasidebar></Pruebasidebar>
-                        {/* <SidebarUser /> */}
-                        <LicensesInfo/>
+                    <LicensesInfo/>
                     </div>   
                 </div> 
                      

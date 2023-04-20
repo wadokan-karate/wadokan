@@ -3,7 +3,7 @@ import HealthInsurance from '../components/HealthInsurance.jsx';
 import Pruebasidebar from '../components/pruebasidebar.jsx';
 import '../components/style/HealthInsurance.css';
 import "../style/Licenses.css";
-import SeguroMedico from "../assets/img/seguroMedico.png";
+
 
     const LicensesView = () => {
 
@@ -16,7 +16,6 @@ import SeguroMedico from "../assets/img/seguroMedico.png";
                 <div className=' flex'>
                        
                        <Pruebasidebar></Pruebasidebar>
-                        {/* <SidebarUser /> */} 
                        <HealthInsurance/>                
                 </div>       
               </div>
