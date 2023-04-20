@@ -8,7 +8,7 @@ import "../style/Licenses.css"
         return (
             
             <>
-                <div className="container-licence">
+                <div className="MainBackground">
                     <div className="flex"> 
                         <Pruebasidebar></Pruebasidebar>
                         {/* <SidebarUser /> */}

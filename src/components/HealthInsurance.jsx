@@ -32,6 +32,20 @@ const HealthInsurance = () => {
 
        <p className=" text-md mt-4 text-lg text-wadokanBlue font-bold ">Llamar a la mayor brevedad posible al teléfono de contacto de Allianz Beiman 677 808 817 / 954 027 032, donde te orientarán por el personal sanitario especializado sobre el mejor procedimiento a seguir para la correcta atención de su accidente. El parte deberá ser comunicado y enviado como máximo en los 7 días posteriores desde la fecha en la que se produce el accidente. </p>
        
+       
+       <h2 className=" text-start Header2 font-bold text-lg" >PROTOCOLO EN CASO DE ACCIDENTE</h2>
+
+       <ul className=" KarateList text-black text-md mt-4 mb-3 pb-3 text-lg"> En caso de accidente habrá que adjuntar al correo electrónico de la Delegación Sevillana de Karate los siguientes documentos:
+
+         <li className=" KarateList text-black text-md  text-lg">Ficha federativa</li>
+         <li className=" KarateList  text-black text-md  text-lg">Hora y lugar del accidente</li>
+         <li className=" KarateList  text-black text-md  text-lg">Descripción del accidente</li>
+         <li className=" KarateList  text-black text-md  text-lg">Zona afectada</li>
+
+        </ul>
+
+        <p className=" text-wadokanBlue text-md mt-4 text-lg font-semibold">Correo de la Delegación Sevillana: sevillakarate@gmail.com</p>
+         
        <p className="text-md mt-4 text-lg ">Para consultar con más detalle Descargar el documento oficial PDF que se adjunta a continuación:</p>
              
          <div> <img src={SeguroMedico} className="Healthimg" alt="Descripción de la imagen" /></div>
