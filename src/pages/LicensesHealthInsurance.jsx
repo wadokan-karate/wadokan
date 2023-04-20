@@ -1,8 +1,9 @@
+import React from "react";
 import HealthInsurance from '../components/HealthInsurance.jsx';
 import SidebarUser from '../components/SidebarUser.jsx';
 import Pruebasidebar from '../components/pruebasidebar.jsx';
 import '../components/style/HealthInsurance.css';
-import "../style/Licenses.css"
+import "../style/Licenses.css";
 
     const LicensesView = () => {
 

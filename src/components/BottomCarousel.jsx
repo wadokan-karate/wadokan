@@ -134,7 +134,7 @@ const BottomCarousel = () => {
                                     </Slide>
                                     <Slide index={10}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="src\assets\img\BottomCarousel\DePeques.png" alt="sitting area" className="object-cover object-center w-full" />
+                                            <img src="src\assets\img\BottomCarousel\DePeques.png" alt="Foto" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                 <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">De Peques...</h2>
                                                 <div className="flex h-full items-end pb-6">
