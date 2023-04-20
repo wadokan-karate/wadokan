@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
-import Logo from '../assets/img/SlideHome/Foto1.png';
 import LogoName from '../assets/img/SlideHome/Foto2.png';
 import CintoBlack from '../assets/img/SlideHome/Foto5.png';
-import CintoYellow from '../assets/img/SlideHome/Foto4.png';
 import FraseFoto from '../assets/img/SlideHome/FraseFoto.png';
+import PakosGym from '../assets/img/SlideHome/PakosGym.png';
 import ImgDojoLogo from '../assets/img/SlideHome/LogoDojo.png';
 import DojoMontequinto from '../assets/img/SlideHome/DojoMontequinto.png';
+
 
 
 
@@ -23,6 +23,9 @@ function Carousel() {
 
     {
       url: DojoMontequinto,
+    },
+    {
+      url: PakosGym,
     },
     {
         url: FraseFoto,
