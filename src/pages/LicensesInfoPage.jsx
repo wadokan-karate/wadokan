@@ -9,7 +9,7 @@ import "../style/Licenses.css"
         return (
             
             <>
-                <div className="MainBackground">
+                <div className="container-licence">
                     <div className="flex"> 
                     <Pruebasidebar></Pruebasidebar>
                     <LicensesInfo/>
