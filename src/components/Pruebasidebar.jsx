@@ -57,8 +57,8 @@ const Pruebasidebar = () => {
                     </div>
                 </div>
 
-                <div className=" bg-wadokanBlue text-blue-gray-900  mb-4 ml-4 m-10 p-3 rounded-md">
-                    <a  className="text-lg ml-12 font-semibold    hover:bg-wadokanBlue hover:text-blue-gray-900"href="/">INICIO</a>
+                <div className=" bg-wadokanBlue text-blue-gray-900  mb-6 ml-4 m-10 p-3 rounded-md">
+                    <a  className="text-lg ml-12 font-semibold hover:bg-wadokanBlue hover:text-blue-gray-900"href="/">INICIO</a>
                 </div>               
                 
             </nav>
