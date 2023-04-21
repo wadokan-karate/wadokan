@@ -27,7 +27,7 @@ const LicensesInfo = () => {
      
      <div className='Solicitud bg-wadokanBlue text-center mt-8 ml-80 mr-80 pt-2 pb-2 rounded-md font-bold hover:text-gray-200'>
       <a className=' hover:text-white' href="https://fankarate.com/noticias/actualidad/incorpora-tu-foto-tu-ficha-deportiva/" target='_blank'>
-       ENLACE CAMBIA TU FOTO</a>
+       CAMBIA TU FOTO</a>
      </div>  
 
      <h2 className=" text-center Header2Bottom font-bold text-lg pt-5" >INFORMACIÓN IMPORTANTE</h2>   
