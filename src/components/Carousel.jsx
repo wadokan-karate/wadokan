@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
-import Logo from '../assets/img/SlideHome/Foto1.png';
 import LogoName from '../assets/img/SlideHome/Foto2.png';
-import Equipation from '../assets/img/SlideHome/Foto3.png';
 import CintoBlack from '../assets/img/SlideHome/Foto5.png';
-import CintoYellow from '../assets/img/SlideHome/Foto4.png';
-// import PalaciosDojo from '../assets/img/SlideHome/PalaciosDojo.jpg';
+import FraseFoto from '../assets/img/SlideHome/FraseFoto.png';
+import PakosGym from '../assets/img/SlideHome/PakosGym.png';
+import ImgDojoLogo from '../assets/img/SlideHome/LogoDojo.png';
+import DojoMontequinto from '../assets/img/SlideHome/DojoMontequinto.png';
+
 
 
 
@@ -17,18 +18,19 @@ function Carousel() {
       url: CintoBlack,
     },
     {
-      url: LogoName,
+      url:ImgDojoLogo,
     },
     {
-      url: Equipation,
+      url: DojoMontequinto,
     },
-
     {
-        url: Logo,
+      url: PakosGym,
     },
-    
     {
-        url: CintoYellow,
+        url: FraseFoto,
+    },    
+    {
+        url: LogoName,
     },
   ];
 
@@ -51,7 +53,7 @@ function Carousel() {
   };
 
   return (
-    <div className=' CarouselBox max-w-[1400px] h-[480px] w-full m-0 '>
+    <div className=' CarouselBox max-w-[1400px] h-[480px] w-full'>
       
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
