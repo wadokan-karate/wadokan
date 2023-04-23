@@ -1,7 +1,7 @@
-import scheduleService from "../service/scheduleService";
+import {scheduleService} from "../service/scheduleService";
 
 const scheduleHandler = {
-    addSchedule(newSchedule) {
+    async addSchedule(newSchedule) {
 
         let schedule = { 
             "day": newSchedule.day,
@@ -13,18 +13,18 @@ const scheduleHandler = {
             "isActive": true,
         }
         console.log(schedule)
-        return scheduleService.submitSchedule(schedule);
+        return await scheduleService.submitSchedule(schedule);
     },
-    loadSchedules(){
-        return scheduleService.getSchedules();
+    async loadSchedules(){
+        return await scheduleService.getSchedules();
     },
-    loadSchedule(id) {
-        return scheduleService.getSchedule(id);
+    async loadSchedule(id) {
+        return await scheduleService.getSchedule(id);
     },
-    deleteSchedule(id){
-        return scheduleService.deleteSchedule(id);
+    async deleteSchedule(id){
+        return await scheduleService.deleteSchedule(id);
     },
-    updateSchedule(id, updatedSchedule){
+    async updateSchedule(id, updatedSchedule){
         if (!updatedSchedule) {
             return;
         }
@@ -40,7 +40,7 @@ const scheduleHandler = {
         }
         console.log(updatedScheduleStructure)
 
-        return scheduleService.updateSchedule(id, updatedScheduleStructure);
+        return await scheduleService.updateSchedule(id, updatedScheduleStructure);
     },
 }
 

@@ -1,53 +1,40 @@
 import { eventService } from "../service/eventService";
 
-
 export const eventHandler = {
-
-    async addProductImgBase64(newProductBaseModel) {
-
-       
-
-        let imgStringData = newProductBaseModel.imgBase64;
-        let imgStringDataSplit = imgStringData.split(',');
-        let imgContent = imgStringDataSplit[1];
-        let imgExtension = imgStringDataSplit[0].split(';')[0].split(':')[1];
-
-        let newProductBase64RequestModel = {
-            "eventEntity": {
-                "name": newProductBaseModel.name,
-                "description": newProductBaseModel.description
-            },
-            "base64FileModel": {
-                "fileName": newProductBaseModel.name + "-Photo",
-                "base64FileContent": imgContent,
-                "extension": imgExtension
-            }
+    async addEvent(newEvent) {
+        let eventData = {
+            "name": newEvent.title,
+            "description": newEvent.description,
+            "image": newEvent.imgEvent,
+            "isActive": true,
         }
 
-        return await eventService.submitProductImgBase64(newProductBase64RequestModel);
-
+        console.log(newEvent)
+        return await eventService.submitEvent(eventData);
     },
-    async loadProductsBase64Array() {
-
-        return await eventService.getProductsBase64Array();
-
+    async loadEvents(){
+        return await eventService.getEvents();
     },
-    getFileContentType(extension){
-    
-        const contentTypes = {
-            png: "image/png",
-            jpeg: "image/jpeg",
-            jpg: "image/jpg"
+    async loadEvent(id) {
+        return await eventService.getEvent(id);
+    },
+    async deleteSchedule(id){
+        return await eventService.deleteEvent(id);
+    },
+    async updateEvent(id, updatedEvent){
+        if (!updatedEvent) {
+            return;
         }
-
-        try{
-            if(contentTypes[extension].length > 0){
-                return contentTypes[extension];
-            }
-        }catch{
-            return "application/octet-stream";
+        
+        let updatedEventStructure = {
+            "name": updatedEventStructure.name,
+            "description": updatedEventStructure.description,
+            "image": updatedEventStructure.image,
         }
+        console.log(updatedEventStructure)
 
-    }
-
+        return await eventService.updateEvent(id, updatedEventStructure);
+    },
 }
+
+export default eventHandler;

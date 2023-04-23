@@ -21,10 +21,7 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
-<<<<<<< HEAD
-=======
     "react-hook-form": "^7.43.9",
->>>>>>> dev
     "react-icons": "^4.8.0",
     "react-router-dom": "^6.10.0",
     "tw-elements": "^1.0.0-beta2"
