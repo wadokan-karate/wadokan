@@ -74,8 +74,9 @@ export default function Schedule() {
 
   return (
     <div>
+    
+      <div id="containerSchedule">  
       <h2 id="schedulesTitle">Horario</h2>
-      <div id="containerSchedule">
         <p>Puede consultar el horario de otras localidades y ubicaciones filtrando los datos a continuación</p>
         <select id="city" name="city" value={city} onChange={(e) => {
           if (city !== e.target.value) {

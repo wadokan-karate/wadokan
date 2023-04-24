@@ -2,6 +2,7 @@ import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import '../components/style/navbar.css'
+import LogoNavbar from '../assets/WadokanLogoRect.png'
 
 const navigation = [
   { name: 'Wadokan', href: '/', current: true },
@@ -20,7 +21,7 @@ function classNames(...classes) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-wadokanBlue ">
+    <Disclosure as="nav" className="bg-wadokanBlue">
       {({ open }) => (
         <>
           <div className=" mx-auto max-w-7xl px-2 sm:px-3 lg:px-4">
@@ -37,15 +38,10 @@ export default function Navbar() {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 justify-around sm:items-stretch" >
-                <div className="flex flex-shrink-0 items-center" >
-                  <img
-                    className="block h-12 w-auto lg:hidden"
-                    src="src\assets\logo wadokan rect.png"
-                    alt="Your Company"
-                  />
+                <div className="flex flex-shrink-0 items-center" >              
                   <img
                     className="hidden h-12 w-auto lg:block"
-                    src="src\assets\logo wadokan rect.png"
+                    src={LogoNavbar}
                     alt="Your Company"
                   />
                 </div>

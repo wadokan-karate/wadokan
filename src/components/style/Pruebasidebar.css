@@ -1,0 +1,42 @@
+.h2Style{
+    font-family: 'Montserrat';
+    border-bottom: solid 5px #2196F3;
+    margin-right: 14%;
+
+}
+
+.categories{
+  font-family: 'Montserrat';
+  padding: 3%;
+  padding-bottom: 6%;   
+  margin-left: 6%;
+  text-decoration: none;
+
+  
+}
+
+#dropdownDefaultButton{
+    position: absolute;
+    z-index: 999;
+    top: 9vh;
+    left: 2%;
+}
+
+@media screen and (max-width: 640px) {
+    /* esconde el aside */
+    aside {
+      display: none;
+    }
+    
+    /* muestra el botón de dropdown */
+    #dropdownDefaultButton {
+      display: block;
+    }
+  }
+
+ @media (min-width: 768px) {
+    #dropdownDefaultButton {
+      display: none;
+    }
+  }
+    

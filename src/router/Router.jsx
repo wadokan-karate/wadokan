@@ -6,6 +6,12 @@ import Club from "../pages/Club";
 import Home from "../pages/Home";
 import Contact from "../pages/Contact";
 import Licenses from "../pages/Licenses";
+import LicensesHealthInsurance from "../pages/LicensesHealthInsurance";
+import LicensesImageRights from "../pages/LicensesImageRights ";
+import LicensesInscriptionFak from "../pages/LicensesInscriptionFak";
+import LicensesInscriptionImd from "../pages/LicensesInscriptionImd";
+import LicensesInfoPage from "../pages/LicensesInfoPage";
+import LicensesBeltExam from "../pages/LicensesBeltExam";
 import SeeNew from "../pages/SeeNew";
 import Admin from "../pages/Admin";
 import SeeResource from "../pages/SeeResource";
@@ -16,6 +22,13 @@ import Cookies from "../pages/Cookies";
 import Privacy from "../pages/Privacy";
 import Legal from "../pages/Legal";
 import Login from "../pages/Login";
+import AdminView from "../pages/AdminView";
+import AVevents from "../pages/AVeventes";
+import AVourteam from "../pages/AVourteam";
+import AVresources from "../pages/AVresources";
+import AVschedule from "../pages/AVschedule";
+
+
 
 
 export const router = createBrowserRouter([
@@ -61,6 +74,36 @@ export const router = createBrowserRouter([
                         //loader: fetchDocuments,
                     }, 
                     {
+                        path: '/licencias/seguro',
+                        element: <LicensesHealthInsurance/>,
+                        //loader: fetchDocuments,
+                    },
+                    {
+                        path: '/licencias/derechosdeimagen',
+                        element: <LicensesImageRights/>,
+                        //loader: fetchDocuments,
+                    },
+                    {
+                        path: '/licencias/inscripcionfak',
+                        element: <LicensesInscriptionFak/>,
+                        //loader: fetchDocuments,
+                    },
+                    {
+                        path: '/licencias/inscripcionImd',
+                        element: <LicensesInscriptionImd/>,
+                        //loader: fetchDocuments,
+                    },
+                    {
+                        path: '/licencias/licensesinfo',
+                        element: <LicensesInfoPage/>,
+                        //loader: fetchDocuments,
+                    },
+                    {
+                        path: '/licencias/examenescinturon',
+                        element: <LicensesBeltExam/>,
+                        //loader: fetchDocuments,
+                    },
+                    {
                         path: '/contacto',
                         element: <Contact />,
                     },
@@ -82,8 +125,26 @@ export const router = createBrowserRouter([
                     },
                     {
                         path: '/admin',
-                        element: <Admin />,
+                        element: <AdminView />,
+                    },
+                    {
+                        path: '/admin/noticias',
+                        element: <AVevents />,
+                    },
+                    {
+                        path: '/admin/nuestroequipo',
+                        element: <AVourteam />,
+                    },
+                    {
+                        path: '/admin/recursos',
+                        element: <AVresources />,
+                    },
+                    {
+                        path: '/admin/horario',
+                        element: <AVschedule />,
                     }
+
+                    
                 ]
             },
         ]

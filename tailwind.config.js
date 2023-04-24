@@ -10,12 +10,16 @@ module.exports = withMT ({
     "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}"
   ],
   theme: {
-    extend: {},
-    colors:{
+    extend: {
+    colors: {
       'wadokanBlue':'#2196F3',
       'grey':'#3E3E3E',
-      'white':'#ffffff'
-    }
+      'white':'#FFFFFF',
+      'List': '#FFFAFA',
+      'gris': '#A79A9A',
+
+      },
+    },
   },
   plugins: [require("tw-elements/dist/plugin.cjs"), ('flowbite/plugin'), ('autoprefixer'),],
   

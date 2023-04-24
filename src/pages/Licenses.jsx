@@ -1,10 +1,19 @@
-const Licenses = () => {
+import Pruebasidebar from '../components/pruebasidebar.jsx';
+import "../style/Licenses.css"
 
-    return (
-        <>
-           
-        </>
-    );
-};
+    const Licenses = () => {
 
-export default Licenses;
+        return (
+            
+            <>
+             <div className='flex'>               
+                <Pruebasidebar/>     
+                <img src="src\assets\img\SlideHome\LogoDojo.png" alt="" className='w-full'/>                 
+                
+             </div>
+            </>
+        
+        )
+    }
+    
+    export default Licenses;
