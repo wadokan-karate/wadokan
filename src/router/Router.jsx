@@ -17,7 +17,7 @@ import Admin from "../pages/Admin";
 import SeeResource from "../pages/SeeResource";
 import scheduleHandler from '../handlers/scheduleHandler';
 import trainerHandler from '../handlers/trainerHandler';
-//import DocumentHandler from '../handlers/DocumentHandler';
+import resourceHandler from '../handlers/resourceHandler';
 import Cookies from "../pages/Cookies";
 import Privacy from "../pages/Privacy";
 import Legal from "../pages/Legal";
@@ -96,12 +96,10 @@ export const router = createBrowserRouter([
                     {
                         path: '/licencias/licensesinfo',
                         element: <LicensesInfoPage/>,
-                        //loader: fetchDocuments,
                     },
                     {
                         path: '/licencias/examenescinturon',
                         element: <LicensesBeltExam/>,
-                        //loader: fetchDocuments,
                     },
                     {
                         path: '/contacto',
@@ -170,13 +168,12 @@ async function fetchTrainer({ params }) {
     return { Trainer };
 }
 
-/* async function fetchDocuments() {
-    const Documents = await DocumentHandler.loadDocuments();
-    return { Documents };
+async function fetchResources() {
+    const Resources = await resourceHandler.loadResources();
+    return { Resources };
 }
 
-async function fetchDocument({ params }) {
-    const Document = await DocumentHandler.loadDocument(params.id);
-    return { Document };
+async function fetchResource({ params }) {
+    const Resource = await resourcetHandler.loadResource(params.id);
+    return { Resource };
 }
- */

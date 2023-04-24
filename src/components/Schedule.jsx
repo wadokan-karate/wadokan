@@ -125,8 +125,6 @@ export default function Schedule() {
               <td>{schedules.find((schedule) => schedule.day === 'Miércoles' && schedule.timeRange === timeRange)?.age} <br></br> {schedules.find((schedule) => schedule.day === 'Miércoles' && schedule.timeRange === timeRange)?.belt}</td>
               <td>{schedules.find((schedule) => schedule.day === 'Jueves' && schedule.timeRange === timeRange)?.age} <br></br> {schedules.find((schedule) => schedule.day === 'Jueves' && schedule.timeRange === timeRange)?.belt}</td>
               <td>{schedules.find((schedule)=> schedule.day === 'Viernes' && schedule.timeRange === timeRange)?.age} <br></br> {schedules.find((schedule) => schedule.day === 'Viernes' && schedule.timeRange === timeRange)?.belt}</td>
-
-
             </tr>
           ))}
         </tbody>

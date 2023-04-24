@@ -12,7 +12,7 @@ const apiClient = axios.create({
     timeout: 15000 // Aumentamos el tiempo de espera a 15 segundos
 });
 
-export const respurceService = {
+export const resourceService = {
     async getResources() {
         try {
             let response = await apiClient.get("/GetAllResources");

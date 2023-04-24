@@ -19,7 +19,7 @@ const SidebarAdmin = () => {
                     <Link to="/admin/nuestroequipo">Nuestro equipo</Link>
                 </li>
                 <li>
-                    <Link to="/admin/horario">Horario</Link>
+                    <Link to="/admin/horario">Horarios</Link>
                 </li>
 
             </ul>

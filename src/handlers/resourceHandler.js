@@ -5,13 +5,13 @@ export const resourceHandler = {
         let resourceData = {
             "name": newResource.title,
             "description": newResource.description,
-            "image": newResource.imgEvent,
+            "image": newResource.imgResource,
             "video": newResource.video,
             "isActive": true,
         }
 
         console.log(newResource)
-        return await resourceService.submitEvent(resourceData);
+        return await resourceService.submitResource(resourceData);
     },
     async loadResources(){
         return await resourceService.getResources();
