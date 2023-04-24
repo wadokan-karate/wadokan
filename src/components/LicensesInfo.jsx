@@ -41,13 +41,13 @@ const LicensesInfo = () => {
        CAMBIA TU FOTO</a>
      </div>  
 
-     <h2 className=" text-center Header2Bottom font-extrabold text-xl pt-5" >INFORMACIÓN IMPORTANTE</h2>   
+     <h2 className=" text-start Header2 Bottom font-extrabold text-xl pt-5" >INFORMACIÓN IMPORTANTE</h2>   
      <p className="text-md mt-4 text-lg ">En el siguiente enlace te adjuntamos los archivos PDF necesarios para cumplimentar la solicitud. </p>
 
      <div className=" border-8 mt-10  border-grey"> <img src={FederacionLogos} alt="Descripción de la imagen" /></div>
             
 
-      </div>
+    </div>
    
       );
   };
