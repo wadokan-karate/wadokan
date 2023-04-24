@@ -24,128 +24,128 @@ const BottomCarousel = () => {
                                 <div id="slider" className="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700">
                                     <Slide index={0}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="src\assets\img\PalaciosDojo.jpg" alt="black chair and white table" className="object-cover object-center w-full" />
+                                            <img src="src\assets\img\BottomCarousel\FotoGrupo1.png" alt="black chair and white table" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">Dojo</h2>
+                                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">Campeonato Andalucia</h2>
                                                 <div className="flex h-full items-end pb-6">
-                                                    <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">Wadokan Los Palacios</h3>
+                                                    <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white"></h3>
                                                 </div>
                                             </div>
                                         </div>
                                     </Slide>
                                     <Slide index={1}>
                                         <div className=" flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="src\assets\img\PalaciosDojo.jpg" alt="sitting area" className="object-cover object-center w-full" />
+                                            <img src="src\assets\img\BottomCarousel\FotoGrupo4.png" alt="sitting area" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                 <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">Dojo</h2>
                                                 <div className="flex h-full items-end pb-6">
-                                                    <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">Wadokan Los Palacios</h3>
+                                                    <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white"></h3>
                                                 </div>
                                             </div>
                                         </div>
                                     </Slide>
                                     <Slide index={2}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="src\assets\img\PalaciosDojo.jpg" alt="sitting area" className="object-cover object-center w-full" />
+                                            <img src="src\assets\img\BottomCarousel\FotoGrupo3.png" alt="sitting area" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">Dojo</h2>
+                                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">Liga IMD</h2>
                                                 <div className="flex h-full items-end pb-6">
-                                                    <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">Wadokan Los Palacios</h3>
+                                                    <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white"></h3>
                                                 </div>
                                             </div>
                                         </div>
                                     </Slide>
                                     <Slide index={3}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="src\assets\img\PalaciosDojo.jpg" alt="sitting area" className="object-cover object-center w-full" />
+                                            <img src="src\assets\img\BottomCarousel\FotoGrupo2.png" alt="sitting area" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">Dojo</h2>
+                                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">Campeonato Andalucia</h2>
                                                 <div className="flex h-full items-end pb-6">
-                                                    <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">Wadokan Los Palacios</h3>
+                                                    <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white"></h3>
                                                 </div>
                                             </div>
                                         </div>
                                     </Slide>
                                     <Slide index={4}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="src\assets\img\PalaciosDojo.jpg" alt="black chair and white table" className="object-cover object-center w-full" />
+                                            <img src="src\assets\img\BottomCarousel\FotoGrupo5.png" alt="black chair and white table" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">Dojo</h2>
+                                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">Campeonatos</h2>
                                                 <div className="flex h-full items-end pb-6">
-                                                    <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">Wadokan Los Palacios</h3>
+                                                    <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white"></h3>
                                                 </div>
                                             </div>
                                         </div>
                                     </Slide>
                                     <Slide index={5}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="src\assets\img\PalaciosDojo.jpg" alt="sitting area" className="object-cover object-center w-full" />
+                                            <img src="src\assets\img\BottomCarousel\FotoGrupo8.png" alt="sitting area" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">Dojo</h2>
+                                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">Wadokan Montequinto</h2>
                                                 <div className="flex h-full items-end pb-6">
-                                                    <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">Wadokan Los Palacios</h3>
+                                                    <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white"></h3>
                                                 </div>
                                             </div>
                                         </div>
                                     </Slide>
                                     <Slide index={6}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="src\assets\img\PalaciosDojo.jpg" alt="sitting area" className="object-cover object-center w-full" />
+                                            <img src="src\assets\img\BottomCarousel\YoPatada.jpg" alt="sitting area" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">Dojo</h2>
+                                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">Karate</h2>
                                                 <div className="flex h-full items-end pb-6">
-                                                    <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">Wadokan Los Palacios</h3>
+                                                    <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white"></h3>
                                                 </div>
                                             </div>
                                         </div>
                                     </Slide>
                                     <Slide index={7}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="src\assets\img\PalaciosDojo.jpg" alt="sitting area" className="object-cover object-center w-full" />
+                                            <img src="src\assets\img\BottomCarousel\FotoGrupo9.png" alt="sitting area" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">Dojo</h2>
+                                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">Examen Cinto Negro</h2>
                                                 <div className="flex h-full items-end pb-6">
-                                                    <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">Wadokan Los Palacios</h3>
+                                                    <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white"></h3>
                                                 </div>
                                             </div>
                                         </div>
                                     </Slide>
                                     <Slide index={8}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="src\assets\img\PalaciosDojo.jpg" alt="black chair and white table" className="object-cover object-center w-full" />
+                                            <img src="src\assets\img\BottomCarousel\Campeona.png" alt="black chair and white table" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                                <h2 className="texlg:t-xl le leading-4 text-basealg:ding-tight text-white">Dojo</h2>
+                                                <h2 className="texlg:t-xl le leading-4 text-basealg:ding-tight text-white">Campeonato IMD</h2>
                                                 <div className="flex h-full items-end pb-6">
-                                                    <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">Wadokan Los Palacios</h3>
+                                                    <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white"></h3>
                                                 </div>
                                             </div>
                                         </div>
                                     </Slide>
                                     <Slide index={9}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="src\assets\img\PalaciosDojo.jpg" alt="sitting area" className="object-cover object-center w-full" />
+                                            <img src="src\assets\img\BottomCarousel\ProfeManu.png" alt="sitting area" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">Dojo</h2>
+                                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">Manuel de alumno</h2>
                                                 <div className="flex h-full items-end pb-6">
-                                                    <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">Wadokan Los Palacios</h3>
+                                                    <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white"></h3>
                                                 </div>
                                             </div>
                                         </div>
                                     </Slide>
                                     <Slide index={10}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="src\assets\img\PalaciosDojo.jpg" alt="sitting area" className="object-cover object-center w-full" />
+                                            <img src="src\assets\img\BottomCarousel\DePeques.png" alt="Foto" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">Dojo</h2>
+                                                <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">De Peques...</h2>
                                                 <div className="flex h-full items-end pb-6">
-                                                    <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white">Wadokan Los Palacios</h3>
+                                                    <h3 className="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white"></h3>
                                                 </div>
                                             </div>
                                         </div>
                                     </Slide>
                                     <Slide index={11}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="src\assets\img\PalaciosDojo.jpg" alt="sitting area" className="object-cover object-center w-full" />
+                                            <img src="src\assets\img\BottomCarousel\Monitores.png" alt="sitting area" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                 <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">Dojo</h2>
                                                 <div className="flex h-full items-end pb-6">
