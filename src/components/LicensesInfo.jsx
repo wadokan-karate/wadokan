@@ -30,7 +30,7 @@ const LicensesInfo = () => {
         <li className=" KarateList text-black text-md  text-lg">Cuando hayas terminado todos estos pasos adjuntar los documentos necesarios en un correo y enviarlo al e-mail del club</li>
 
         <p className=" text-center m-0 mt-3 text-wadokanBlue font-semibold">KarateWadokanSev@gmail.com</p>
-        <p className=" text-center m-0 mt-3 text-wadokanBlue font-semibold">IBAN:---------------------</p>
+        <p className=" text-center m-0 mt-3 text-wadokanBlue font-semibold">IBAN: ES05 2100 8391 1301 0002 8359</p>
 
 
        </ul>      
@@ -41,7 +41,7 @@ const LicensesInfo = () => {
        CAMBIA TU FOTO</a>
      </div>  
 
-     <h2 className=" text-start Header2 Bottom font-extrabold text-xl pt-5" >INFORMACIÓN IMPORTANTE</h2>   
+     <h2 className=" text-start mt-4 Header2 Bottom font-extrabold text-xl pt-5" >INFORMACIÓN IMPORTANTE</h2>   
      <p className="text-md mt-4 text-lg ">En el siguiente enlace te adjuntamos los archivos PDF necesarios para cumplimentar la solicitud. </p>
 
      <div className=" border-8 mt-10  border-grey"> <img src={FederacionLogos} alt="Descripción de la imagen" /></div>
