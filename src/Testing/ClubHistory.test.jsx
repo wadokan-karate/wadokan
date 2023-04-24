@@ -8,3 +8,10 @@ test('should contain an image element', ()=> {
     const ImageElement = screen.getByAltText(/banner apartado nuestro club/i);
     expect(ImageElement).toBeInTheDocument();
 })
+
+test('should render a club history img', ()=>{
+    render(<ClubHistory/>);
+    const Img = screen.getByAltText(/Img de la historia de nuestro club/i);
+    expect(Img).toBeInTheDocument();
+    
+});

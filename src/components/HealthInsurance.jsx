@@ -48,7 +48,7 @@ const HealthInsurance = () => {
          
        <p className="text-md mt-4 text-lg ">Para consultar con más detalle Descargar el documento oficial PDF que se adjunta a continuación:</p>
              
-         <div> <img src={SeguroMedico} className="Healthimg" alt="Descripción de la imagen" /></div>
+         <div> <img src={SeguroMedico} className="Healthimg" alt="Img de una mano vendada" /></div>
        </div>
     );
   };

@@ -16,3 +16,9 @@ test('should render a gear img', ()=>{
     expect(Img).toBeInTheDocument();
     
 });
+
+test ('should render the second gear img', ()=>{
+    render(<Gear/>);
+    const Img2 = screen.getByAltText(/Equipación, segunda imagen/i);
+    expect(Img2).toBeInTheDocument();
+})
