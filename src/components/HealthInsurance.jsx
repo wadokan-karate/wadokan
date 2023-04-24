@@ -13,7 +13,7 @@ const HealthInsurance = () => {
          
        <h1 className="text-black mt-14 text-3xl">SEGURO DEPORTIVO</h1>
        
-       <h2 className=" text-start Header2 font-bold text-lg ">PROTOCOLO DE ACTUACIÓN EN CASO DE ACCIDENTES</h2>
+       <h2 className=" text-start Header2 font-bold text-lg ">QUÉ ES Y PARA QUÉ SIRVE</h2>
 
        <p className="text-md mt-4 text-lg">El seguro deportivo es un tipo de seguro que se contrata para cubrir los gastos médicos en caso de lesiones o accidentes durante la práctica de deportes. En el caso del karate, es especialmente importante tener un seguro deportivo ya que es una disciplina que involucra mucho movimiento y contacto físico.
        Al contratar un seguro deportivo para tu hijo, estarás asegurándote de que si llega a tener algún tipo de lesión mientras practica karate, los gastos médicos serán cubiertos por el seguro. Esto incluye visitas al médico, tratamiento médico, hospitalización, cirugía y rehabilitación. <br /> <br />
@@ -33,7 +33,7 @@ const HealthInsurance = () => {
        <p className=" text-md mt-4 text-lg text-wadokanBlue font-bold ">Llamar a la mayor brevedad posible al teléfono de contacto de Allianz Beiman 677 808 817 / 954 027 032, donde te orientarán por el personal sanitario especializado sobre el mejor procedimiento a seguir para la correcta atención de su accidente. El parte deberá ser comunicado y enviado como máximo en los 7 días posteriores desde la fecha en la que se produce el accidente. </p>
        
        
-       <h2 className=" text-start Header2 font-bold text-lg" >PROTOCOLO EN CASO DE ACCIDENTE</h2>
+       <h2 className=" text-start Header2 font-bold text-lg" >EN CASO DE ACCIDENTE</h2>
 
        <ul className=" KarateList text-black text-md mt-4 mb-3 pb-3 text-lg"> En caso de accidente habrá que adjuntar al correo electrónico de la Delegación Sevillana de Karate los siguientes documentos:
 
