@@ -12,11 +12,14 @@ import "../style/Licenses.css";
         return (
             
             <> 
+
+              <DropdownLicenses></DropdownLicenses>
+              
               <div className="MainBackground"> 
                 
              
                 <div className=' flex'>
-                       <DropdownLicenses></DropdownLicenses>                                    
+                                                           
                        <Pruebasidebar></Pruebasidebar>
                        <HealthInsurance/>                
                 </div>       

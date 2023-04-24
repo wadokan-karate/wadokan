@@ -7,16 +7,17 @@ import "../style/Licenses.css"
     const LicensesInscriptionImd  = () => {
 
         return (
-            
-            
+            <>
+               <DropdownLicenses></DropdownLicenses>   
+               
                 <div className="container-licence">
                     <div className="flex"> 
-                        <DropdownLicenses></DropdownLicenses>             
+                               
                         <Pruebasidebar></Pruebasidebar>
                         <InscriptionImd/>
                     </div>   
                 </div> 
-                     
+            </>        
             
         
         )

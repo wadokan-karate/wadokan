@@ -8,10 +8,12 @@ import "../style/Licenses.css"
 
         return (
             
-            <>
+            <>  
+                <DropdownLicenses></DropdownLicenses>   
+                
                 <div className="container-licence">
                     <div className="flex"> 
-                     <DropdownLicenses></DropdownLicenses>             
+                              
                      <Pruebasidebar></Pruebasidebar>                   
                      <ImageRights/>
                     </div>   

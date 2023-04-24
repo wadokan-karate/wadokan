@@ -8,10 +8,12 @@ import "../style/Licenses.css"
 
         return (
             
-            <>
-                <div className="MainBackground">
+            <>  
+                <DropdownLicenses></DropdownLicenses>
+                <div className="MainBackground"> 
+                
                     <div className="flex"> 
-                        <DropdownLicenses></DropdownLicenses>
+                        
                         <Pruebasidebar></Pruebasidebar>
                         <BeltExams/>
                     </div>   

@@ -51,7 +51,7 @@ const InscriptionImd = () => {
 
           <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
 
-            <h2 className="TitleForm mb-10 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Inscripción Campeonatos IMD</h2>
+            <h2 className="TitleForm mb-10 text-3xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Inscripción Campeonatos IMD</h2>
 
             <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-lg"> En este formulario podrás enviar los datos de tu hijo a nuestro correo. Gracias a esto las profes tendrán una información más clara de cada alumno para hacer la inscripción oficial al campeonato, muchas gracias !
             
