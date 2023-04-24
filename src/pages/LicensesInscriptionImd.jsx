@@ -1,4 +1,5 @@
 import InscriptionImd from '../components/InscriptionImd.jsx';
+import "../components/style/InscriptionImd.css";
 import Pruebasidebar from '../components/pruebasidebar.jsx';
 import DropdownLicenses from '../components/DropdownLicenses.jsx';
 import "../components/style/DropdownLicenses.css";

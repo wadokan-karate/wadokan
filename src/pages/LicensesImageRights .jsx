@@ -12,6 +12,7 @@ import "../style/Licenses.css"
                 <DropdownLicenses></DropdownLicenses>   
                 
                 <div className="container-licence">
+                    
                     <div className="flex"> 
                               
                      <Pruebasidebar></Pruebasidebar>                   

@@ -29,14 +29,14 @@ const LicensesInfo = () => {
         <li className=" KarateList text-black text-md  text-lg">Si es la Primera vez que solicita la licencia: <br /> <br /> Deberá acceder al enlace donde indica "CAMBIA TU FOTO",  éste le redirigirá a la página web de la federación dónde podrá insertar una foto, que será la que aparezca en la lincencia federativa.</li>
         <li className=" KarateList text-black text-md  text-lg">Cuando hayas terminado todos estos pasos adjuntar los documentos necesarios en un correo y enviarlo al e-mail del club</li>
 
-        <p className=" text-center m-0 mt-3 text-wadokanBlue font-semibold">KarateWadokanSev@gmail.com</p>
-        <p className=" text-center m-0 mt-3 text-wadokanBlue font-semibold">IBAN: ES05 2100 8391 1301 0002 8359</p>
-
-
+        
        </ul>      
+
+       <p className=" text-center text-md mt-3 text-wadokanBlue font-semibold">KarateWadokanSev@gmail.com</p>
+       <p className=" text-center  text-md mt-3 text-wadokanBlue font-semibold">IBAN: ES05 2100 8391 1301 0002 8359</p>
        
      
-     <div className='Solicitud bg-wadokanBlue text-center mt-8 ml-80 mr-80 pt-2 pb-2 rounded-md font-bold hover:text-gray-200'>
+     <div className='Solicitud bg-wadokanBlue text-center mt-12 ml-80 mr-80 pt-2 pb-2 rounded-md font-bold hover:text-gray-200'>
       <a className=' hover:text-white' href="https://fankarate.com/noticias/actualidad/incorpora-tu-foto-tu-ficha-deportiva/" target='_blank'>
        CAMBIA TU FOTO</a>
      </div>  

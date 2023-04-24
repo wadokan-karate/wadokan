@@ -5,7 +5,7 @@ const ImageRights = () => {
     return (
     <>
 
-        <div className=" ContainerImageRights bg-brown-300 text-center w-full">
+        <div className=" ContainerImageRights bg-brown-300">
         
          
          <h1 className="text-black mt-14 text-3xl">AUTORIZACIÓN DE DERECHOS DE IMAGEN</h1>

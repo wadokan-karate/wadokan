@@ -15,7 +15,7 @@ import "../style/Licenses.css";
 
               <DropdownLicenses></DropdownLicenses>
               
-              <div className="MainBackground"> 
+              <div className="container-licence"> 
                 
              
                 <div className=' flex'>

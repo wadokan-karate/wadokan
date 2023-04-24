@@ -45,7 +45,7 @@ const InscriptionImd = () => {
   
     return (
       <>
-       <div className="ContainerIMD text-center w-full">
+       <div className="ContainerIMD ">
 
        <section className=" dark:bg-gray-900 text-start">
 
