@@ -1,7 +1,7 @@
-import trainerService from "../service/trainerService";
+import {trainerService} from "../service/trainerService";
 
 const trainerHandler = {
-    addTrainer(newTrainer) {
+    async addTrainer(newTrainer) {
 
         let trainer = { 
             "name": newTrainer.name,
@@ -9,18 +9,18 @@ const trainerHandler = {
             "isActive": true,
         }
         console.log(trainer)
-        return trainerService.submitTrainer(trainer);
+        return await trainerService.submitTrainer(trainer);
     },
-    loadTrainers(){
-        return trainerService.getTrainers();
+    async loadTrainers(){
+        return await trainerService.getTrainers();
     },
-    loadTrainer(id) {
-        return trainerService.getTrainer(id);
+    async loadTrainer(id) {
+        return await trainerService.getTrainer(id);
     },
-    deleteTrainer(id){
-        return trainerService.deleteTrainer(id);
+    async deleteTrainer(id){
+        return await trainerService.deleteTrainer(id);
     },
-    updateTrainer(id, updatedTrainer){
+    async updateTrainer(id, updatedTrainer){
         if (!updatedTrainer) {
             return;
         }
@@ -32,7 +32,7 @@ const trainerHandler = {
         }
         console.log(updatedTrainerStructure)
 
-        return trainerService.updateTrainer(id, updatedTrainerStructure);
+        return await trainerService.updateTrainer(id, updatedTrainerStructure);
     },
 }
 

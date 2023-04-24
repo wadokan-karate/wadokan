@@ -3,37 +3,74 @@ import axios from "axios";
 const apiClient = axios.create({
     baseURL: 'https://localhost:7287/Schedule',
     withCredentials: false,
+    method: 'post',
     headers: {
-      Accept: 'application/json',
-      'Content-Type': 'application/json'
-    }
-})
+        'Content-Type': 'application/json',
+        'Authorization': 'veronicasm79@hotmail.com:VBiWA/Ll3mGqRDkA90J9Bllp/N7FMF5z0yuYN+GRI7zsx3immL1dTL2xXoqt8otVDAoWmHbpSaErhQGc+A/ntw==',
+        Accept: 'application/json'
+    },
+    timeout: 30000 // Aumentamos el tiempo de espera a 15 segundos
+});
 
-const scheduleService = {
+export const scheduleService = {
     async getSchedules() {
-        let response = await apiClient.get("/GetAllSchedules");
-        let allSchedules = response.data;
-        return allSchedules;
+        try {
+            let response = await apiClient.get("/GetAllSchedules");
+            if (response.status === 200) {
+                let allSchedules = response.data;
+                return allSchedules;
+            } else {
+                alert("Upsi, hubo un error al traer los horarios.");
+            }
+        } catch (error) {
+            console.log(error);
+            alert("Error al obtener los horarios.");
+        }
     },
     async getSchedule(id) {
-        let response = await apiClient.get(`/GetScheduleById?id=${id}`);
-        let schedule = response.data;
-        return schedule;
-    },
-    async submitSchedule(newSchedule){
         try {
-           const response = await apiClient.post("/Post", newSchedule);
-           return response.data;
+            let response = await apiClient.get(`/GetScheduletById?id=${id}`);
+            if (response.status === 200) {
+                let schedule = response.data;
+                return schedule;
+            } else {
+                alert("Upsi, hubo un error al traer el horario.");
+            }
         } catch (error) {
-           console.error(error);
+            console.log(error);
+            alert("Error al obtener al horario.");
         }
-     },
-    async deleteSchedule(id){
-        await apiClient.delete(`/DeleteSchedule?id=${id}`)
     },
-    async updateSchedule(id, updatedSchedule){
-        await apiClient.patch(`/UpdateSchedule?id=${id}`, updatedSchedule)
+    async submitSchedule(newSchedule) {
+        let config = {
+            method: 'post',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': 'veronicasm79@hotmail.com:VBiWA/Ll3mGqRDkA90J9Bllp/N7FMF5z0yuYN+GRI7zsx3immL1dTL2xXoqt8otVDAoWmHbpSaErhQGc+A/ntw==',
+                Accept: 'application/json'
+            }
+        }
+        let response = await apiClient.post("/InsertSchedule", newSchedule, config);
+        if (response.status == 200) {
+            alert("Clase insertada correctamente con id " + response.data);
+        } else {
+            alert("Upsi...hubo un error al insertar la clase");
+        }
+    },
+    async deleteSchedule(id) {
+        try {
+            await apiClient.delete(`/DeleteSchedule?id=${id}`);
+        } catch (error) {
+            console.log(error);
+            alert("Error al eliminar el horario.");
+        }
+    },
+    async updateSchedule(id, updatedSchedule) {
+        try {
+            await apiClient.patch(`/UpdateSchedule?id=${id}`, updatedSchedule);
+        } catch (error) {
+            console.log(error);
+            alert("Error al actualizar el horario.");
+        }
     }
-}
-
-export default scheduleService;
+};

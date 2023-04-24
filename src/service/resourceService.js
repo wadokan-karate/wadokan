@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiClient = axios.create({
-    baseURL: 'https://localhost:7287/Event',
+    baseURL: 'https://localhost:7287/Resource',
     withCredentials: false,
     method: 'post',
     headers: {
@@ -12,36 +12,36 @@ const apiClient = axios.create({
     timeout: 15000 // Aumentamos el tiempo de espera a 15 segundos
 });
 
-export const eventService = {
-    async getEvents() {
+export const respurceService = {
+    async getResources() {
         try {
-            let response = await apiClient.get("/GetAllEvents");
+            let response = await apiClient.get("/GetAllResources");
             if (response.status === 200) {
-                let allEvents = response.data;
-                return allEvents;
+                let allResources = response.data;
+                return allResources;
             } else {
-                alert("Upsi, hubo un error al traer los eventos.");
+                alert("Upsi, hubo un error al traer los recursos.");
             }
         } catch (error) {
             console.log(error);
-            alert("Error al obtener los eventos.");
+            alert("Error al obtener los recursos.");
         }
     },
-    async getEvent(id) {
+    async getResource(id) {
         try {
-            let response = await apiClient.get(`/GetEventById?id=${id}`);
+            let response = await apiClient.get(`/GetResourceById?id=${id}`);
             if (response.status === 200) {
-                let event = response.data;
-                return event;
+                let resource = response.data;
+                return resource;
             } else {
-                alert("Upsi, hubo un error al traer el evento.");
+                alert("Upsi, hubo un error al traer el recurso.");
             }
         } catch (error) {
             console.log(error);
-            alert("Error al obtener el evento.");
+            alert("Error al obtener el recurso.");
         }
     },
-    async submitEvent(newEvent) {
+    async submitResource(newResource) {
         let config = {
             method: 'post',
             headers: {
@@ -50,11 +50,11 @@ export const eventService = {
                 Accept: 'application/json'
             }
         }
-        let response = await apiClient.post("/InsertEvent", newEvent, config);
+        let response = await apiClient.post("/InsertResource", newResource, config);
         if (response.status == 200) {
-            alert("Evento insertado correctamente con id " + response.data);
+            alert("Recurso insertado correctamente con id " + response.data);
         } else {
-            alert("Upsi...hubo un error al insertar el evento");
+            alert("Upsi...hubo un error al insertar el recurso");
         }
     },
     async deleteEvent(id) {
@@ -65,12 +65,12 @@ export const eventService = {
             alert("Error al eliminar el evento.");
         }
     },
-    async updateEvent(id, updatedEvent) {
+    async updateResource(id, updatedResource) {
         try {
-            await apiClient.patch(`/UpdateEvent?id=${id}`, updatedEvent);
+            await apiClient.patch(`/UpdateResource?id=${id}`, updatedResource);
         } catch (error) {
             console.log(error);
-            alert("Error al actualizar el evento.");
+            alert("Error al actualizar el recurso.");
         }
     }
 };
