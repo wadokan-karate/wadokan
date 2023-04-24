@@ -72,7 +72,7 @@ const InscriptionImd = () => {
 
               <div>
                  <label htmlFor="subject" className="block text-start mb-2 text-lg font-medium text-gray-900 dark:text-gray-300">Color del Cinturón</label>
-                 <select type="select" id="subject" name="option1" className="block text-start pl-2 w-full text-sm m-0 text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" defaultValue="Cinturón Blanco" 
+                 <select type="select" id="subject" name="ColorCinto" className="block text-start pl-2 w-full text-sm m-0 text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" defaultValue="Cinturón Blanco" 
                    required 
                    placeholder="Escoge el color del Cinturón"
                    style={{ color: "gray" }} >
@@ -108,7 +108,7 @@ const InscriptionImd = () => {
 
               <div>
                  <label htmlFor="subject" className="block text-start mb-2 text-lg font-medium text-gray-900 dark:text-gray-300">Lugar donde recibe las clases</label>
-                 <select type="select" id="subject" name="option2" className="block text-start pl-2 w-full text-sm m-0 text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" defaultValue="Cinturón Blanco" 
+                 <select type="select" id="subject" name="Localización" className="block text-start pl-2 w-full text-sm m-0 text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" defaultValue="Cinturón Blanco" 
                    required 
                    placeholder="Escoge Lugar de Entrenamiento"
                    style={{ color: "gray" }} >
