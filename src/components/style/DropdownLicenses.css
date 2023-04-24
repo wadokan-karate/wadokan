@@ -1,0 +1,17 @@
+.dropdown-licenses {
+    position: absolute;
+    z-index: 999;
+    top: 10vh;
+    left: 65%;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .dropdown-licenses {
+      display: block;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .dropdown-licenses {
+      display: none;
+    }
+  }

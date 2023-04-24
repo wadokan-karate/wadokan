@@ -1,4 +1,6 @@
 import Pruebasidebar from '../components/pruebasidebar.jsx';
+import DropdownLicenses from '../components/DropdownLicenses.jsx';
+import "../components/style/DropdownLicenses.css";
 import "../style/Licenses.css"
 
     const Licenses = () => {
@@ -6,8 +8,9 @@ import "../style/Licenses.css"
         return (
             
             <>
-             <div className='flex'>               
-                <Pruebasidebar/>     
+             <div className='flex'>  
+                <DropdownLicenses></DropdownLicenses>             
+                <Pruebasidebar/> 
                 <img src="src\assets\img\SlideHome\LogoDojo.png" alt="" className='w-full'/>                 
                 
              </div>
