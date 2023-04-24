@@ -1,4 +1,5 @@
 import "../components/style/InscriptionImd.css";
+import ImdLogo from "../assets/ImdLogo.png"
 import React, { useState, useEffect } from "react";
 
 const InscriptionImd = () => {
@@ -154,6 +155,8 @@ const InscriptionImd = () => {
             </form>
           </div>
        </section>
+
+       <div className=" border-8 border-grey"> <img src={ImdLogo} className="Imdimg" alt="Descripción de la imagen" /></div>
 
        </div>
      </>
