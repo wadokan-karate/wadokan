@@ -14,3 +14,7 @@
 .TitleForm{
     font-family: 'Shojumaru';
 }
+
+.HiddenOption{
+    text-decoration-color: aqua;
+}
