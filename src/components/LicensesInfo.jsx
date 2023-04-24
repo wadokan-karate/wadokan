@@ -1,7 +1,10 @@
+import "../components/style/LicencesInfo.css";
+import FederacionLogos from "../assets/FederacionLogos.png";
+
 const LicensesInfo = () => {
   
     return (
-      <div className=" ContainerHealth text-center w-full">
+      <div className=" ContainerLicences text-center w-full mb-6">
         
          
       <h1 className="text-black mt-14 text-3xl">LICENCIA FEDERATIVA</h1>
@@ -32,6 +35,8 @@ const LicensesInfo = () => {
 
      <h2 className=" text-center Header2Bottom font-bold text-lg pt-5" >INFORMACIÓN IMPORTANTE</h2>   
      <p className="text-md mt-4 text-lg ">En el siguiente enlace te adjuntamos el archivo PDF que corresponde con la normativa oficial de la Federación Española de Karate (RFEK). En él apararecerá lo que te tienes que preparar para tu examen de cinturón negro. </p>
+
+     <div className=" border-8 mt-10 border-grey"> <img src={FederacionLogos} alt="Descripción de la imagen" /></div>
             
 
       </div>
