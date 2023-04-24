@@ -10,10 +10,10 @@ function classNames(...classes) {
 export default function Example() {
   return (
 
-    <div lassName="dropdown-licenses">
+    <div lassName="dropdown-licenses ">
     <Menu as="div" className="dropdown-licenses flex relative text-left">
       <div>
-        <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+        <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-wadokanBlue px-3 py-2 text-sm font-semibold hover:bg-gray-700 text-grey  hover:text-white' : 'text-grey hover:text-white">
           Categorías
           <ChevronDownIcon className="-mr-1 h-5 w-5 text-gray-400" aria-hidden="true" />
         </Menu.Button>
