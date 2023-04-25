@@ -5,8 +5,7 @@
 }
 
 .senseiSection{
-    width: 50%;
-    
+    width: 50%;    
     background-color: black;
    
 }
@@ -28,9 +27,8 @@ h1{
 }
 
 .foto{
-background-color: aliceblue;
-width: 15.625rem;
-height: 15.625rem;
+width: 300px;
+height: 300px;
 border-radius: 150%;
 margin-bottom: 1.5625rem;
 }
@@ -50,10 +48,9 @@ margin-bottom: 1.5625rem;
 }
 
 .teachersPhoto{
-    height: 9.375rem;
-    width: 9.375rem;
+    height: 180px;
+    width: 180px;
     border-radius: 150%;
-    background-color: white;
     margin-top: .625rem;
     margin-bottom: .625rem;
     text-align: center;

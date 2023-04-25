@@ -12,8 +12,8 @@ const Gear = () => {
                     </p>
                 </div>
                 
-                <img className='gearPhoto' src="src\assets\img\Gear1.png" alt="Equipación, primera imagen" />
-                <img className='gearPhoto' src="src\assets\img\Gear2.png" alt="Equipación, segunda imagen" />
+                <img className='gearPhoto rounded-md' src="src\assets\img\Gear2.png" alt="Equipación, primera imagen" />
+                <img className='gearPhoto rounded-md' src="src\assets\img\Gear1.png" alt="Equipación, segunda imagen" />
             
             </div>
         </div>
