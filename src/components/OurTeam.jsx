@@ -5,9 +5,9 @@ const OurTeam = () => {
     return (
         <>
            <div className="OurTeam">
-           <div className='senseiSection'> 
+           <div className='senseiSection '> 
                 <h1>LAS SENSEIS</h1>
-                <div className='photoContainer'>
+                <div className='photoContainer mt-10'>
                     <div className='foto'>
                         <img src="src\assets\PruebaSensei.png" alt="" />
                     </div>
@@ -19,7 +19,7 @@ const OurTeam = () => {
 
            <div className='teachersSection'>
             <h1>Nuestros Monitores</h1>
-                <div className='teacherPhotoContainer'>
+                <div className='teacherPhotoContainer mt-3 mb-4'>
                     <div>
                     <div className='teachersPhoto'>
                         <img src="src\assets\PruebaSensei.png" alt="" />
