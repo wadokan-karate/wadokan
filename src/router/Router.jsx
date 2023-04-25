@@ -28,6 +28,9 @@ import AVourteam from "../pages/AVourteam";
 import AVresources from "../pages/AVresources";
 import AVschedule from "../pages/AVschedule";
 import EditViewSchedule from "../pages/EditViewschedule";
+import EditViewResoruces from "../pages/EditViewresources";
+import EditViewOurTeam from "../pages/EditViewourteam";
+
 
 
 
@@ -145,6 +148,14 @@ export const router = createBrowserRouter([
                     {
                         path: '/admin/editar/horario',
                         element: < EditViewSchedule />,
+                    },
+                    {
+                        path: '/admin/editar/recursos',
+                        element: < EditViewResoruces />,
+                    },
+                    {
+                        path: '/admin/editar/nuestroequipo',
+                        element: < EditViewOurTeam/>,
                     }
                 ]
             },
