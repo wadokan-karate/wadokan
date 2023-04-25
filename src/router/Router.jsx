@@ -30,6 +30,7 @@ import AVschedule from "../pages/AVschedule";
 import EditViewSchedule from "../pages/EditViewschedule";
 import EditViewResoruces from "../pages/EditViewresources";
 import EditViewOurTeam from "../pages/EditViewourteam";
+import EditViewEvent from "../pages/EditViewevents";
 
 
 
@@ -156,7 +157,12 @@ export const router = createBrowserRouter([
                     {
                         path: '/admin/editar/nuestroequipo',
                         element: < EditViewOurTeam/>,
+                    },
+                    {
+                        path: '/admin/editar/noticias',
+                        element: < EditViewEvent/>,
                     }
+
                 ]
             },
         ]
