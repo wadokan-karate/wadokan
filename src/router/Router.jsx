@@ -27,6 +27,7 @@ import AVevents from "../pages/AVeventes";
 import AVourteam from "../pages/AVourteam";
 import AVresources from "../pages/AVresources";
 import AVschedule from "../pages/AVschedule";
+import BlogDetailView from "../pages/BlogDetailView";
 
 
 
@@ -141,9 +142,11 @@ export const router = createBrowserRouter([
                     {
                         path: '/admin/horario',
                         element: <AVschedule />,
+                    },
+                    {
+                        path: '/vistadetalle/',
+                        element: <BlogDetailView />,
                     }
-
-                    
                 ]
             },
         ]
