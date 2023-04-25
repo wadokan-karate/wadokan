@@ -4,6 +4,8 @@ import '../components/style/HealthInsurance.css'
 
 
 const HealthInsurance = () => {
+
+ 
   
     return (
 
@@ -47,8 +49,11 @@ const HealthInsurance = () => {
         <p className=" text-wadokanBlue text-center text-md mt-4 text-lg font-semibold">Correo de la Delegación Sevillana: sevillakarate@gmail.com</p>
          
        <p className="text-md mt-4 text-lg ">Para consultar con más detalle Descargar el documento oficial PDF que se adjunta a continuación:</p>
-             
+
+      
          <div> <img src={SeguroMedico} className="Healthimg" alt="Descripción de la imagen" /></div>
+
+          
        </div>
     );
   };
