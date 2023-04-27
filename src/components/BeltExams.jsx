@@ -5,7 +5,7 @@ import cintosnegros from "../assets/img/cintosnegros.png";
   
     return (
       
-      <div className=" ContainerHealth bg-brown-300 text-center w-full">
+      <div className=" ContainerHealth">
         
          
        <h1 className="text-black mt-14 text-3xl">EXÁMENES DE CINTURÓN</h1>

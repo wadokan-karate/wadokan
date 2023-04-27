@@ -99,7 +99,7 @@ export default function Schedule() {
           ))}
         </select>
 
-      <table>
+      <table className='responsive'>
         <thead>
             <tr>
             <th id='cityTitle' colSpan="6">{city}</th>
