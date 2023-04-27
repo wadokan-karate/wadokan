@@ -3,10 +3,9 @@ import axios from "axios";
 const apiClient = axios.create({
     baseURL: 'https://localhost:7287/Trainer',
     withCredentials: false,
-    method: 'post',
     headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'veronicasm79@hotmail.com:VBiWA/Ll3mGqRDkA90J9Bllp/N7FMF5z0yuYN+GRI7zsx3immL1dTL2xXoqt8otVDAoWmHbpSaErhQGc+A/ntw==',
+        //'Authorization': 'veronicasm79@hotmail.com:VBiWA/Ll3mGqRDkA90J9Bllp/N7FMF5z0yuYN+GRI7zsx3immL1dTL2xXoqt8otVDAoWmHbpSaErhQGc+A/ntw==',
         Accept: 'application/json'
     },
     timeout: 30000 // Aumentamos el tiempo de espera a 15 segundos
@@ -29,7 +28,7 @@ export const trainerService = {
     },
     async getTrainer(id) {
         try {
-            let response = await apiClient.get(`/GetTrainertById?id=${id}`);
+            let response = await apiClient.get(`/GetTrainerById?id=${id}`);
             if (response.status === 200) {
                 let trainer = response.data;
                 return trainer;

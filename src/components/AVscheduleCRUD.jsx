@@ -59,7 +59,7 @@ const AVscheduleCRUD = () => {
                   <td>{item.belt}</td>
                   <td>
                     <div id='iconsCell'>
-                    <Link to={`/admin/editar/${item.id}`}><Button className="flex items-center gap-3 buttonsCell">
+                    <Link to={`/admin/horario/editar/${item.id}`}><Button className="flex items-center gap-3 buttonsCell">
                       <img className='icons'src={Edit} alt="editar"/>
                       </Button>
                     </Link>

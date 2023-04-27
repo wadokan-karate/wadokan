@@ -13,11 +13,11 @@ import LicensesInscriptionImd from "../pages/LicensesInscriptionImd";
 import LicensesInfoPage from "../pages/LicensesInfoPage";
 import LicensesBeltExam from "../pages/LicensesBeltExam";
 import SeeNew from "../pages/SeeNew";
-import Admin from "../pages/Admin";
 import SeeResource from "../pages/SeeResource";
 import scheduleHandler from '../handlers/scheduleHandler';
 import trainerHandler from '../handlers/trainerHandler';
 import resourceHandler from '../handlers/resourceHandler';
+import eventHandler from '../handlers/eventHandler';
 import Cookies from "../pages/Cookies";
 import Privacy from "../pages/Privacy";
 import Legal from "../pages/Legal";
@@ -60,8 +60,8 @@ export const router = createBrowserRouter([
                     {
                         path: '/blog-recursos',
                         element: <Blog />,
-                        //loader: fetchResources,
-                        //loader: fetchEvents,
+                        loader: fetchResources,
+                        loader: fetchEvents,
                     },
                     {
                         path: '/noticias/:id',
@@ -76,17 +76,14 @@ export const router = createBrowserRouter([
                     {
                         path: '/licencias',
                         element: <Licenses />,
-                        //loader: fetchDocuments,
                     }, 
                     {
                         path: '/licencias/seguro',
                         element: <LicensesHealthInsurance/>,
-                        //loader: fetchDocuments,
                     },
                     {
                         path: '/licencias/derechosdeimagen',
                         element: <LicensesImageRights/>,
-                        //loader: fetchDocuments,
                     },
                     {
                         path: '/licencias/inscripcionfak',
@@ -96,7 +93,6 @@ export const router = createBrowserRouter([
                     {
                         path: '/licencias/inscripcionImd',
                         element: <LicensesInscriptionImd/>,
-                        //loader: fetchDocuments,
                     },
                     {
                         path: '/licencias/licensesinfo',
@@ -147,26 +143,40 @@ export const router = createBrowserRouter([
                         element: <AVschedule />,
                     },
                     {
-                        path: '/admin/editar/horario',
+                        path: '/admin/horario/editar/:id',
                         element: < EditViewSchedule />,
+                        loader: fetchSchedule,
                     },
                     {
-                        path: '/admin/editar/recursos',
+                        path: '/admin/recursos/editar/:id',
                         element: < EditViewResoruces />,
+                        loader: fetchResource,
                     },
                     {
-                        path: '/admin/editar/nuestroequipo',
+                        path: '/admin/nuestroequipo/editar/:id',
                         element: < EditViewOurTeam/>,
+                        loader: fetchTrainer,
                     },
                     {
-                        path: '/admin/editar/noticias',
+                        path: '/admin/noticias/editar/:id',
                         element: < EditViewEvent/>,
+                        loader: fetchEvent,
                     }
 
                 ]
             },
         ]
 );
+
+async function fetchEvents() {
+    const Events = await eventHandler.loadEvents();
+    return { Events };
+}
+
+async function fetchEvent({ params }) {
+    const Event = await eventHandler.loadEvent(params.id);
+    return { Event };
+}
 
 async function fetchSchedules() {
     const Schedules = await scheduleHandler.loadSchedules();
@@ -194,6 +204,6 @@ async function fetchResources() {
 }
 
 async function fetchResource({ params }) {
-    const Resource = await resourcetHandler.loadResource(params.id);
+    const Resource = await resourceHandler.loadResource(params.id);
     return { Resource };
 }
