@@ -1,9 +1,74 @@
-# wadokan
+<h2 align="center"> KARATE WADOKAN-FRONT</h2>
+
+
+<div align="center"><img src="https://user-images.githubusercontent.com/117834971/234863466-30d1ee0e-06ad-441e-a420-16d52a7a7b3c.png" width=250></div>
 
 
 
 
 
+<h2 align="justify"> 📝Project description:</h2>
+<p align="justify">This pedagogical project was created as a final presentation of the full stack bootcamp of Factoria F5 and Fundación Don Bosco-Sevilla. The goal is to create a website for a real client: Karate Wadokan. Our team created a desktop and responsive website, where the client can publish and change their schedules and class calendar by center/class, upload images, edit and delete these images, edit texts and manage documents sent by students.</p>
+
+<h2>📟 Layout</h2>
+
+The layout of the Karate Wadokan application screens was developed by the team through the Figma online tool, a prototyping software focused on UI Design (interface design). You can access the layout through this link:https://www.figma.com/file/1Pz6A4MBJIwHg7uqkudDzf/Wadokan-Web?node-id=0-1&t=CpLJ6f4Zo8PoK3qf-0.
+
+### Layout Web
+<div align="center" width=50><img src="https://user-images.githubusercontent.com/117834971/234877972-73dc236f-fa9c-48f3-be0a-50a614630bd5.png"></div>
+
+### Layout Mobile
+<div align="center" width=50><img src="https://user-images.githubusercontent.com/117834971/234878018-4eac70d0-c4a4-448a-9fd0-4a494920a1b2.png"></div>
+
+
+
+
+
+
+<h2 align="justify"> 🔧Stacks:</h2>
+<p align="justify">| Node.js | NPM | React |JavaScript | CSS3 | HTML5 | C# | ASP.NET Core 6 | Entity Framework 7 | SQL Server| Tailwind CSS |</p>
+
+
+<h2 align="justify">🚀 Available Scripts:</h2>
+<p align="justify">In a project where Vite is installed, you can use the `vite` binary in your `npm` scripts, or run it directly with `npx vite`. Here are the default npm scripts in a scaffolded Vite project: npm run dev </p>
+
+
+<h2 align="justify"> :computer: How to install the project (Front):</h2>
+<p align="justify">1) Clone the repository</p>
+<p align="justify">2) Install dependencies:npm i or npm install</p>
+<p align="justify">3) npm install -g json-server</p>
+<p align="justify">5) npm run dev</p>
+
+
+<h2 align="justify"> :computer: How to install the project (Back):</h2>
+
+
+<h2 align="justify"> 📚Methodology:</h2>
+
+<p align="justify">- Methodology Agile with Scrum.</p>
+<p align="justify">- Mob Programming.</p>
+<p align="justify">- Pair Programming.</p>
+
+<h2 align="justify"> 👀  Testing: Front</h2>
+<p align="justify">- Tested renderizaion of components </p> 
+<p align="justify">- Try running npm run test </p> 
+<p align="justify">- Tested  </p> 
+<p align="justify">- </p> 
+<p align="justify">- </p> 
+
+<h2 align="justify"> 👀  Testing: Back</h2>
+<p align="justify">- Tested renderizaion of components </p> 
+<p align="justify">- Try running npm run test </p> 
+<p align="justify">- Tested  </p> 
+<p align="justify">- </p> 
+<p align="justify">- </p> 
+
+
+<h2 align="justify">  🧪Next Steps:</h2>
+
+<p align="justify"> - Set up a functional Login service </p>
+<p align="justify"> - Improve validation process and security service as a whole </p> 
+<p align="justify"> - Implement categories filter in the navigation sidebar </p>  
 
 
 
