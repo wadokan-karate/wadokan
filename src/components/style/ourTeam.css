@@ -59,3 +59,37 @@ margin-bottom: 1.5625rem;
     text-align: center;
     
 }
+
+@media (max-width: 500px) {
+    .OurTeam{
+        display: flex;
+        flex-direction: column;
+    }
+    .senseiSection{
+        margin: 0 auto;
+    }
+
+    .photoContainer{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .foto{
+       height: 12.5rem;
+    }
+
+    .teachersSection{
+        margin: 0 auto;;
+    }
+    .teacherPhotoContainer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .teacherPhotodivider{
+        margin: 5%;
+    }
+    
+
+   
+  }

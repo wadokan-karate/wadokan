@@ -38,3 +38,15 @@ p{
 #Gearh1{
     color: black;
 }
+
+@media (max-width: 500px) {
+    #OurHistPhoto{
+        display: none;
+    }
+
+    .OurHistoryText{
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 3%;
+    }
+  }

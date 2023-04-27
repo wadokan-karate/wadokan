@@ -1,7 +1,7 @@
 const LicensesInfo = () => {
   
     return (
-      <div className=" ContainerHealth bg-brown-300 text-center w-full">
+      <div className=" ContainerHealth bg-brown-300 text-center w-full m-auto">
         
          
       <h1 className="text-black mt-14 text-3xl">LICENCIA FEDERATIVA</h1>
