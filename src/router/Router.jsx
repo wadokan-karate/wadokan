@@ -37,6 +37,7 @@ import AddViewSchedule from "../pages/AddViewSchedule";
 import AddViewResource from "../pages/AddViewResource";
 import AddViewTrainer from "../pages/AddViewTrainer";
 import AddViewEvent from "../pages/AddViewEvent";
+import SendedContactForm from "../pages/SendedContactForm";
 
 
 
@@ -188,7 +189,11 @@ export const router = createBrowserRouter([
                     {
                         path: '/admin/añadir/noticias',
                         element: < AddViewEvent/>,
-                    }
+                    },
+                    {
+                        path: '/formularioenviado',
+                        element: < SendedContactForm/>,
+                    },
 
 
                 ]
