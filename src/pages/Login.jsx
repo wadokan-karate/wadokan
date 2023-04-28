@@ -1,10 +1,11 @@
-import LoginForm from "../components/LoginForm";
+import FormLogin from "../components/FormLogin";
+
 
 const Login = () => {
 
     return (
         <>
-           <LoginForm/>
+           <FormLogin/>
         </>
     );
 };
