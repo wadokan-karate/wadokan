@@ -6,7 +6,7 @@ import HealthInsurance from "../components/HealthInsurance";
 
 test('should render HealthInsurance h2 tittle', ()=>{
     render(<HealthInsurance/>);
-    const HealthInsuranceText = screen.getAllByText(/PROTOCOLO DE ACTUACIÓN EN CASO DE ACCIDENTES/i);
+    const HealthInsuranceText = screen.getAllByText(/SEGURO DEPORTIVO/i);
 })
 
 

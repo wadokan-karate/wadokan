@@ -6,5 +6,6 @@ import Pruebasidebar from "../components/Pruebasidebar";
 
 test('should render Pruebasidebar tittle', ()=>{
     render(<Pruebasidebar/>);
-    const pruebasidebarTittle = screen.getAllByText(/CATEGORIAS/i);
+    const pruebasidebarTittle = screen.getByText(/CATEGORIAS/i);
+    expect(pruebasidebarTittle).toBeInTheDocument();
 })
