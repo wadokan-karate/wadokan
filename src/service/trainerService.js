@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiClient = axios.create({
-    baseURL: 'https://localhost:7287/Schedule',
+    baseURL: 'https://localhost:7287/Trainer',
     withCredentials: false,
     method: 'post',
     headers: {
@@ -12,36 +12,36 @@ const apiClient = axios.create({
     timeout: 30000 // Aumentamos el tiempo de espera a 15 segundos
 });
 
-export const scheduleService = {
-    async getSchedules() {
+export const trainerService = {
+    async getTrainers() {
         try {
-            let response = await apiClient.get("/GetAllSchedules");
+            let response = await apiClient.get("/GetAllTrainers");
             if (response.status === 200) {
-                let allSchedules = response.data;
-                return allSchedules;
+                let allTrainers = response.data;
+                return allTrainers;
             } else {
-                alert("Upsi, hubo un error al traer los horarios.");
+                alert("Upsi, hubo un error al traer los monitores.");
             }
         } catch (error) {
             console.log(error);
-            alert("Error al obtener los horarios.");
+            alert("Error al obtener los monitores.");
         }
     },
-    async getSchedule(id) {
+    async getTrainer(id) {
         try {
-            let response = await apiClient.get(`/GetScheduletById?id=${id}`);
+            let response = await apiClient.get(`/GetTrainertById?id=${id}`);
             if (response.status === 200) {
-                let schedule = response.data;
-                return schedule;
+                let trainer = response.data;
+                return trainer;
             } else {
-                alert("Upsi, hubo un error al traer el horario.");
+                alert("Upsi, hubo un error al traer al monitor.");
             }
         } catch (error) {
             console.log(error);
-            alert("Error al obtener al horario.");
+            alert("Error al obtener al monitor.");
         }
     },
-    async submitSchedule(newSchedule) {
+    async submitTrainer(newTrainer) {
         let config = {
             method: 'post',
             headers: {
@@ -50,27 +50,29 @@ export const scheduleService = {
                 Accept: 'application/json'
             }
         }
-        let response = await apiClient.post("/InsertSchedule", newSchedule, config);
+        let response = await apiClient.post("/InsertTrainer", newTrainer, config);
         if (response.status == 200) {
-            alert("Clase insertada correctamente con id " + response.data);
+            alert("Monitor insertado correctamente con id " + response.data);
         } else {
-            alert("Upsi...hubo un error al insertar la clase");
+            alert("Upsi...hubo un error al insertar el monitor");
         }
     },
-    async deleteSchedule(id) {
+    async deleteTrainer(id) {
         try {
-            await apiClient.delete(`/DeleteSchedule?id=${id}`);
+            await apiClient.delete(`/DeleteTrainer?id=${id}`);
         } catch (error) {
             console.log(error);
-            alert("Error al eliminar el horario.");
+            alert("Error al eliminar el monitor.");
         }
     },
-    async updateSchedule(id, updatedSchedule) {
+    async updateTrainer(id, updatedTrainer) {
         try {
-            await apiClient.patch(`/UpdateSchedule?id=${id}`, updatedSchedule);
+            await apiClient.patch(`/UpdateTrainer?id=${id}`, updatedTrainer);
         } catch (error) {
             console.log(error);
-            alert("Error al actualizar el horario.");
+            alert("Error al actualizar el monitor.");
         }
     }
 };
+
+   

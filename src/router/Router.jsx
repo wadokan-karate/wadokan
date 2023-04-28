@@ -13,11 +13,11 @@ import LicensesInscriptionImd from "../pages/LicensesInscriptionImd";
 import LicensesInfoPage from "../pages/LicensesInfoPage";
 import LicensesBeltExam from "../pages/LicensesBeltExam";
 import SeeNew from "../pages/SeeNew";
+import Admin from "../pages/Admin";
 import SeeResource from "../pages/SeeResource";
 import scheduleHandler from '../handlers/scheduleHandler';
-//import eventHandler from '../handlers/eventHandler';
-//import ResourceHandler from '../handlers/ResourceHandler';
-//import DocumentHandler from '../handlers/DocumentHandler';
+import trainerHandler from '../handlers/trainerHandler';
+import resourceHandler from '../handlers/resourceHandler';
 import Cookies from "../pages/Cookies";
 import Privacy from "../pages/Privacy";
 import Legal from "../pages/Legal";
@@ -27,7 +27,13 @@ import AVevents from "../pages/AVeventes";
 import AVourteam from "../pages/AVourteam";
 import AVresources from "../pages/AVresources";
 import AVschedule from "../pages/AVschedule";
+// acept both changes
 import BlogDetailView from "../pages/BlogDetailView";
+import EditViewSchedule from "../pages/EditViewschedule";
+import EditViewResoruces from "../pages/EditViewresources";
+import EditViewOurTeam from "../pages/EditViewourteam";
+import EditViewEvent from "../pages/EditViewevents";
+
 
 
 
@@ -51,6 +57,7 @@ export const router = createBrowserRouter([
                     {
                         path: '/nuestro-club',
                         element: <Club/>,
+                        loader: fetchTrainers,
                     },    
                     {
                         path: '/blog-recursos',
@@ -96,12 +103,10 @@ export const router = createBrowserRouter([
                     {
                         path: '/licencias/licensesinfo',
                         element: <LicensesInfoPage/>,
-                        //loader: fetchDocuments,
                     },
                     {
                         path: '/licencias/examenescinturon',
                         element: <LicensesBeltExam/>,
-                        //loader: fetchDocuments,
                     },
                     {
                         path: '/contacto',
@@ -143,24 +148,32 @@ export const router = createBrowserRouter([
                         path: '/admin/horario',
                         element: <AVschedule />,
                     },
+                    // acept both changes
                     {
                         path: '/vistadetalle/',
                         element: <BlogDetailView />,
+                    },
+                    {
+                        path: '/admin/editar/horario',
+                        element: < EditViewSchedule />,
+                    },
+                    {
+                        path: '/admin/editar/recursos',
+                        element: < EditViewResoruces />,
+                    },
+                    {
+                        path: '/admin/editar/nuestroequipo',
+                        element: < EditViewOurTeam/>,
+                    },
+                    {
+                        path: '/admin/editar/noticias',
+                        element: < EditViewEvent/>,
                     }
+
                 ]
             },
         ]
 );
-
-/* async function fetchPhotos() {
-    const Photos = await PhotoHandler.loadPhotos();
-    return { Photos };
-}
-
-async function fetchPhoto({ params }) {
-    const Photo = await PhotoHandler.loadPhoto(params.id);
-    return { Photo };
-} */
 
 async function fetchSchedules() {
     const Schedules = await scheduleHandler.loadSchedules();
@@ -172,33 +185,22 @@ async function fetchSchedule({ params }) {
     return { Schedule };
 }
 
-/* async function fetchEvents() {
-    const Events = await EventHandler.loadEvents();
-    return { Events };
+async function fetchTrainers() {
+    const Trainers = await trainerHandler.loadTrainers();
+    return { Trainers };
 }
 
-async function fetchEvent({ params }) {
-    const Event = await EventHandler.loadEvent(params.id);
-    return { Event };
-} */
+async function fetchTrainer({ params }) {
+    const Trainer = await trainerHandler.loadTrainer(params.id);
+    return { Trainer };
+}
 
-/* async function fetchResources() {
-    const Resources = await ResourceHandler.loadResources();
+async function fetchResources() {
+    const Resources = await resourceHandler.loadResources();
     return { Resources };
 }
 
 async function fetchResource({ params }) {
-    const Resource = await ResourceHandler.loadResource(params.id);
+    const Resource = await resourcetHandler.loadResource(params.id);
     return { Resource };
-} */
-
-/* async function fetchDocuments() {
-    const Documents = await DocumentHandler.loadDocuments();
-    return { Documents };
 }
-
-async function fetchDocument({ params }) {
-    const Document = await DocumentHandler.loadDocument(params.id);
-    return { Document };
-}
- */
