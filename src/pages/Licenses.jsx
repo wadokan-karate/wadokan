@@ -1,4 +1,4 @@
-import Pruebasidebar from '../components/pruebasidebar.jsx';
+import Pruebasidebar from '../components/Pruebasidebar.jsx';
 import DropdownLicenses from '../components/DropdownLicenses.jsx';
 import "../components/style/DropdownLicenses.css";
 import "../style/Licenses.css";
@@ -8,9 +8,10 @@ import "../style/Licenses.css";
         return (
             
             <>
-               <div className="absolute ml-60 mt-4 bg-wadokanBlue rounded-md font-semibold hover:bg-gray-700 text-grey  hover:text-white hover:text-grey hover:text-white">
+
+             <div className="absolute ml-60 mt-4 bg-wadokanBlue rounded-md font-semibold hover:bg-gray-700 text-grey hover:text-white hover:text-grey hover:text-white">
                 <DropdownLicenses></DropdownLicenses>   
-              </div>
+             </div>
              <div className='flex'>  
                         
                 <Pruebasidebar/> 
