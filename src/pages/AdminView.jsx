@@ -1,5 +1,5 @@
 import SidebarAdmin from '../components/SidebarAdmin.jsx';
-import DropdownLicenses from '../components/DropdownLicenses.jsx';
+import DropdownAdmin from '../components/DropdownAdmin.jsx';
 import "../components/style/DropdownLicenses.css";
 import "../style/Licenses.css"
 
@@ -9,7 +9,7 @@ import "../style/Licenses.css"
             
             <>
                 <div className="absolute ml-60 mt-4 bg-wadokanBlue rounded-md font-semibold  hover:text-white hover:text-grey hover:text-white">
-                  <DropdownLicenses></DropdownLicenses>  
+                  <DropdownAdmin></DropdownAdmin>  
                 </div> 
                 <div className="flex container-info">
                   <SidebarAdmin></SidebarAdmin>
