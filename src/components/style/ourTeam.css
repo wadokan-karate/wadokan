@@ -64,6 +64,7 @@ background-image: cover;
     width: 9.375rem;
     border-radius: 150%;
     background-color: white;
+    background-image: url(../src/assets/PruebaSensei.png);
     margin-top: .625rem;
     margin-bottom: .625rem;
     text-align: center;

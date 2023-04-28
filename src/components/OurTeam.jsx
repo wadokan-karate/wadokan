@@ -17,7 +17,7 @@ const OurTeam = () => {
             <h1>Nuestros Monitores</h1>
                 <div className='teacherPhotoContainer'>
                     <div className='teacherPhotodivider'>
-                        <div className='teachersPhoto'>Foto</div>
+                        <div className='teachersPhoto'></div>
                         <div className='teachersPhoto'></div>
                     </div>
                     <div className='teacherPhotodivider'>
