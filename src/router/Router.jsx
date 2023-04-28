@@ -159,7 +159,7 @@ export const router = createBrowserRouter([
                         element: <BlogDetailView />,
                     },
                     {
-                        path: '/admin/editar/horario',
+                        path: '/admin/editar/horario/:id',
                         element: < EditViewSchedule />,
                     },
                     {
