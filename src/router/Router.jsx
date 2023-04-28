@@ -17,7 +17,7 @@ import Admin from "../pages/Admin";
 import SeeResource from "../pages/SeeResource";
 import scheduleHandler from '../handlers/scheduleHandler';
 import trainerHandler from '../handlers/trainerHandler';
-//import DocumentHandler from '../handlers/DocumentHandler';
+import resourceHandler from '../handlers/resourceHandler';
 import Cookies from "../pages/Cookies";
 import Privacy from "../pages/Privacy";
 import Legal from "../pages/Legal";
@@ -27,6 +27,18 @@ import AVevents from "../pages/AVeventes";
 import AVourteam from "../pages/AVourteam";
 import AVresources from "../pages/AVresources";
 import AVschedule from "../pages/AVschedule";
+// acept both changes
+import BlogDetailView from "../pages/BlogDetailView";
+import EditViewSchedule from "../pages/EditViewschedule";
+import EditViewResoruces from "../pages/EditViewresources";
+import EditViewOurTeam from "../pages/EditViewourteam";
+import EditViewEvent from "../pages/EditViewevents";
+import AddViewSchedule from "../pages/AddViewSchedule";
+import AddViewResource from "../pages/AddViewResource";
+import AddViewTrainer from "../pages/AddViewTrainer";
+import AddViewEvent from "../pages/AddViewEvent";
+import SendedContactForm from "../pages/SendedContactForm";
+
 
 
 
@@ -96,12 +108,10 @@ export const router = createBrowserRouter([
                     {
                         path: '/licencias/licensesinfo',
                         element: <LicensesInfoPage/>,
-                        //loader: fetchDocuments,
                     },
                     {
                         path: '/licencias/examenescinturon',
                         element: <LicensesBeltExam/>,
-                        //loader: fetchDocuments,
                     },
                     {
                         path: '/contacto',
@@ -125,7 +135,6 @@ export const router = createBrowserRouter([
                     },
                     {
                         path: '/admin',
-                        element: <Admin />,
                         element: <AdminView />,
                     },
                     {
@@ -143,9 +152,50 @@ export const router = createBrowserRouter([
                     {
                         path: '/admin/horario',
                         element: <AVschedule />,
-                    }
+                    },
+                    // acept both changes
+                    {
+                        path: '/vistadetalle/',
+                        element: <BlogDetailView />,
+                    },
+                    {
+                        path: '/admin/editar/horario/:id',
+                        element: < EditViewSchedule />,
+                    },
+                    {
+                        path: '/admin/editar/recursos/:id',
+                        element: < EditViewResoruces />,
+                    },
+                    {
+                        path: '/admin/editar/nuestroequipo/:id',
+                        element: < EditViewOurTeam/>,
+                    },
+                    {
+                        path: '/admin/editar/noticias',
+                        element: < EditViewEvent/>,
+                    },
+                    {
+                        path: '/admin/añadir/horario',
+                        element: < AddViewSchedule/>,
+                    },
+                    {
+                        path: '/admin/añadir/recursos',
+                        element: < AddViewResource/>,
+                    },
+                    {
+                        path: '/admin/añadir/nuestroequipo',
+                        element: < AddViewTrainer/>,
+                    },
+                    {
+                        path: '/admin/añadir/noticias',
+                        element: < AddViewEvent/>,
+                    },
+                    {
+                        path: '/formularioenviado',
+                        element: < SendedContactForm/>,
+                    },
 
-                    
+
                 ]
             },
         ]
@@ -171,13 +221,12 @@ async function fetchTrainer({ params }) {
     return { Trainer };
 }
 
-/* async function fetchDocuments() {
-    const Documents = await DocumentHandler.loadDocuments();
-    return { Documents };
+async function fetchResources() {
+    const Resources = await resourceHandler.loadResources();
+    return { Resources };
 }
 
-async function fetchDocument({ params }) {
-    const Document = await DocumentHandler.loadDocument(params.id);
-    return { Document };
+async function fetchResource({ params }) {
+    const Resource = await resourceHandler.loadResource(params.id);
+    return { Resource };
 }
- */

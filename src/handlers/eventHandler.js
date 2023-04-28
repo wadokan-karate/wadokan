@@ -18,7 +18,7 @@ export const eventHandler = {
     async loadEvent(id) {
         return await eventService.getEvent(id);
     },
-    async deleteSchedule(id){
+    async deleteEvent(id){
         return await eventService.deleteEvent(id);
     },
     async updateEvent(id, updatedEvent){

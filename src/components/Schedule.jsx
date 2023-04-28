@@ -99,7 +99,7 @@ export default function Schedule() {
           ))}
         </select>
 
-      <table>
+      <table className='responsive'>
         <thead>
             <tr>
             <th id='cityTitle' colSpan="6">{city}</th>
@@ -125,8 +125,6 @@ export default function Schedule() {
               <td>{schedules.find((schedule) => schedule.day === 'Miércoles' && schedule.timeRange === timeRange)?.age} <br></br> {schedules.find((schedule) => schedule.day === 'Miércoles' && schedule.timeRange === timeRange)?.belt}</td>
               <td>{schedules.find((schedule) => schedule.day === 'Jueves' && schedule.timeRange === timeRange)?.age} <br></br> {schedules.find((schedule) => schedule.day === 'Jueves' && schedule.timeRange === timeRange)?.belt}</td>
               <td>{schedules.find((schedule)=> schedule.day === 'Viernes' && schedule.timeRange === timeRange)?.age} <br></br> {schedules.find((schedule) => schedule.day === 'Viernes' && schedule.timeRange === timeRange)?.belt}</td>
-
-
             </tr>
           ))}
         </tbody>

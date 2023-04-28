@@ -1,9 +1,79 @@
+import React, { useState, useEffect } from 'react';
+import eventHandler from '../handlers/eventHandler';
+import { Link } from "react-router-dom";
+import { Button } from "@material-tailwind/react";
+import View from '../assets/img/ver.png';
+import Edit from '../assets/img/editar.png';
+import Add from '../assets/img/add.png';
+import Delete from '../assets/img/eliminar.png';
+import "../style/AV.css"
+import "../index.css"
+
 
 const AVeventsCRUD = () => {
-  
+  const [event, setEvents] = useState([]);
+
+  useEffect(() => {
+    getData();
+  }, []);
+
+  const getData = async () => {
+    const data = await eventHandler.loadEvents();
+    setEvents(data);
+  };
+
+  const deleteEvent = async (id) => {
+    setEvents(event.filter((p) => p.id !== id));
+    await eventHandler.deleteEvent(id);
+  };
+
     return (
-      <h1 className="text-black">Este componente tiene el crud de las noticias/eventos</h1>
-    );
+      <>
+      <div className='containerAdmin'>
+        <h1 className="text-black">Listado de noticias</h1>
+        <Link to={`/admin/addEvent`}><Button className="flex items-center gap-3 buttonAdd">
+                      <img src={Add} alt="ver" className='icons'/><p>Añadir</p>
+                      </Button>
+                    </Link>
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th className='thAdmin'>Nombre</th>
+                <th className='thAdmin'>Descripción</th>
+                <th className='thAdmin'>Foto</th>
+                <th className='thAdmin'>Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              {event.map((item) => (
+                <tr key={item.id}>
+                  <td>{item.name}</td>
+                  <td>{item.description}</td>
+                  <td ><img id='tdAdminImage' src={`data:image/jpg;base64,${item.image}`} alt={item.name} /></td>
+                  <td>
+                    <div id='iconsCell'>
+                    <Link to={`/admin/editar/${item.id}`}><Button className="flex items-center gap-3 buttonsCell">
+                      <img className='icons'src={Edit} alt="editar"/>
+                      </Button>
+                    </Link>
+                    <Link to={`/ver/${item.id}`}><Button className="flex items-center gap-3 buttonsCell">
+                      <img src={View} alt="ver" className='icons'/>
+                      </Button>
+                    </Link>
+                    <Button className="flex items-center gap-3 buttonsCell" onClick={() => deleteEvent(item.id)}>
+                    <img className='icons' src={Delete} alt="eliminar"/>
+                    </Button>
+                    </div>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+      </>
+    )
   };
   
   export default AVeventsCRUD;

@@ -178,7 +178,7 @@ const BottomCarousel = () => {
                                 <div id="slider" className="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700">
                                     <Slide index={0}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" className="object-cover object-center w-full" />
+                                            <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="purple chair and white table" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                 <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">Dojo</h2>
                                                 <div className="flex h-full items-end pb-6">
@@ -222,7 +222,7 @@ const BottomCarousel = () => {
                                     </Slide>
                                     <Slide index={4}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" className="object-cover object-center w-full" />
+                                            <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="pink chair and white table" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                 <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">Dojo</h2>
                                                 <div className="flex h-full items-end pb-6">
@@ -266,7 +266,7 @@ const BottomCarousel = () => {
                                     </Slide>
                                     <Slide index={8}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" className="object-cover object-center w-full" />
+                                            <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="green chair and white table" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                 <h2 className="texlg:t-xl le leading-4 text-basealg:ding-tight text-white">Dojo</h2>
                                                 <div className="flex h-full items-end pb-6">
@@ -332,7 +332,7 @@ const BottomCarousel = () => {
                                 <div id="slider" className="h-full w-full flex lg:gap-8 md:gap-6 items-center justify-start transition ease-out duration-700">
                                     <Slide index={0}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" className="object-cover object-center w-full" />
+                                            <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="beige chair and white table" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                 <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">Dojo</h2>
                                                 <div className="flex h-full items-end pb-6">
@@ -376,7 +376,7 @@ const BottomCarousel = () => {
                                     </Slide>
                                     <Slide index={4}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" className="object-cover object-center w-full" />
+                                            <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="grey chair and white table" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                 <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">Dojo</h2>
                                                 <div className="flex h-full items-end pb-6">
@@ -420,7 +420,7 @@ const BottomCarousel = () => {
                                     </Slide>
                                     <Slide index={8}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" className="object-cover object-center w-full" />
+                                            <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="lightblack chair and white table" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                 <h2 className="texlg:t-xl le leading-4 text-basealg:ding-tight text-white">Dojo</h2>
                                                 <div className="flex h-full items-end pb-6">

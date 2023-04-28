@@ -14,3 +14,15 @@
     margin: 0 auto;
     text-align: center;
 }
+
+
+
+@media (max-width: 500px) {
+    #iframe{
+        width: 25rem !important;
+    }
+
+    #calendarTittle{
+        margin: 0 auto;
+    }
+  }
