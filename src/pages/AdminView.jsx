@@ -1,4 +1,4 @@
-import Pruebasidebar from '../components/pruebasidebar.jsx';
+import SidebarAdmin from '../components/SidebarAdmin.jsx';
 import "../style/Licenses.css"
 
     const AdminView = () => {
@@ -7,7 +7,7 @@ import "../style/Licenses.css"
             
             <>
                 <div className="container-licence">
-                 <Pruebasidebar></Pruebasidebar>
+                 <SidebarAdmin></SidebarAdmin>
                 </div> 
                 <div className="container-info"> 
                 </div>        
