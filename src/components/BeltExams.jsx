@@ -1,4 +1,4 @@
-import '../components/style/BeltExams.css';
+import '../style/BeltExams.css';
 import cintosnegros from "../assets/img/cintosnegros.png";
 
   const BeltExams = () => {

@@ -6,7 +6,7 @@ import View from '../assets/img/ver.png';
 import Edit from '../assets/img/editar.png';
 import Add from '../assets/img/add.png';
 import Delete from '../assets/img/eliminar.png';
-import "./style/AV.css"
+import "../style/AV.css"
 import "../index.css"
 
 const AVourteamCRUD = () => {

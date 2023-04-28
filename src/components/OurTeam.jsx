@@ -1,4 +1,4 @@
-import './style/ourTeam.css'
+import '../style/ourTeam.css'
 
 const OurTeam = () => {
 

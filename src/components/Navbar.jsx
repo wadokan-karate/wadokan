@@ -1,7 +1,7 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
-import '../components/style/navbar.css'
+import '../style/navbar.css'
 import LogoNavbar from '../assets/WadokanLogoRect.png'
 
 const navigation = [

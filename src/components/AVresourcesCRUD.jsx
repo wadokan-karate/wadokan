@@ -7,7 +7,7 @@ import Edit from '../assets/img/editar.png';
 import Add from '../assets/img/add.png';
 import Delete from '../assets/img/eliminar.png';
 import ReactPlayer from 'react-player';
-import "./style/AV.css"
+import "../style/AV.css"
 import "../index.css"
 
 

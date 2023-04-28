@@ -5,7 +5,7 @@ import {
     Button,
     Typography,
   } from "@material-tailwind/react";
-import '../components/style/loginForm.css'
+import '../style/loginForm.css'
    
   export default function LoginForm() {
     return (
