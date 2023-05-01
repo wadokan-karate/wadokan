@@ -51,7 +51,7 @@ const AVourteamCRUD = () => {
                 <td ><img id='tdAdminPhoto' src={`data:image/jpg;base64,${item.photo}`} alt={item.name} /></td>
                 <td>
                   <div id='iconsCell'>
-                  <Link to={`/admin/editar/${item.id}`}><Button className="flex items-center gap-3 buttonsCell">
+                  <Link to={`/admin/editar/nuestroequipo/${item.id}`}><Button className="flex items-center gap-3 buttonsCell">
                     <img className='icons'src={Edit} alt="editar"/>
                     </Button>
                   </Link>

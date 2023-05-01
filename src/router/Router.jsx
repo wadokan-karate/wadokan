@@ -167,7 +167,7 @@ export const router = createBrowserRouter([
                         element: < EditViewResoruces />,
                     },
                     {
-                        path: '/admin/editar/nuestroequipo',
+                        path: '/admin/editar/nuestroequipo/:id',
                         element: < EditViewOurTeam/>,
                     },
                     {
