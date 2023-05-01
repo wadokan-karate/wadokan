@@ -17,6 +17,7 @@ module.exports = withMT ({
       'white':'#FFFFFF',
       'List': '#FFFAFA',
       'gris': '#A79A9A',
+      'darkgrey': '#929292'
 
       },
     },
