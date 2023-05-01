@@ -34,7 +34,7 @@ The layout of the Karate Wadokan application screens was developed by the team t
 
 
 <h2 align="justify"> :computer: How to install the project (Front):</h2>
-<p align="justify">1) Clone the repository</p>
+<p align="justify">1) Clone the repository: https://github.com/wadokan-karate/wadokan.git</p>
 <p align="justify">2) Install dependencies:npm i or npm install</p>
 <p align="justify">3) npm install -g json-server</p>
 <p align="justify">5) npm run dev</p>
