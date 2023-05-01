@@ -41,27 +41,48 @@ The layout of the Karate Wadokan application screens was developed by the team t
 
 
 <h2 align="justify"> :computer: How to install the project (Back):</h2>
+<p align="justify> This section demonstrates how to set up your own local database and how to connect it to the API we developed specifically for Wadokan Front project to use. 
+It must be noted that, even though the Wadokan Front project may be run using json-server, it is highly recommended to set it up using Apiwadokan Back project.   </h3> 
+<p> </p> 
 
+<h3 align="justify"> Recommended installation steps </h3> 
 
-<h2 align="justify"> 📚Methodology:</h2>
+1. Clone repository (preferably next to Wadokan Front repository, we go hand in hand)  </p> 
 
-<p align="justify">- Methodology Agile with Scrum.</p>
-<p align="justify">- Mob Programming.</p>
-<p align="justify">- Pair Programming.</p>
+2. Create your own local database in Microsoft SQL Server Management Studio </p> 
+
+3. Connect your new database to Apiwadokan project accessing _appsettings.json_ file </p> 
+4. Run *add-migration _name_ -Project Data* 
+                  
+5. Run *update-database*                 
+
+6. Check the connection is active in the Server Explorer </p> 
+
+7. All set! Build Apiwasokan -Back solution and run _npm run dev_ command in wadokan front project </p> 
+
+> While connecting the project to your database, note that your *Data source=...* and *initial catalog=...* corresponds to the name of your computer and the name of your database respectively.  
 
 <h2 align="justify"> 👀  Testing: Front</h2>
 <p align="justify">- Tested renderizaion of components </p> 
 <p align="justify">- Try running npm run test </p> 
-<p align="justify">- Tested  </p> 
-<p align="justify">- </p> 
-<p align="justify">- </p> 
+<p align="justify">- Tested should contain an image element </p> 
+<p align="justify">- Tested should render a club history img </p> 
+<p align="justify">- Tested should render gear p </p> 
+<p align="justify">- Tested should there is a button </p> 
+<p align="justify">- Tested should render ContactUsInfo h2 tittle </p> 
+<p align="justify">- Tested should render google calendar tittle</p>
+<p align="justify">- Tested should render HealthInsurance p </p> 
+<p align="justify">- Tested should render a HealthInsurance img</p>
+<p align="justify">- Tested should render ImageRights h1 </p>
+<p align="justify">- Tested should render Login tittle </p>
+<p align="justify">- Tested should render the logo of wadokan in Login img </p>
+<p align="justify">- Tested should render ourteam tittle </p>
+<p align="justify">- Tested should render Pruebasidebar tittle </p>                 
 
 <h2 align="justify"> 👀  Testing: Back</h2>
-<p align="justify">- Tested renderizaion of components </p> 
-<p align="justify">- Try running npm run test </p> 
-<p align="justify">- Tested  </p> 
-<p align="justify">- </p> 
-<p align="justify">- </p> 
+<p align="justify">- Tested Event Service - Validate Model  </p> 
+<p align="justify">- Tested User Entity/Encrypted Password </p> 
+<p align="justify">- Tested User Item Constructor Is Active </p>  
 
 
 <h2 align="justify">  🧪Next Steps:</h2>
@@ -70,7 +91,11 @@ The layout of the Karate Wadokan application screens was developed by the team t
 <p align="justify"> - Improve validation process and security service as a whole </p> 
 <p align="justify"> - Implement categories filter in the navigation sidebar </p>  
 
+<h2 align="justify"> 📚Methodology:</h2>
 
+<p align="justify">- Methodology Agile with Scrum.</p>
+<p align="justify">- Mob Programming.</p>
+<p align="justify">- Pair Programming.</p>
 
 
 
