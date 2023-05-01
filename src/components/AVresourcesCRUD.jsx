@@ -32,7 +32,7 @@ const AVresourcesCRUD = () => {
     <>
     <div className='containerAdmin'>
       <h1 className="text-black">Listado de recursos</h1>
-      <Link to={`/admin/addResource`}><Button className="flex items-center gap-3 buttonAdd">
+      <Link to={`/admin/añadir/recursos`}><Button className="flex items-center gap-3 buttonAdd">
                     <img src={Add} alt="ver" className='icons'/><p>Añadir</p>
                     </Button>
                   </Link>
@@ -56,7 +56,7 @@ const AVresourcesCRUD = () => {
                 <td ><img id='tdAdminPhoto' src={`data:image/jpg;base64,${item.image}`} alt={item.name} /></td>
                 <td>
                   <div id='iconsCell'>
-                  <Link to={`/admin/editar/${item.id}`}><Button className="flex items-center gap-3 buttonsCell">
+                  <Link to={`/admin/recursos/editar/${item.id}`}><Button className="flex items-center gap-3 buttonsCell">
                     <img className='icons'src={Edit} alt="editar"/>
                     </Button>
                   </Link>
