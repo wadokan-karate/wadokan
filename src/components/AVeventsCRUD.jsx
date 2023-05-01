@@ -31,7 +31,7 @@ const AVeventsCRUD = () => {
       <>
       <div className='containerAdmin'>
         <h1 className="text-black">Listado de noticias</h1>
-        <Link to={`/admin/addEvent`}><Button className="flex items-center gap-3 buttonAdd">
+        <Link to={`/admin/añadir/noticias`}><Button className="flex items-center gap-3 buttonAdd">
                       <img src={Add} alt="ver" className='icons'/><p>Añadir</p>
                       </Button>
                     </Link>
@@ -53,7 +53,7 @@ const AVeventsCRUD = () => {
                   <td ><img id='tdAdminImage' src={`data:image/jpg;base64,${item.image}`} alt={item.name} /></td>
                   <td>
                     <div id='iconsCell'>
-                    <Link to={`/admin/editar/${item.id}`}><Button className="flex items-center gap-3 buttonsCell">
+                    <Link to={`/admin/noticias/editar/${item.id}`}><Button className="flex items-center gap-3 buttonsCell">
                       <img className='icons'src={Edit} alt="editar"/>
                       </Button>
                     </Link>

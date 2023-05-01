@@ -47,12 +47,12 @@ function AddEvent() {
   
   return (
     <div className='containerForm'>
-        <h2>Añadir Evento</h2>
+        <h2 className='mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white bg-wadokanBlue'>Añadir Noticia</h2>
       <form ref={formRef} onSubmit={handleSubmit(onSubmit)} className="form">
         <fieldset>
 
           <div className='containerLabel'>
-          <label className='title' htmlFor="title">Título del evento</label>
+          <label className='title' htmlFor="title">Título del noticia</label>
           <br></br>
           <input id="title" {...register("title", { required: true })} />
           {errors.title && <span>Debe rellenar este campo</span>}
