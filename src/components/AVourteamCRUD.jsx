@@ -50,11 +50,7 @@ const AVourteamCRUD = () => {
                 <td>{item.name}</td>
                 <td>
                   <div id='iconsCell'>
-<<<<<<< HEAD
-                  <Link to={`/admin/nuestroequipo/editar/${item.id}`}><Button className="flex items-center gap-3 buttonsCell">
-=======
                   <Link to={`/admin/editar/nuestroequipo/${item.id}`}><Button className="flex items-center gap-3 buttonsCell">
->>>>>>> dev
                     <img className='icons'src={Edit} alt="editar"/>
                     </Button>
                   </Link>

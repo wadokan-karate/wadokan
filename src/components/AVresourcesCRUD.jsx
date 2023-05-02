@@ -52,11 +52,7 @@ const AVresourcesCRUD = () => {
                 
                 <td>
                   <div id='iconsCell'>
-<<<<<<< HEAD
-                  <Link to={`/admin/recursos/editar//${item.id}`}><Button className="flex items-center gap-3 buttonsCell">
-=======
                   <Link to={`/admin/editar/recursos/${item.id}`}><Button className="flex items-center gap-3 buttonsCell">
->>>>>>> dev
                     <img className='icons'src={Edit} alt="editar"/>
                     </Button>
                   </Link>
