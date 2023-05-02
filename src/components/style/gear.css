@@ -3,13 +3,17 @@
     flex-direction: row;
 }
 
+.GearTextContainer{
+    width: 60%;
+}
+
 #Gearh1{
     text-align: left;
-    margin-left: 15%;
-    margin-top: 8%;
+    margin-left: 8%;
+    margin-top: 14%;
 }
 .gearPContainer{
-    width: 70%;
+    
     text-align: justify;
 }
 
@@ -19,6 +23,7 @@
     margin-bottom: 2%;
     margin-right: 2%;
 }
+
 
 @media (max-width: 500px) {
     .gearContainer{

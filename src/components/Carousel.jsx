@@ -8,6 +8,7 @@ import PakosGym from '../assets/img/SlideHome/PakosGym.png';
 import ImgDojoLogo from '../assets/img/SlideHome/LogoDojo.png';
 import DojoMontequinto from '../assets/img/SlideHome/DojoMontequinto.png';
 import MariaCaminoSlide from '../assets/img/SlideHome/MariaCaminoSlide.png';
+import NiñosLosPalacios from '../assets/img/SlideHome/NiñosLosPalacios.png';
 
 
 
@@ -22,14 +23,14 @@ function Carousel() {
       url:ImgDojoLogo,
     },
     {
+      url: NiñosLosPalacios,
+    },
+    {
       url: DojoMontequinto,
     },
     {
       url: PakosGym,
-    },
-    {
-        url: FraseFoto,
-    },    
+    },  
     {
         url: LogoName,
     },
