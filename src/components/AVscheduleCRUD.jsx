@@ -19,7 +19,8 @@ const AVscheduleCRUD = () => {
 
   const getData = async () => {
     const data = await scheduleHandler.loadSchedules();
-    setSchedules(data);
+    const filteredData = data.filter(schedule => schedule.isActive === true);
+    setSchedules(filteredData);
   };
 
   const deleteSchedule = async (id) => {
@@ -31,7 +32,7 @@ const AVscheduleCRUD = () => {
       <>
       <div className='containerAdmin'>
         <h1 className="text-black">Listado de noticias</h1>
-        <Link to={`/admin/addSchedule`}><Button className="flex items-center gap-3 buttonAdd">
+        <Link to={`/admin/añadir/horario`}><Button className="flex items-center gap-3 buttonAdd">
                       <img src={Add} alt="ver" className='icons'/><p>Añadir</p>
                       </Button>
                     </Link>
@@ -63,7 +64,7 @@ const AVscheduleCRUD = () => {
                       <img className='icons'src={Edit} alt="editar"/>
                       </Button>
                     </Link>
-                    <Link to={`/ver/${item.id}`}><Button className="flex items-center gap-3 buttonsCell">
+                    <Link to={`/calendario`}><Button className="flex items-center gap-3 buttonsCell">
                       <img src={View} alt="ver" className='icons'/>
                       </Button>
                     </Link>

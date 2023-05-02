@@ -28,10 +28,11 @@ export const resourceHandler = {
         }
         
         let updatedResourceStructure = {
-            "name": updatedResourceStructure.name,
-            "description": updatedResourceStructure.description,
-            "image": updatedResourceStructure.image,
-            "video": updatedResourceStructure.video,
+            "name": updatedResource.name,
+            "description": updatedResource.description,
+            "image": updatedResource.image,
+            "video": updatedResource.video,
+            "id": updatedResource.id
         }
         console.log(updatedResourceStructure)
 

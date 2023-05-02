@@ -155,7 +155,7 @@ export const router = createBrowserRouter([
                     },
                     // acept both changes
                     {
-                        path: '/vistadetalle/',
+                        path: '/vistadetalle/:id',
                         element: <BlogDetailView />,
                     },
                     {
@@ -171,7 +171,7 @@ export const router = createBrowserRouter([
                         element: < EditViewOurTeam/>,
                     },
                     {
-                        path: '/admin/editar/noticias',
+                        path: '/admin/noticias/editar/:id',
                         element: < EditViewEvent/>,
                     },
                     {
