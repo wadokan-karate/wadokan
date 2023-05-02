@@ -35,7 +35,7 @@ function AddSchedule() {
 
   return (
     <div className='containerForm'>
-        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white bg-wadokanBlue">Añadir Horario</h2>
+        <h2 className=" mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white bg-wadokanBlue">Añadir Horario</h2>
       <form ref={formRef} onSubmit={handleSubmit(onSubmit)} className="form">
         <fieldset>
 
