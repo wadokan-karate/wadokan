@@ -104,8 +104,9 @@ background-image: cover;
     }
     .teacherPhotoContainer{
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
+        flex-direction: column;
+        
+        
     }
     .teacherPhotodivider{
         margin: 5%;
