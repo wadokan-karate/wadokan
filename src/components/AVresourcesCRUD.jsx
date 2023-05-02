@@ -60,7 +60,7 @@ const AVresourcesCRUD = () => {
                     <img className='icons'src={Edit} alt="editar"/>
                     </Button>
                   </Link>
-                  <Link to={`/ver/${item.id}`}><Button className="flex items-center gap-3 buttonsCell">
+                  <Link to={`/blog-recursos`}><Button className="flex items-center gap-3 buttonsCell">
                     <img src={View} alt="ver" className='icons'/>
                     </Button>
                   </Link>

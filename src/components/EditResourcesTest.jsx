@@ -137,7 +137,7 @@ const [alertMessage, setAlertMessage] = useState("");
 
             <div id='buttons' style={{display:'flex', flexDirection: 'row'}}>
               <input onClick={handleAddClick} id="submit" type="submit" value="GUARDAR" />
-              <Link to="/admin/noticias" style={{textDecoration:'none'}}><input id="return" type="button" value="VOLVER" /></Link>
+              <Link to="/admin/recursos" style={{textDecoration:'none'}}><input id="return" type="button" value="VOLVER" /></Link>
           </div>
 
           <Alert show={showAlert} variant={alertVariant} onClose={handleAlertClose} style={{backgroundColor: '#2196F3', marginTop:'2vh'}} dismissible>

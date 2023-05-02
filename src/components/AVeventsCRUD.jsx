@@ -57,7 +57,7 @@ const AVeventsCRUD = () => {
                       <img className='icons'src={Edit} alt="editar"/>
                       </Button>
                     </Link>
-                    <Link to={`/ver/${item.id}`}><Button className="flex items-center gap-3 buttonsCell">
+                    <Link to={`/vistadetalle/${item.id}`}><Button className="flex items-center gap-3 buttonsCell">
                       <img src={View} alt="ver" className='icons'/>
                       </Button>
                     </Link>
