@@ -14,3 +14,14 @@
 
   
 }
+
+.sidebar{
+  padding-bottom: 3%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(84 110 122 / var(--tw-bg-opacity));
+  
+}
+
+.SidebarButton{
+  margin-bottom: 5%;
+}
