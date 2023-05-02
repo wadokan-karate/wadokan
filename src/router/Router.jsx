@@ -33,6 +33,10 @@ import EditViewSchedule from "../pages/EditViewschedule";
 import EditViewResoruces from "../pages/EditViewresources";
 import EditViewOurTeam from "../pages/EditViewourteam";
 import EditViewEvent from "../pages/EditViewevents";
+import AddViewSchedule from "../pages/AddViewSchedule";
+import AddViewResource from "../pages/AddViewResource";
+import AddViewTrainer from "../pages/AddViewTrainer";
+import AddViewEvent from "../pages/AddViewEvent";
 
 
 
@@ -168,7 +172,24 @@ export const router = createBrowserRouter([
                     {
                         path: '/admin/editar/noticias',
                         element: < EditViewEvent/>,
+                    },
+                    {
+                        path: '/admin/añadir/horario',
+                        element: < AddViewSchedule/>,
+                    },
+                    {
+                        path: '/admin/añadir/recursos',
+                        element: < AddViewResource/>,
+                    },
+                    {
+                        path: '/admin/añadir/nuestroequipo',
+                        element: < AddViewTrainer/>,
+                    },
+                    {
+                        path: '/admin/añadir/noticias',
+                        element: < AddViewEvent/>,
                     }
+
 
                 ]
             },

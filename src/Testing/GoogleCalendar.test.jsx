@@ -5,5 +5,9 @@ import GoogleCalendar from "../components/GoogleCalendar";
 
 test('should render google calendar tittle', ()=>{
     render(<GoogleCalendar/>);
-    const googleCalendarTittle = screen.getAllByText(/CALENDARIO ANUAL DE EVENTOS/i);
+    const googleCalendarTittle = screen.getByText(/CALENDARIO ANUAL DE EVENTOS/i);
+    expect(googleCalendarTittle).toBeInTheDocument();
+    
 })
+
+
