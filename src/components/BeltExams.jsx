@@ -34,7 +34,7 @@ import cintosnegros from "../assets/img/cintosnegros.png";
 
        <h2 className=" text-center Header2Bottom font-bold text-lg" >SOLICITUD EXAMEN CINTO NEGRO</h2>
         
-       <p className="text-md mt-4 text-lg ">Para poder presentarte a los diferentes exámenes de cinturón negro, tendrás que acceder a la página web de la Federación Andaluza de Karate (FAK) y cumplimentar el formulario que aparece en la web.</p>
+       <p className="text-md mb-16 mt-4 text-lg ">Para poder presentarte a los diferentes exámenes de cinturón negro, tendrás que acceder a la página web de la Federación Andaluza de Karate (FAK) y cumplimentar el formulario que aparece en la web.</p>
       
       <div className='Solicitud bg-wadokanBlue text-center mt-8 pt-2 pb-2 rounded-md font-bold hover:text-gray-200'>
        <a className=' hover:text-white' href="https://fankarate.com/disciplina/karate/solicitud-examen-cinturon-negro/" target='_blank'>
@@ -42,7 +42,11 @@ import cintosnegros from "../assets/img/cintosnegros.png";
       </div>  
 
       <h2 className=" text-center Header2Bottom font-bold text-lg pt-5" >NORMATIVA DEL EXAMEN</h2>   
-      <p className="text-md mt-4 text-lg ">En el siguiente enlace te adjuntamos el archivo PDF que corresponde con la normativa oficial de la Federación Española de Karate (RFEK). En él apararecerá lo que te tienes que preparar para tu examen de cinturón negro. </p>
+      <p className="text-md mb-14 mt-4 text-lg ">En el siguiente enlace te adjuntamos el archivo PDF que corresponde con la normativa oficial de la Federación Española de Karate (RFEK). En él apararecerá lo que te tienes que preparar para tu examen de cinturón negro. </p>
+
+      <div className=" text-center text-lg font-semibold">
+       <a className="w-4 h-4 px-2 py-2 mb-2 bg-wadokanBlue  text-grey  hover:text-white' : 'text-grey hover:bg-gray-700 hover:text-white rounded-md" href="https://drive.google.com/file/d/1nr-mZTam5AGoCVg07OTZlZgrA6Ysrj4o/view?usp=share_link" target="_blank">Normativa de Examen Cinto Negro</a>
+      </div> 
              
        <div> <img src={cintosnegros} className="Healthimg" alt="Descripción de la imagen" /></div>
        </div>

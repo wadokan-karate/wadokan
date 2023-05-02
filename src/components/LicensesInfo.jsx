@@ -32,8 +32,8 @@ const LicensesInfo = () => {
         
        </ul>      
 
-       <p className=" text-center text-md mt-3 text-wadokanBlue font-semibold">KarateWadokanSev@gmail.com</p>
-       <p className=" text-center  text-md mt-3 text-wadokanBlue font-semibold">IBAN: ES05 2100 8391 1301 0002 8359</p>
+       <p className=" text-center text-md mt-3 mb-0 text-wadokanBlue font-semibold">KarateWadokanSev@gmail.com</p>
+       <p className=" text-center  text-md mt-3 mb-6 text-wadokanBlue font-semibold">IBAN: ES05 2100 8391 1301 0002 8359</p>
        
      
      <div className='Solicitud bg-wadokanBlue text-center mt-12 ml-80 mr-80 pt-2 pb-2 rounded-md font-bold hover:text-gray-200'>
@@ -41,10 +41,22 @@ const LicensesInfo = () => {
        CAMBIA TU FOTO</a>
      </div>  
 
-     <h2 className=" text-start mt-4 Header2 Bottom font-extrabold text-xl pt-5" >INFORMACIÓN IMPORTANTE</h2>   
-     <p className="text-md mt-4 text-lg ">En el siguiente enlace te adjuntamos los archivos PDF necesarios para cumplimentar la solicitud. </p>
+     <div className=" mt-8 text-center text-lg font-semibold">
+       <a className="w-4 h-4 px-2 py-2 mb-2 bg-wadokanBlue  text-grey  hover:text-white' : 'text-grey hover:bg-gray-700 hover:text-white rounded-md" href="https://drive.google.com/file/d/1RuKVr6GKOUmM3ZYMDCMqs0nSApvjv7tj/view?usp=share_link" target="_blank">Instrucciones Para Insertar Tu Foto</a>
+      </div> 
 
-     <div className=" border-8 mt-10  border-grey"> <img src={FederacionLogos} alt="Descripción de la imagen" /></div>
+
+     <h2 className=" text-start mt-4 Header2 Bottom font-extrabold text-xl pt-5" >INFORMACIÓN IMPORTANTE</h2>   
+     <p className="text-md mb-8 mt-4 text-lg ">En el siguiente enlace te adjuntamos los archivos PDF necesarios para cumplimentar la solicitud. </p>
+
+     <div className=" text-center text-lg font-semibold">
+       <a className="w-4 h-4 px-2 py-2 mb-2 bg-wadokanBlue  text-grey  hover:text-white' : 'text-grey hover:bg-gray-700 hover:text-white rounded-md" href="https://drive.google.com/file/d/1w4ToP_KXaQ9HDTCqevN5usYknVvv-ZCR/view?usp=share_link" target="_blank">Documento Solicitud Licencia ederativa</a>
+      </div> 
+      <div className=" mt-8 text-center text-lg font-semibold">
+       <a className="w-4 h-4 px-2 py-2 mb-2 bg-wadokanBlue  text-grey  hover:text-white' : 'text-grey hover:bg-gray-700 hover:text-white rounded-md" href="https://docs.google.com/document/d/15euYCnKOo5mdRSlGwWRlQmBteznoCWGh/edit?usp=share_link&ouid=113850719361241386683&rtpof=true&sd=true" target="_blank">Cláusula de Federados (Protección de datos)</a>
+      </div> 
+
+     <div className=" border-8 mt-14  border-grey"> <img src={FederacionLogos} alt="Descripción de la imagen" /></div>
             
 
     </div>
