@@ -104,7 +104,7 @@ function FormLogin() {
         <Button
           variant="primary"
           type="submit"
-           style={{ background: '#F2AA85', border: 'none' }}
+           style={{ background: '#2196F3', border: 'none' }}
   
         >
           Iniciar sesión
