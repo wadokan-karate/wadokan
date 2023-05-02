@@ -18,7 +18,8 @@ const AVourteamCRUD = () => {
 
   const getData = async () => {
     const data = await trainerHandler.loadTrainers();
-    setTrainers(data);
+    const filteredData = data.filter(trainer => trainer.isActive === true);
+    setTrainers(filteredData);
   };
 
   const deleteTrainer = async (id) => {
@@ -40,7 +41,6 @@ const AVourteamCRUD = () => {
           <thead>
             <tr>
               <th className='thAdmin'>Nombre y Apellidos</th>
-              <th className='thAdmin'>Foto</th>
               <th className='thAdmin'>Acciones</th>
             </tr>
           </thead>
@@ -48,7 +48,6 @@ const AVourteamCRUD = () => {
             {trainer.map((item) => (
               <tr key={item.id}>
                 <td>{item.name}</td>
-                <td ><img id='tdAdminPhoto' src={`data:image/jpg;base64,${item.photo}`} alt={item.name} /></td>
                 <td>
                   <div id='iconsCell'>
                   <Link to={`/admin/editar/nuestroequipo/${item.id}`}><Button className="flex items-center gap-3 buttonsCell">

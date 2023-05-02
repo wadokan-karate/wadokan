@@ -19,7 +19,8 @@ const AVscheduleCRUD = () => {
 
   const getData = async () => {
     const data = await scheduleHandler.loadSchedules();
-    setSchedules(data);
+    const filteredData = data.filter(schedule => schedule.isActive === true);
+    setSchedules(filteredData);
   };
 
   const deleteSchedule = async (id) => {
