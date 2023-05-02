@@ -50,7 +50,7 @@ const LicensesInfo = () => {
      <p className="text-md mb-8 mt-4 text-lg ">En el siguiente enlace te adjuntamos los archivos PDF necesarios para cumplimentar la solicitud. </p>
 
      <div className=" text-center text-lg font-semibold">
-       <a className="w-4 h-4 px-2 py-2 mb-2 bg-wadokanBlue  text-grey  hover:text-white' : 'text-grey hover:bg-gray-700 hover:text-white rounded-md" href="https://drive.google.com/file/d/1w4ToP_KXaQ9HDTCqevN5usYknVvv-ZCR/view?usp=share_link" target="_blank">Documento Solicitud Licencia ederativa</a>
+       <a className="w-4 h-4 px-2 py-2 mb-2 bg-wadokanBlue  text-grey  hover:text-white' : 'text-grey hover:bg-gray-700 hover:text-white rounded-md" href="https://drive.google.com/file/d/1w4ToP_KXaQ9HDTCqevN5usYknVvv-ZCR/view?usp=share_link" target="_blank">Documento Solicitud Licencia Federativa</a>
       </div> 
       <div className=" mt-8 text-center text-lg font-semibold">
        <a className="w-4 h-4 px-2 py-2 mb-2 bg-wadokanBlue  text-grey  hover:text-white' : 'text-grey hover:bg-gray-700 hover:text-white rounded-md" href="https://docs.google.com/document/d/15euYCnKOo5mdRSlGwWRlQmBteznoCWGh/edit?usp=share_link&ouid=113850719361241386683&rtpof=true&sd=true" target="_blank">Cláusula de Federados (Protección de datos)</a>
