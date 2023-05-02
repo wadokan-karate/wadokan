@@ -163,7 +163,7 @@ export const router = createBrowserRouter([
                         element: < EditViewSchedule />,
                     },
                     {
-                        path: '/admin/editar/recursos/:i',
+                        path: '/admin/editar/recursos/:id',
                         element: < EditViewResoruces />,
                     },
                     {
