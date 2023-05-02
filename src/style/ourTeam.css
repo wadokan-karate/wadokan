@@ -84,11 +84,20 @@ background-image: cover;
     .photoContainer{
         display: flex;
         flex-direction: row;
+       
+        
         
     }
-    .foto{
+    .foto1{
+        margin-top:15%;
        height: 12.5rem;
+       width: 12.5rem;
+       background-image: url(../src/assets/VeroResponsive.png);
     }
+    .foto2{
+        height: 12.5rem;
+        background-image: url(../src/assets/CristinaResponsive.png);
+     }
 
     .teachersSection{
         margin: 0 auto;;
@@ -101,7 +110,5 @@ background-image: cover;
     .teacherPhotodivider{
         margin: 5%;
     }
-    
-
    
   }
