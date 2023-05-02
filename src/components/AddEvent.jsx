@@ -8,7 +8,7 @@ import '../../src/index.css';
 import '../style/Form.css';
 
 function AddEvent() {
-
+//AÑADIENDO UN COMENTARIO PARA HACER PUSH
     const { register, handleSubmit, formState: { errors }, setValue, getValues, reset } = useForm();
 
     const [showAlert, setShowAlert] = useState(false);
