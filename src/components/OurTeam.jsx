@@ -1,3 +1,4 @@
+import Trainers from './Trainers'
 import '../style/ourTeam.css'
 
 const OurTeam = () => {
@@ -16,15 +17,15 @@ const OurTeam = () => {
            <div className='teachersSection'>
             <h1>Nuestros Monitores</h1>
                 <div className='teacherPhotoContainer'>
-                    <div className='teacherPhotodivider'>
+                    {/* <div className='teacherPhotodivider'>
                         <div className='teachersPhoto'></div>
                         <div className='teachersPhoto'></div>
                     </div>
                     <div className='teacherPhotodivider'>
                         <div className='teachersPhoto'></div>
                         <div className='teachersPhoto'></div>
-                    </div>
-                    
+                    </div> */}
+                    <Trainers />
                 </div>
            </div>
         </div>

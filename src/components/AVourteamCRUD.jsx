@@ -31,7 +31,7 @@ const AVourteamCRUD = () => {
       <>
     <div className='containerAdmin'>
       <h1 className="text-black">Listado de monitores</h1>
-      <Link to={`/admin/addTrainer`}><Button className="flex items-center gap-3 buttonAdd">
+      <Link to={`/admin/añadir/nuestroequipo`}><Button className="flex items-center gap-3 buttonAdd">
                     <img src={Add} alt="ver" className='icons'/><p>Añadir</p>
                     </Button>
                   </Link>

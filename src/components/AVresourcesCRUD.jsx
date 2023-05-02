@@ -32,7 +32,7 @@ const AVresourcesCRUD = () => {
     <>
     <div className='containerAdmin'>
       <h1 className="text-black">Listado de recursos</h1>
-      <Link to={`/admin/addResource`}><Button className="flex items-center gap-3 buttonAdd">
+      <Link to={`/admin/añadir/recursos`}><Button className="flex items-center gap-3 buttonAdd">
                     <img src={Add} alt="ver" className='icons'/><p>Añadir</p>
                     </Button>
                   </Link>

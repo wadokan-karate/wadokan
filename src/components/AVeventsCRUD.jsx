@@ -31,7 +31,7 @@ const AVeventsCRUD = () => {
       <>
       <div className='containerAdmin'>
         <h1 className="text-black">Listado de noticias</h1>
-        <Link to={`/admin/addEvent`}><Button className="flex items-center gap-3 buttonAdd">
+        <Link to={`/admin/añadir/noticias`}><Button className="flex items-center gap-3 buttonAdd">
                       <img src={Add} alt="ver" className='icons'/><p>Añadir</p>
                       </Button>
                     </Link>
