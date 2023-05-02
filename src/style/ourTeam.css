@@ -38,6 +38,7 @@ background-image: cover;
 }
 .foto2{
     background-color: aliceblue;
+    background-image: url(../src/assets/Cristina.png);
     width: 15.625rem;
     height: 15.625rem;
     border-radius: 150%;

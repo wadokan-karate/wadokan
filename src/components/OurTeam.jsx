@@ -10,7 +10,7 @@ const OurTeam = () => {
                     <h1>LAS SENSEIS</h1>
                     <div className='photoContainer'>
                         <div className='foto1'></div>
-                        <div className='foto2'>Foto</div>
+                        <div className='foto2'></div>
                     </div>
                 </div>
 
