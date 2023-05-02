@@ -12,7 +12,8 @@ const Trainers = () => {
 
   const getData = async () => {
     const data = await trainerHandler.loadTrainers();
-    setTrainers(data);
+    const filteredData = data.filter(trainer => trainer.isActive === true);
+    setTrainers(filteredData);
   };
 
     return (
