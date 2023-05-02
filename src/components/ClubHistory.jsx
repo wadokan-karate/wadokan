@@ -1,4 +1,4 @@
-import '../components/style/club.css'
+import '../style/club.css'
 
 const ClubHistory = () => {
 

@@ -37,6 +37,7 @@ import AddViewSchedule from "../pages/AddViewSchedule";
 import AddViewResource from "../pages/AddViewResource";
 import AddViewTrainer from "../pages/AddViewTrainer";
 import AddViewEvent from "../pages/AddViewEvent";
+import SendedContactForm from "../pages/SendedContactForm";
 
 
 
@@ -154,23 +155,23 @@ export const router = createBrowserRouter([
                     },
                     // acept both changes
                     {
-                        path: '/vistadetalle/',
+                        path: '/vistadetalle/:id',
                         element: <BlogDetailView />,
                     },
                     {
-                        path: '/admin/editar/horario',
+                        path: '/admin/editar/horario/:id',
                         element: < EditViewSchedule />,
                     },
                     {
-                        path: '/admin/editar/recursos',
+                        path: '/admin/editar/recursos/:id',
                         element: < EditViewResoruces />,
                     },
                     {
-                        path: '/admin/editar/nuestroequipo',
+                        path: '/admin/editar/nuestroequipo/:id',
                         element: < EditViewOurTeam/>,
                     },
                     {
-                        path: '/admin/editar/noticias',
+                        path: '/admin/noticias/editar/:id',
                         element: < EditViewEvent/>,
                     },
                     {
@@ -188,7 +189,11 @@ export const router = createBrowserRouter([
                     {
                         path: '/admin/añadir/noticias',
                         element: < AddViewEvent/>,
-                    }
+                    },
+                    {
+                        path: '/formularioenviado',
+                        element: < SendedContactForm/>,
+                    },
 
 
                 ]

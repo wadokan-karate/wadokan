@@ -37,6 +37,7 @@ const scheduleHandler = {
             "age": updatedSchedule.age,
             "belt": updatedSchedule.belt,
             "isActive": true,
+            "id": updatedSchedule.id
         }
         console.log(updatedScheduleStructure)
 

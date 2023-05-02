@@ -1,4 +1,4 @@
-import "../components/style/LicencesInfo.css";
+import "../style/LicencesInfo.css";
 import FederacionLogos from "../assets/FederacionLogos.png";
 
 const LicensesInfo = () => {

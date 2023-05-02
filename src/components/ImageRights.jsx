@@ -1,4 +1,4 @@
-import "../components/style/ImageRights.css";
+import "../style/ImageRights.css";
 
 const ImageRights = () => {
 

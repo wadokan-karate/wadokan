@@ -1,9 +1,9 @@
 import React from "react";
 import HealthInsurance from '../components/HealthInsurance.jsx';
-import Pruebasidebar from '../components/pruebasidebar.jsx';
+import Pruebasidebar from '../components/Pruebasidebar.jsx';
 import DropdownLicenses from '../components/DropdownLicenses.jsx';
-import "../components/style/DropdownLicenses.css";
-import '../components/style/HealthInsurance.css';
+import "../style/DropdownLicenses.css";
+import '../style/HealthInsurance.css';
 import "../style/Licenses.css";
 
 

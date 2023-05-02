@@ -29,6 +29,7 @@ const trainerHandler = {
             "name": updatedTrainer.name,
             "photo": updatedTrainer.photo,
             "isActive": true,
+            "id": updatedTrainer.id
         }
         console.log(updatedTrainerStructure)
 

@@ -1,5 +1,5 @@
 import { lazy } from 'react';
-import '../components/style/contactUsInfo.css'
+import '../style/contactUsInfo.css'
 
 const ContactUsInfo = () => {
 

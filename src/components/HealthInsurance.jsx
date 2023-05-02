@@ -1,6 +1,6 @@
 import React from "react";
 import SeguroMedico from "../assets/img/seguroMedico.png";
-import '../components/style/HealthInsurance.css'
+import '../style/HealthInsurance.css'
 
 
 const HealthInsurance = () => {

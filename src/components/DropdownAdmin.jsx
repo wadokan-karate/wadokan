@@ -1,7 +1,7 @@
 import { Fragment } from 'react'
 import { Menu, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
-import "../components/style/DropdownLicenses.css";
+import "../style/DropdownLicenses.css";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')

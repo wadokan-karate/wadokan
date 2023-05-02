@@ -29,7 +29,7 @@ export const scheduleService = {
     },
     async getSchedule(id) {
         try {
-            let response = await apiClient.get(`/GetScheduletById?id=${id}`);
+            let response = await apiClient.get(`/GetScheduleById?id=${id}`);
             if (response.status === 200) {
                 let schedule = response.data;
                 return schedule;

@@ -1,6 +1,4 @@
-import '../components/style/gear.css'
-
-
+import '../style/gear.css'
 const Gear = () => {
 
     return (

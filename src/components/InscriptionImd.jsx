@@ -1,4 +1,4 @@
-import "../components/style/InscriptionImd.css";
+import "../style/InscriptionImd.css";
 import ImdLogo from "../assets/ImdLogo.png"
 import React, { useState, useEffect } from "react";
 

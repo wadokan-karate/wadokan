@@ -1,6 +1,6 @@
 import SidebarAdmin from '../components/SidebarAdmin.jsx';
 import DropdownAdmin from '../components/DropdownAdmin.jsx';
-import "../components/style/DropdownLicenses.css";
+import "../style/DropdownLicenses.css";
 import "../style/Licenses.css"
 
     const AdminView = () => {

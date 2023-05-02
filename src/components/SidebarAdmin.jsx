@@ -1,7 +1,7 @@
 import { useState } from "react";
-import '../components/style/SidebarUser.css'
+import '../style/SidebarUser.css'
 import "../index.css"
-import "../components/style/Pruebasidebar.css"
+import "../style/Pruebasidebar.css"
 
 
 const Pruebasidebar = () => {    
