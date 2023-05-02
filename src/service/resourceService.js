@@ -57,9 +57,9 @@ export const resourceService = {
             alert("Upsi...hubo un error al insertar el recurso");
         }
     },
-    async deleteEvent(id) {
+    async deleteResource(id) {
         try {
-            await apiClient.delete(`/DeleteEvent?id=${id}`);
+            await apiClient.delete(`/DeleteResource?id=${id}`);
         } catch (error) {
             console.log(error);
             alert("Error al eliminar el evento.");

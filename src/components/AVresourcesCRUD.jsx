@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect,  } from 'react';
 import resourceHandler from '../handlers/resourceHandler';
 import { Link } from "react-router-dom";
 import { Button } from "@material-tailwind/react";
@@ -20,7 +20,8 @@ const AVresourcesCRUD = () => {
 
   const getData = async () => {
     const data = await resourceHandler.loadResources();
-    setResources(data);
+    const filteredData = data.filter(event => event.isActive === true);
+    setResources(filteredData);
   };
 
   const deleteResource = async (id) => {
@@ -41,8 +42,6 @@ const AVresourcesCRUD = () => {
           <thead>
             <tr>
               <th className='thAdmin'>Nombre</th>
-              <th className='thAdmin'>Video</th>
-              <th className='thAdmin'>Video</th>
               <th className='thAdmin'>Acciones</th>
             </tr>
           </thead>
@@ -50,17 +49,14 @@ const AVresourcesCRUD = () => {
             {resource.map((item) => (
               <tr key={item.id}>
                 <td>{item.name}</td>
-                <td >
-                  <ReactPlayer url={item.video} light={true} width="20vw" height="23vh" />
-                </td>
-                <td ><img id='tdAdminPhoto' src={`data:image/jpg;base64,${item.image}`} alt={item.name} /></td>
+                
                 <td>
                   <div id='iconsCell'>
-                  <Link to={`/admin/editar/${item.id}`}><Button className="flex items-center gap-3 buttonsCell">
+                  <Link to={`/admin/editar/recursos/${item.id}`}><Button className="flex items-center gap-3 buttonsCell">
                     <img className='icons'src={Edit} alt="editar"/>
                     </Button>
                   </Link>
-                  <Link to={`/ver/${item.id}`}><Button className="flex items-center gap-3 buttonsCell">
+                  <Link to={`/blog-recursos`}><Button className="flex items-center gap-3 buttonsCell">
                     <img src={View} alt="ver" className='icons'/>
                     </Button>
                   </Link>

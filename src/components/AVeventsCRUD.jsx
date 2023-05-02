@@ -19,7 +19,8 @@ const AVeventsCRUD = () => {
 
   const getData = async () => {
     const data = await eventHandler.loadEvents();
-    setEvents(data);
+    const filteredData = data.filter(event => event.isActive === true);
+    setEvents(filteredData);
   };
 
   const deleteEvent = async (id) => {
@@ -40,8 +41,6 @@ const AVeventsCRUD = () => {
             <thead>
               <tr>
                 <th className='thAdmin'>Nombre</th>
-                <th className='thAdmin'>Descripción</th>
-                <th className='thAdmin'>Foto</th>
                 <th className='thAdmin'>Acciones</th>
               </tr>
             </thead>
@@ -49,15 +48,13 @@ const AVeventsCRUD = () => {
               {event.map((item) => (
                 <tr key={item.id}>
                   <td>{item.name}</td>
-                  <td>{item.description}</td>
-                  <td ><img id='tdAdminImage' src={`data:image/jpg;base64,${item.image}`} alt={item.name} /></td>
                   <td>
                     <div id='iconsCell'>
-                    <Link to={`/admin/editar/${item.id}`}><Button className="flex items-center gap-3 buttonsCell">
+                    <Link to={`/admin/noticias/editar/${item.id}`}><Button className="flex items-center gap-3 buttonsCell">
                       <img className='icons'src={Edit} alt="editar"/>
                       </Button>
                     </Link>
-                    <Link to={`/ver/${item.id}`}><Button className="flex items-center gap-3 buttonsCell">
+                    <Link to={`/vistadetalle/${item.id}`}><Button className="flex items-center gap-3 buttonsCell">
                       <img src={View} alt="ver" className='icons'/>
                       </Button>
                     </Link>
