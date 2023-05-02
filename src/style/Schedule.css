@@ -25,6 +25,7 @@
     font-size: large;
     margin-bottom: 2vh;
     margin-top: 3vh;
+    text-align: center;
     
 }
 
@@ -89,3 +90,10 @@ td{
     height: 7vh;
     width: 6vw;
 }
+
+
+@media (max-width: 500px) {
+    .responsive{
+        font-size: .6875rem;
+    }
+  }

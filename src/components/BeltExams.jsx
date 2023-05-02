@@ -1,11 +1,11 @@
-import '../components/style/BeltExams.css';
+import '../style/BeltExams.css';
 import cintosnegros from "../assets/img/cintosnegros.png";
 
   const BeltExams = () => {
   
     return (
       
-      <div className=" ContainerHealth bg-brown-300 text-center w-full">
+      <div className=" ContainerHealth">
         
          
        <h1 className="text-black mt-14 text-3xl">EXÁMENES DE CINTURÓN</h1>
@@ -36,7 +36,7 @@ import cintosnegros from "../assets/img/cintosnegros.png";
         
        <p className="text-md mt-4 text-lg ">Para poder presentarte a los diferentes exámenes de cinturón negro, tendrás que acceder a la página web de la Federación Andaluza de Karate (FAK) y cumplimentar el formulario que aparece en la web.</p>
       
-      <div className='Solicitud bg-wadokanBlue text-center mt-8 ml-80 mr-80 pt-2 pb-2 rounded-md font-bold hover:text-gray-200'>
+      <div className='Solicitud bg-wadokanBlue text-center mt-8 pt-2 pb-2 rounded-md font-bold hover:text-gray-200'>
        <a className=' hover:text-white' href="https://fankarate.com/disciplina/karate/solicitud-examen-cinturon-negro/" target='_blank'>
         ENLACE DE LA SOLICITUD</a>
       </div>  

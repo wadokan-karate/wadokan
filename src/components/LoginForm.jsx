@@ -5,14 +5,14 @@ import {
     Button,
     Typography,
   } from "@material-tailwind/react";
-import '../components/style/loginForm.css'
+import '../style/loginForm.css'
    
   export default function LoginForm() {
     return (
         <div id="container">
-            <div id="logoContainer">
+            {/* <div id="logoContainer">
                 <img src="src\assets\logo wadokan rect.png" alt="Logo wadokan"/>
-            </div>
+            </div> */}
             <div id="loginContainer">
                 <Card color="transparent" shadow={false} >
                 <Typography variant="h4" color="blue-gray">

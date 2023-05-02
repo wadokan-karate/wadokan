@@ -19,3 +19,10 @@
     margin-bottom: 2%;
     margin-right: 2%;
 }
+
+@media (max-width: 500px) {
+    .gearContainer{
+        display: flex;
+        flex-direction: column;
+    }
+  }

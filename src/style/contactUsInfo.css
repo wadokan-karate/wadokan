@@ -1,0 +1,57 @@
+.ContactUsInfoContainer{
+ 
+    background-color: lightgray;
+    font-family: 'Montserrat';
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-bottom: 4%;
+
+}
+
+#InfoMapContainer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    margin-right: 4%;
+
+}
+
+.MapContainer{
+    width: 100%;
+    height: 75vh;
+}
+
+.wadokanContactInfo{
+ 
+    text-align: start;
+    margin-top: 10%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+@media (max-width: 768px) {
+    #InfoMapContainer {
+      display: flex;
+      flex-direction: column;
+    }
+
+
+
+  }
+
+  @media only screen and (max-width: 767px) {
+    #InfoMapContainer .MapContainer {
+      height: 100%;
+      padding: 4%;
+      margin-left: 2%;
+      border-radius: none;
+      
+    }
+
+    .wadokanContactInfo{
+        margin: 0;
+        text-align: center;
+    }
+  }

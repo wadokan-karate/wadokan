@@ -1,7 +1,8 @@
 
 import LicensesInfo from '../components/LicensesInfo.jsx';
-import SidebarUser from '../components/SidebarUser.jsx';
-import Pruebasidebar from '../components/pruebasidebar.jsx';
+import Pruebasidebar from '../components/Pruebasidebar.jsx';
+import DropdownLicenses from '../components/DropdownLicenses.jsx';
+import "../style/DropdownLicenses.css";
 import "../style/Licenses.css"
 
     const LicensesInfoPage  = () => {
@@ -9,8 +10,11 @@ import "../style/Licenses.css"
         return (
             
             <>
+                <DropdownLicenses></DropdownLicenses>   
+                
                 <div className="MainBackground">
                     <div className="flex"> 
+                             
                     <Pruebasidebar></Pruebasidebar>
                     <LicensesInfo/>
                     </div>   

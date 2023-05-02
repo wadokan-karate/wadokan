@@ -27,10 +27,17 @@ import AVevents from "../pages/AVeventes";
 import AVourteam from "../pages/AVourteam";
 import AVresources from "../pages/AVresources";
 import AVschedule from "../pages/AVschedule";
+// acept both changes
+import BlogDetailView from "../pages/BlogDetailView";
 import EditViewSchedule from "../pages/EditViewschedule";
 import EditViewResoruces from "../pages/EditViewresources";
 import EditViewOurTeam from "../pages/EditViewourteam";
 import EditViewEvent from "../pages/EditViewevents";
+import AddViewSchedule from "../pages/AddViewSchedule";
+import AddViewResource from "../pages/AddViewResource";
+import AddViewTrainer from "../pages/AddViewTrainer";
+import AddViewEvent from "../pages/AddViewEvent";
+import SendedContactForm from "../pages/SendedContactForm";
 
 
 
@@ -142,26 +149,68 @@ export const router = createBrowserRouter([
                         path: '/admin/horario',
                         element: <AVschedule />,
                     },
+                    // acept both changes
                     {
+<<<<<<< HEAD
                         path: '/admin/horario/editar/:id',
+=======
+                        path: '/vistadetalle/:id',
+                        element: <BlogDetailView />,
+                    },
+                    {
+                        path: '/admin/editar/horario/:id',
+>>>>>>> dev
                         element: < EditViewSchedule />,
                         loader: fetchSchedule,
                     },
                     {
+<<<<<<< HEAD
                         path: '/admin/recursos/editar/:id',
+=======
+                        path: '/admin/editar/recursos/:id',
+>>>>>>> dev
                         element: < EditViewResoruces />,
                         loader: fetchResource,
                     },
                     {
+<<<<<<< HEAD
                         path: '/admin/nuestroequipo/editar/:id',
+=======
+                        path: '/admin/editar/nuestroequipo/:id',
+>>>>>>> dev
                         element: < EditViewOurTeam/>,
                         loader: fetchTrainer,
                     },
                     {
                         path: '/admin/noticias/editar/:id',
                         element: < EditViewEvent/>,
+<<<<<<< HEAD
                         loader: fetchEvent,
                     }
+=======
+                    },
+                    {
+                        path: '/admin/añadir/horario',
+                        element: < AddViewSchedule/>,
+                    },
+                    {
+                        path: '/admin/añadir/recursos',
+                        element: < AddViewResource/>,
+                    },
+                    {
+                        path: '/admin/añadir/nuestroequipo',
+                        element: < AddViewTrainer/>,
+                    },
+                    {
+                        path: '/admin/añadir/noticias',
+                        element: < AddViewEvent/>,
+                    },
+                    {
+                        path: '/formularioenviado',
+                        element: < SendedContactForm/>,
+                    },
+
+>>>>>>> dev
 
                 ]
             },

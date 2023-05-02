@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import '../components/style/SidebarUser.css'
+import '../style/SidebarUser.css'
 import "../index.css"
 
 const SidebarUser = () => {

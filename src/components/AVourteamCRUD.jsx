@@ -6,7 +6,7 @@ import View from '../assets/img/ver.png';
 import Edit from '../assets/img/editar.png';
 import Add from '../assets/img/add.png';
 import Delete from '../assets/img/eliminar.png';
-import "./style/AV.css"
+import "../style/AV.css"
 import "../index.css"
 
 const AVourteamCRUD = () => {
@@ -18,7 +18,8 @@ const AVourteamCRUD = () => {
 
   const getData = async () => {
     const data = await trainerHandler.loadTrainers();
-    setTrainers(data);
+    const filteredData = data.filter(trainer => trainer.isActive === true);
+    setTrainers(filteredData);
   };
 
   const deleteTrainer = async (id) => {
@@ -31,7 +32,7 @@ const AVourteamCRUD = () => {
       <>
     <div className='containerAdmin'>
       <h1 className="text-black">Listado de monitores</h1>
-      <Link to={`/admin/addTrainer`}><Button className="flex items-center gap-3 buttonAdd">
+      <Link to={`/admin/añadir/nuestroequipo`}><Button className="flex items-center gap-3 buttonAdd">
                     <img src={Add} alt="ver" className='icons'/><p>Añadir</p>
                     </Button>
                   </Link>
@@ -40,7 +41,6 @@ const AVourteamCRUD = () => {
           <thead>
             <tr>
               <th className='thAdmin'>Nombre y Apellidos</th>
-              <th className='thAdmin'>Foto</th>
               <th className='thAdmin'>Acciones</th>
             </tr>
           </thead>
@@ -48,14 +48,17 @@ const AVourteamCRUD = () => {
             {trainer.map((item) => (
               <tr key={item.id}>
                 <td>{item.name}</td>
-                <td ><img id='tdAdminPhoto' src={`data:image/jpg;base64,${item.photo}`} alt={item.name} /></td>
                 <td>
                   <div id='iconsCell'>
+<<<<<<< HEAD
                   <Link to={`/admin/nuestroequipo/editar/${item.id}`}><Button className="flex items-center gap-3 buttonsCell">
+=======
+                  <Link to={`/admin/editar/nuestroequipo/${item.id}`}><Button className="flex items-center gap-3 buttonsCell">
+>>>>>>> dev
                     <img className='icons'src={Edit} alt="editar"/>
                     </Button>
                   </Link>
-                  <Link to={`/ver/${item.id}`}><Button className="flex items-center gap-3 buttonsCell">
+                  <Link to={`/nuestro-club`}><Button className="flex items-center gap-3 buttonsCell">
                     <img src={View} alt="ver" className='icons'/>
                     </Button>
                   </Link>
