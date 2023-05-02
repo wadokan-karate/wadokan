@@ -85,10 +85,10 @@ function AddSchedule() {
 
         <div id="buttons" style={{display:'flex', flexDirection: 'row'}}>
           <input onClick={handleAddClick} id="submit" type="submit" value="GUARDAR" />
-          <Link to="/" style={{textDecoration:'none'}}><input id="return" type="button" value="VOLVER" /></Link>
+          <Link to="/admin/horario" style={{textDecoration:'none'}}><input id="return" type="button" value="VOLVER" /></Link>
         </div>
       <Alert show={showAlert} variant={alertVariant} onClose={handleAlertClose} dismissible>
-        <Alert.Heading style={{ color: 'white', textAlign: 'center' }}>{alertVariant === 'success' ? 'Horario añadido a la base de datos' : 'Error'}</Alert.Heading>
+        <Alert.Heading style={{ color: '#2196F3', textAlign: 'center' }}>{alertVariant === 'success' ? 'Horario añadido a la base de datos' : 'Error'}</Alert.Heading>
         <p style={{ color: 'white' }}>
           {alertMessage}
         </p>
