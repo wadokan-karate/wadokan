@@ -37,7 +37,10 @@ The layout of the Karate Wadokan application screens was developed by the team t
 <p align="justify">1) Clone the repository: https://github.com/wadokan-karate/wadokan.git</p>
 <p align="justify">2) Install dependencies:npm i or npm install</p>
 <p align="justify">3) npm install -g json-server</p>
-<p align="justify">5) npm run dev</p>
+<p align="justify">4) npm install react-player</p>
+<p align="justify">5) npm install @fortawesome/react-fontawesome</p>
+<p align="justify">6) npm i @material-tailwind/react</p>
+<p align="justify">7) npm run dev</p>
 
 
 <h2 align="justify"> :computer: How to install the project (Back):</h2>
