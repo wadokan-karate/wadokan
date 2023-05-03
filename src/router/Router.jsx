@@ -29,6 +29,7 @@ import AVresources from "../pages/AVresources";
 import AVschedule from "../pages/AVschedule";
 // acept both changes
 import BlogDetailView from "../pages/BlogDetailView";
+import ResourceDetailView from "../pages/BlogDetailView";
 import EditViewSchedule from "../pages/EditViewschedule";
 import EditViewResoruces from "../pages/EditViewresources";
 import EditViewOurTeam from "../pages/EditViewourteam";
@@ -154,9 +155,14 @@ export const router = createBrowserRouter([
                     },
                     // acept both changes
                     {
-                        path: '/vistadetalle/:id',
+                        path: '/vista-detalle-blog/:id',
                         element: <BlogDetailView />,
                         loader: fetchEvent,
+                    },
+                    {
+                        path: '/vista-detalle-recurso/:id',
+                        element: <ResourceDetailView />,
+                        loader: fetchResource,
                     },
                     {
                         path: '/admin/editar/horario/:id',
@@ -246,3 +252,13 @@ async function fetchResource({ params }) {
     const Resource = await resourceHandler.loadResource(params.id);
     return { Resource };
 }
+
+// async function fetchEvents() {
+//     const Events = await eventHandler.loadEvents();
+//     return { Events };
+// }
+
+// async function fetchEvent({ params }) {
+//     const Event = await eventHandler.loadEvent(params.id);
+//     return { Event };
+// }

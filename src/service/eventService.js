@@ -14,32 +14,14 @@ const apiClient = axios.create({
 
 export const eventService = {
     async getEvents() {
-        try {
-            let response = await apiClient.get("/GetAllEvents");
-            if (response.status === 200) {
-                let allEvents = response.data;
-                return allEvents;
-            } else {
-                alert("Upsi, hubo un error al traer los eventos.");
-            }
-        } catch (error) {
-            console.log(error);
-            alert("Error al obtener los eventos.");
-        }
+        let response = await apiClient.get("/GetAllEvents");
+        let allEvents = response.data;
+        return allEvents;
     },
     async getEvent(id) {
-        try {
-            let response = await apiClient.get(`/GetEventById?id=${id}`);
-            if (response.status === 200) {
-                let event = response.data;
-                return event;
-            } else {
-                alert("Upsi, hubo un error al traer el evento.");
-            }
-        } catch (error) {
-            console.log(error);
-            alert("Error al obtener el evento.");
-        }
+        let response = await apiClient.get(`/GetEventById?id=${id}`);
+        let event = response.data;
+        return event;
     },
     async submitEvent(newEvent) {
         let config = {
@@ -51,26 +33,12 @@ export const eventService = {
             }
         }
         let response = await apiClient.post("/InsertEvent", newEvent, config);
-        if (response.status == 200) {
-            alert("Evento insertado correctamente con id " + response.data);
-        } else {
-            alert("Upsi...hubo un error al insertar el evento");
-        }
+        return response.data;
     },
     async deleteEvent(id) {
-        try {
-            await apiClient.delete(`/DeleteEvent?id=${id}`);
-        } catch (error) {
-            console.log(error);
-            alert("Error al eliminar el evento.");
-        }
+        await apiClient.delete(`/DeleteEvent?id=${id}`);
     },
     async updateEvent(id, updatedEvent) {
-        try {
-            await apiClient.patch(`/UpdateEvent?id=${id}`, updatedEvent);
-        } catch (error) {
-            console.log(error);
-            alert("Error al actualizar el evento.");
-        }
+        await apiClient.patch(`/UpdateEvent?id=${id}`, updatedEvent);
     }
 };

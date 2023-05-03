@@ -13,32 +13,14 @@ const apiClient = axios.create({
 
 export const trainerService = {
     async getTrainers() {
-        try {
-            let response = await apiClient.get("/GetAllTrainers");
-            if (response.status === 200) {
-                let allTrainers = response.data;
-                return allTrainers;
-            } else {
-                alert("Upsi, hubo un error al traer los monitores.");
-            }
-        } catch (error) {
-            console.log(error);
-            alert("Error al obtener los monitores.");
-        }
+        let response = await apiClient.get("/GetAllTrainers");
+        let allTrainers = response.data;
+        return allTrainers;
     },
     async getTrainer(id) {
-        try {
-            let response = await apiClient.get(`/GetTrainerById?id=${id}`);
-            if (response.status === 200) {
-                let trainer = response.data;
-                return trainer;
-            } else {
-                alert("Upsi, hubo un error al traer al monitor.");
-            }
-        } catch (error) {
-            console.log(error);
-            alert("Error al obtener al monitor.");
-        }
+        let response = await apiClient.get(`/GetTrainerById?id=${id}`);
+        let trainer = response.data;
+        return trainer;
     },
     async submitTrainer(newTrainer) {
         let config = {
@@ -50,27 +32,13 @@ export const trainerService = {
             }
         }
         let response = await apiClient.post("/InsertTrainer", newTrainer, config);
-        if (response.status == 200) {
-            alert("Monitor insertado correctamente con id " + response.data);
-        } else {
-            alert("Upsi...hubo un error al insertar el monitor");
-        }
+        return response.data;
     },
     async deleteTrainer(id) {
-        try {
-            await apiClient.delete(`/DeleteTrainer?id=${id}`);
-        } catch (error) {
-            console.log(error);
-            alert("Error al eliminar el monitor.");
-        }
+        await apiClient.delete(`/DeleteTrainer?id=${id}`);
     },
     async updateTrainer(id, updatedTrainer) {
-        try {
-            await apiClient.patch(`/UpdateTrainer?id=${id}`, updatedTrainer);
-        } catch (error) {
-            console.log(error);
-            alert("Error al actualizar el monitor.");
-        }
+        await apiClient.patch(`/UpdateTrainer?id=${id}`, updatedTrainer);
     }
 };
 

@@ -1,26 +1,27 @@
 import { Card } from "flowbite-react";
 import { useParams } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
-import eventHandler from '../handlers/eventHandler';
+import resourceHandler from '../handlers/resourceHandler';
 import { Link } from "react-router-dom";
+import ReactPlayer from "react-player";
 
-  export default function CardblogDetail() {
+  export default function CardResourceDetail() {
     const {id} = useParams();
-    const [event, setEvent] = useState([null])
+    const [resource, setResource] = useState([null])
 
   useEffect(() => {
-    async function fetchEvent() {
-      const eventData = await eventHandler.loadEvent(id);
-      setEvent(eventData);
+    async function fetchResource() {
+      const resourceData = await resourceHandler.loadResource(id);
+      setResource(resourceData);
     }
-    fetchEvent();
+    fetchResource();
   }, [id]);
 
-  if (!event) {
+  if (!resource) {
     return <div>Loading...</div>;
   }
   
-  const { name, image, description }= event;
+  const { name, image, description, video }= resource;
 
     return (
         <Card href="#">
@@ -36,9 +37,11 @@ import { Link } from "react-router-dom";
                 <p className="font-normal text-gray-700 dark:text-gray-400 m-auto">
                 {description}
                 </p>
+                <div className="Video">
+                   <ReactPlayer url={video} />
+                </div>
                 <Link to="/blog-recursos" style={{textDecoration:'none', textAlign: 'center'}}><input id="return" type="button" value="VOLVER" /></Link>
             </Card>
-            
       </Card>
     );
   }

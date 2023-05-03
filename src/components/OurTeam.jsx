@@ -26,7 +26,7 @@ const OurTeam = () => {
                     <div className='teachersPhoto'></div>
                     </div>
                      */}
-                     <Trainers />
+                     <Trainers className='TrainerBox'/>
                 </div>
            </div>
             </div>
