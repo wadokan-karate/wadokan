@@ -34,13 +34,22 @@ The layout of the Karate Wadokan application screens was developed by the team t
 
 
 <h2 align="justify"> :computer: How to install the project (Front):</h2>
-<p align="justify">1) Clone the repository: https://github.com/wadokan-karate/wadokan.git</p>
-<p align="justify">2) Install dependencies:npm i or npm install</p>
-<p align="justify">3) npm install -g json-server</p>
-<p align="justify">4) npm install react-player</p>
-<p align="justify">5) npm install @fortawesome/react-fontawesome</p>
-<p align="justify">6) npm i @material-tailwind/react</p>
-<p align="justify">7) npm run dev</p>
+<p align="justify">1)   Clone the repository: https://github.com/wadokan-karate/wadokan.git</p>
+<p align="justify">2)   Install dependencies:npm i or npm install</p>
+<p align="justify">3)   npm install -g json-server</p>
+<p align="justify">4)   npm install react-player</p>
+<p align="justify">5)   npm install @fortawesome/react-fontawesome</p>
+<p align="justify">6)   npm i @material-tailwind/react</p>
+<p align="justify">7)   npm install -D tailwindcss postcss autoprefixer </p>
+<p align="justify">8)   npx tailwindcss init -p </p>
+<p align="justify">9)   npm install flowbite flowbite-react</p>
+<p align="justify">10)  npm install tailwindcss@latest</p>
+<p align="justify">11)  npm install @headlessui/react @heroicons/react</p>
+<p align="justify">12)  npm install react-hook-form</p>
+<p align="justify">13)  npm install googleapis</p>
+<p align="justify">14)  npm install @headlessui/react</p>
+
+<p align="justify">15) npm run dev</p>
 
 
 <h2 align="justify"> :computer: How to install the project (Back):</h2>
