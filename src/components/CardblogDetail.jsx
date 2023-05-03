@@ -1,4 +1,5 @@
    import { Card } from "flowbite-react";
+   import '../style/CardblogDetail.css'
 
   export default function CardblogDetail() {
     return (

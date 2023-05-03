@@ -1,40 +1,57 @@
 import {
-    Card,
-    CardHeader,
-    CardBody,
-    CardFooter,
-    Typography,
-    Avatar,
-    Tooltip,
-    
-  } from "@material-tailwind/react";
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  Typography,
+  Avatar,
+  Tooltip,
+  
+} from "@material-tailwind/react";
 import { Button } from "flowbite-react";
-   
-  export default function Cardblog() {
-    return (
-      <Card className="max-w-[24rem] overflow-hidden">
-        <CardHeader
-          floated={false}
-          shadow={false}
-          color="transparent"
-          className="m-0 rounded-none"
-        >
-          <img
-            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
-            alt="ui/ux review check"
-          />
-        </CardHeader>
-        <CardBody>
-          <Typography variant="h4" color="blue-gray">
-            Blog Tittle
-          </Typography>
+import React, { useState, useEffect } from 'react';
+import eventHandler from '../handlers/eventHandler';
+import { Link } from "react-router-dom";
+ 
+export default function Cardblog() {
+  const [event, setEvents] = useState([]);
 
-          <Button className=" bg-wadokanBlue m-auto mt-3">Leer artículo</Button>
-        </CardBody>
-        {/* <CardFooter className="flex items-center justify-between">
+  useEffect(() => {
+    getData();
+  }, []);
+
+  const getData = async () => {
+    const data = await eventHandler.loadEvents();
+    const filteredData = data.filter(event => event.isActive === true);
+    setEvents(filteredData);
+  };
+
+  return (
+    <>
+      {event.map((item) => (
+        <Card className="max-w-[24rem] overflow-hidden">
+          <CardHeader
+            floated={false}
+            shadow={false}
+            color="transparent"
+            className="m-0 rounded-none"
+          >
+            <img
+              src={`data:image/jpg;base64,${item.image}`} alt={item.name}
+            />
+          </CardHeader>
+          <CardBody>
+            <Typography variant="h4" color="blue-gray">
+              {item.name}
+            </Typography>
+  
+            <Link to={`/vistadetalle/${item.id}`}><Button className=" bg-wadokanBlue m-auto mt-3">Leer artículo</Button>
+            </Link>
+          </CardBody>
           
-          <Typography className="font-normal">January 10</Typography>
-        </CardFooter> */}
-      </Card>
-    );
-  }
+        </Card>
+      ))}
+    </>
+  );
+
+}
