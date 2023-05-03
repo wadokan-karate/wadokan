@@ -29,6 +29,7 @@ li {
     margin-bottom: 15%;
 }
 
+
 @media (min-width: 320px) and (max-width: 760px){
     #links ul{
         font-size: 18px;

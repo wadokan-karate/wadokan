@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Form, Button } from "react-bootstrap";
+import { Form } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faLock } from "@fortawesome/free-solid-svg-icons";
 import { loginService } from "../service/loginService";
@@ -7,6 +7,8 @@ import React, { useState, useEffect, useContext } from "react";
 import swal from 'sweetalert';
 import { Link, useNavigate } from "react-router-dom";
 import { UserContext } from "../contexts/UserContext";
+import { Button} from '@material-tailwind/react'
+import '../style/FormLogin.css'
 
 
 
@@ -71,7 +73,7 @@ function FormLogin() {
   return (
     <div className="registration-form-container">
       <div className="registration-form-title"></div>
-      <Form onSubmit={handleSubmit} className="center-form">
+      <form onSubmit={handleSubmit} className="center-form">
         <h2 style={{ marginBottom: '40px' }}>Iniciar sesión</h2>
         <Form.Group className="mb-3" style={{ width: '300px' }}>
           <Form.Label>
@@ -104,12 +106,10 @@ function FormLogin() {
         <Button
           variant="primary"
           type="submit"
-           style={{ background: '#2196F3', border: 'none' }}
-  
-        >
+           style={{ background: '#2196F3', border: 'none' }}>
           Iniciar sesión
         </Button>
-      </Form>
+      </form>
     </div>
   );
 }
