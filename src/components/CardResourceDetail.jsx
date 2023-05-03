@@ -5,7 +5,7 @@ import resourceHandler from '../handlers/resourceHandler';
 import { Link } from "react-router-dom";
 import ReactPlayer from "react-player";
 
-  export default function CardblogDetail() {
+  export default function CardResourceDetail() {
     const {id} = useParams();
     const [resource, setResource] = useState([null])
 
@@ -21,7 +21,7 @@ import ReactPlayer from "react-player";
     return <div>Loading...</div>;
   }
   
-  const { name, image, description, video }= resource;
+  const { name, image, description, video } = resource;
 
     return (
         <Card href="#">

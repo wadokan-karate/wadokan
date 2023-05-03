@@ -30,7 +30,8 @@ export const eventHandler = {
             "name": updatedEvent.name,
             "description": updatedEvent.description,
             "image": updatedEvent.image,
-            "id": updatedEvent.id
+            "id": updatedEvent.id,
+            "isActive": true
         }
         console.log(updatedEventStructure)
 

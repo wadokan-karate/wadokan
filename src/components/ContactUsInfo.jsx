@@ -1,4 +1,6 @@
 import { lazy } from 'react';
+import email from '../assets/img/email1.png'
+import telefono from '../assets/img/llamada1.png'
 import '../style/contactUsInfo.css'
 
 const ContactUsInfo = () => {
@@ -9,11 +11,12 @@ const ContactUsInfo = () => {
             <h1 className='HeaderContact pt-4 pb-3 text-center text-4xl'>¡Encuentranos!</h1></div>
             <div id='InfoMapContainer'>
                 <div className='wadokanContactInfo '>
-                    <h2 className='text-center font-semibold'>CONTACTA CON NOSOTRAS:</h2> <br /><br />
-                    <h3 className='font-semibold'>Correo Electrónico: <br /> <br /> KarateWadokanSev@gmail.com</h3><br /><br />
-                    <h2 className='font-semibold'>Teléfonos:</h2><br />
-                    <h3 className='font-semibold'>- Verónica: +34644687024</h3><br />
-                    <h3 className='font-semibold'>- Cristina: +34669226147</h3>
+                    <h3 className='text-center font-semibold titleContact'>CONTACTA CON NOSOTRAS:</h3> <br />
+                    <img className='iconsContact' id='emailIcon' src={email} alt='email'></img><br />
+                    <h4 className='font-semibold text-center textContact'>KarateWadokanSev@gmail.com</h4><br /><br />
+                    <img className='iconsContact' id='phoneIcon' src={telefono} alt='teléfonos'></img><br />
+                    <h4 className='font-semibold text-center textContact'>Verónica: +34 644 687 024</h4>
+                    <h4 className='font-semibold text-center textContact'>Cristina: +34 669 226 147</h4>
                     
 
                 </div>
