@@ -52,6 +52,7 @@ export const router = createBrowserRouter([
                     {
                         index: true,
                         element: <Home/>,
+                        //loader: fetchPhotos,
                         loader: fetchSchedules,
                     },
                     {
@@ -67,30 +68,33 @@ export const router = createBrowserRouter([
                     {
                         path: '/blog-recursos',
                         element: <Blog />,
-                        loader: fetchResources,
-                        loader: fetchEvents,
+                        //loader: fetchResources,
+                        //loader: fetchEvents,
                     },
                     {
                         path: '/noticias/:id',
                         element: <SeeNew />,
-                        loader: fetchEvent,
+                        //loader: fetchEvent,
                     },
                     {
                         path: '/recursos/:id',
                         element: <SeeResource />,
-                        loader: fetchResource,
+                        //loader: fetchResource,
                     },
                     {
                         path: '/licencias',
                         element: <Licenses />,
+                        //loader: fetchDocuments,
                     }, 
                     {
                         path: '/licencias/seguro',
                         element: <LicensesHealthInsurance/>,
+                        //loader: fetchDocuments,
                     },
                     {
                         path: '/licencias/derechosdeimagen',
                         element: <LicensesImageRights/>,
+                        //loader: fetchDocuments,
                     },
                     {
                         path: '/licencias/inscripcionfak',
@@ -100,6 +104,7 @@ export const router = createBrowserRouter([
                     {
                         path: '/licencias/inscripcionImd',
                         element: <LicensesInscriptionImd/>,
+                        //loader: fetchDocuments,
                     },
                     {
                         path: '/licencias/licensesinfo',
@@ -136,22 +141,18 @@ export const router = createBrowserRouter([
                     {
                         path: '/admin/noticias',
                         element: <AVevents />,
-                        loader: fetchEvents,
                     },
                     {
                         path: '/admin/nuestroequipo',
                         element: <AVourteam />,
-                        loader: fetchTrainers,
                     },
                     {
                         path: '/admin/recursos',
                         element: <AVresources />,
-                        loader: fetchResources,
                     },
                     {
                         path: '/admin/horario',
                         element: <AVschedule />,
-                        loader: fetchSchedules,
                     },
                     // acept both changes
                     {
@@ -167,27 +168,22 @@ export const router = createBrowserRouter([
                     {
                         path: '/admin/editar/horario/:id',
                         element: < EditViewSchedule />,
-                        loader: fetchSchedule,
                     },
                     {
                         path: '/admin/editar/recursos/:id',
                         element: < EditViewResoruces />,
-                        loader: fetchResource,
                     },
                     {
                         path: '/admin/editar/nuestroequipo/:id',
                         element: < EditViewOurTeam/>,
-                        loader: fetchTrainer,
                     },
                     {
-                        path: '/admin/editar/noticias/:id',
+                        path: '/admin/noticias/editar/:id',
                         element: < EditViewEvent/>,
-                        loader: fetchEvent,
                     },
                     {
                         path: '/admin/añadir/horario',
                         element: < AddViewSchedule/>,
-                        loader: fetchSchedule,
                     },
                     {
                         path: '/admin/añadir/recursos',
@@ -196,7 +192,6 @@ export const router = createBrowserRouter([
                     {
                         path: '/admin/añadir/nuestroequipo',
                         element: < AddViewTrainer/>,
-                        
                     },
                     {
                         path: '/admin/añadir/noticias',
@@ -212,16 +207,6 @@ export const router = createBrowserRouter([
             },
         ]
 );
-
-async function fetchEvents() {
-    const Events = await eventHandler.loadEvents();
-    return { Events };
-}
-
-async function fetchEvent({ params }) {
-    const Event = await eventHandler.loadEvent(params.id);
-    return { Event };
-}
 
 async function fetchSchedules() {
     const Schedules = await scheduleHandler.loadSchedules();
@@ -253,12 +238,12 @@ async function fetchResource({ params }) {
     return { Resource };
 }
 
-// async function fetchEvents() {
-//     const Events = await eventHandler.loadEvents();
-//     return { Events };
-// }
+async function fetchEvents() {
+    const Events = await eventHandler.loadEvents();
+    return { Events };
+}
 
-// async function fetchEvent({ params }) {
-//     const Event = await eventHandler.loadEvent(params.id);
-//     return { Event };
-// }
+async function fetchEvent({ params }) {
+    const Event = await eventHandler.loadEvent(params.id);
+    return { Event };
+}
