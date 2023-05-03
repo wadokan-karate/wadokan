@@ -87,9 +87,9 @@ It must be noted that, even though the Wadokan Front project may be run using js
 
 <h2 align="justify">  🧪Next Steps:</h2>
 
-<p align="justify"> - Set up a functional Login service </p>
-<p align="justify"> - Improve validation process and security service as a whole </p> 
-<p align="justify"> - Implement categories filter in the navigation sidebar </p>  
+<p align="justify"> -  </p>
+<p align="justify"> -  </p> 
+<p align="justify"> -  </p>  
 
 <h2 align="justify"> 📚Methodology:</h2>
 
