@@ -12,6 +12,7 @@ import { Button } from "flowbite-react";
 import React, { useState, useEffect } from 'react';
 import resourceHandler from '../handlers/resourceHandler';
 import { Link } from "react-router-dom";
+import '../style/cardblog.css'
  
 export default function Cardblog() {
   const [resource, setResources] = useState([]);
@@ -36,7 +37,7 @@ export default function Cardblog() {
             color="transparent"
             className="m-0 rounded-none"
           >
-            <img
+            <img id='cardImage'
               src={`data:image/jpg;base64,${item.image}`} alt={item.name}
             />
           </CardHeader>
