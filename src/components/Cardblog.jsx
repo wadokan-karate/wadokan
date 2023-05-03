@@ -45,7 +45,7 @@ import { Link } from "react-router-dom";
                 {item.name}
               </Typography>
     
-              <Link to={`/vistadetalle/${item.id}`}><Button className=" bg-wadokanBlue m-auto mt-3">Leer artículo</Button>
+              <Link to={`/vista-detalle-blog/${item.id}`}><Button className=" bg-wadokanBlue m-auto mt-3">Leer artículo</Button>
               </Link>
             </CardBody>
             {/* <CardFooter className="flex items-center justify-between">

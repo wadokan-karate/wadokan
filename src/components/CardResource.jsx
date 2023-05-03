@@ -45,7 +45,7 @@ export default function Cardblog() {
               {item.name}
             </Typography>
   
-            <Link to={`/vistadetalle/${item.id}`}><Button className=" bg-wadokanBlue m-auto mt-3">Ver Recurso</Button>
+            <Link to={`/vista-detalle-recurso/${item.id}`}><Button className=" bg-wadokanBlue m-auto mt-3">Ver Recurso</Button>
             </Link>
           </CardBody>
           {/* <CardFooter className="flex items-center justify-between">
