@@ -5,7 +5,7 @@ import resourceHandler from '../handlers/resourceHandler';
 import { Link } from "react-router-dom";
 import ReactPlayer from "react-player";
 
-  export default function CardblogDetail() {
+  export default function CardResourceDetail() {
     const {id} = useParams();
     const [resource, setResource] = useState([null])
 
