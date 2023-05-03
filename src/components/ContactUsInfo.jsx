@@ -9,11 +9,11 @@ const ContactUsInfo = () => {
             <h1 className='HeaderContact pt-4 pb-3 text-center text-4xl'>¡Encuentranos!</h1></div>
             <div id='InfoMapContainer'>
                 <div className='wadokanContactInfo '>
-                    <h2 className='text-center font-semibold'>CONTACTA CON NOSOTRAS:</h2> <br /><br />
-                    <h3 className='font-semibold'>Correo Electrónico: <br /> <br /> KarateWadokanSev@gmail.com</h3><br /><br />
-                    <h2 className='font-semibold'>Teléfonos:</h2><br />
-                    <h3 className='font-semibold'>- Verónica: +34644687024</h3><br />
-                    <h3 className='font-semibold'>- Cristina: +34669226147</h3>
+                    <h2 className=' text-lg text-center font-semibold'>CONTACTA CON NOSOTRAS:</h2> <br /><br />
+                    <h3 className=' text-lg font-semibold'>Correo Electrónico: <br /> <br /> KarateWadokanSev@gmail.com</h3><br /><br />
+                    <h2 className=' text-lg font-semibold'>Teléfonos:</h2><br />
+                    <h3 className=' text-lg font-semibold'>- Verónica: +34644687024</h3><br />
+                    <h3 className=' text-lg font-semibold'>- Cristina: +34669226147</h3>
                     
 
                 </div>

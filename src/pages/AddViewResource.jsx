@@ -6,7 +6,8 @@ const AddViewResource = () => {
 
     return (
         
-
+            <>
+             
                 <div className="container-licence">
                     <div className='flex'>
                         <SidebarAdmin/>
@@ -14,7 +15,7 @@ const AddViewResource = () => {
                     </div>
                     
                 </div>  
-            
+            </>
         
     );
 };

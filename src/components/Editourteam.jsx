@@ -7,6 +7,8 @@ import trainerHandler from '../handlers/trainerHandler';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 
+import '../../src/index.css';
+import '../style/Form.css';
 
 const EditOurTeam = () => {
 
@@ -125,7 +127,9 @@ const [alertMessage, setAlertMessage] = useState("");
   
           </form>
         </div>
-      </section>
-    );
-  };
-  export default EditOurTeam;
+    </section>
+  )
+
+}
+
+export default EditOurTeam

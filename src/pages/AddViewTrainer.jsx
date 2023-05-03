@@ -6,7 +6,9 @@ const AddViewTrainer = () => {
 
     return (
         
+            <>
 
+                
                 <div className="container-licence">
                     <div className='flex'>
                         <SidebarAdmin/>
@@ -14,7 +16,7 @@ const AddViewTrainer = () => {
                     </div>
                     
                 </div>  
-            
+            </>
         
     );
 };

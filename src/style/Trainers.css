@@ -8,3 +8,10 @@
   margin: 1vh 2vh;
 
 }
+
+@media (max-width: 00px) {
+  #containerTrainers{
+    display: flex;
+    flex-direction: column;
+  }
+}
