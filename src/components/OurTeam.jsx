@@ -1,4 +1,5 @@
 import '../style/ourTeam.css'
+import Trainers from '../components/Trainers';
 
 const OurTeam = () => {
 
@@ -25,6 +26,7 @@ const OurTeam = () => {
                     <div className='teachersPhoto'></div>
                     </div>
                      */}
+                     <Trainers />
                 </div>
            </div>
             </div>
