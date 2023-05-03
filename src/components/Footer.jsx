@@ -30,7 +30,7 @@ export default function Footer(){
                       <ul className="text-dark font-semibold">
                           <li className="mb-4">
                             
-                            <a href="/nuestro-club"><h2>INFORMACION</h2></a>
+                            <a href="/nuestro-club"><h2 className='text-2xl' >INFORMACION</h2></a>
                 
                           </li>
              
@@ -43,7 +43,7 @@ export default function Footer(){
                 
                           <li className="mb-4">
 
-                             <a href="/licencias"><h2>LINKS DE INTERES</h2></a>
+                             <a href="/licencias"><h2 className='text-2xl'>LINKS DE INTERES</h2></a>
 
                           </li>
                       </ul> 
@@ -51,10 +51,10 @@ export default function Footer(){
 
                    <div className='Options'>
          
-                      <ul className="text-dark text-xl font-semibold">
+                      <ul className="text-dark font-semibold">
                           <li className="mb-4">
 
-                            <a href="/contacto"><h2>CONTACTO</h2></a>
+                            <a href="/contacto"><h2 className='text-2xl'>CONTACTO</h2></a>
 
                           </li>
               {/* <li className="mb-4">
