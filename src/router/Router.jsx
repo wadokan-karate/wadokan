@@ -13,11 +13,11 @@ import LicensesInscriptionImd from "../pages/LicensesInscriptionImd";
 import LicensesInfoPage from "../pages/LicensesInfoPage";
 import LicensesBeltExam from "../pages/LicensesBeltExam";
 import SeeNew from "../pages/SeeNew";
-import Admin from "../pages/Admin";
 import SeeResource from "../pages/SeeResource";
 import scheduleHandler from '../handlers/scheduleHandler';
 import trainerHandler from '../handlers/trainerHandler';
 import resourceHandler from '../handlers/resourceHandler';
+import eventHandler from '../handlers/eventHandler';
 import Cookies from "../pages/Cookies";
 import Privacy from "../pages/Privacy";
 import Legal from "../pages/Legal";
@@ -29,6 +29,7 @@ import AVresources from "../pages/AVresources";
 import AVschedule from "../pages/AVschedule";
 // acept both changes
 import BlogDetailView from "../pages/BlogDetailView";
+import ResourceDetailView from "../pages/BlogDetailView";
 import EditViewSchedule from "../pages/EditViewschedule";
 import EditViewResoruces from "../pages/EditViewresources";
 import EditViewOurTeam from "../pages/EditViewourteam";
@@ -155,8 +156,14 @@ export const router = createBrowserRouter([
                     },
                     // acept both changes
                     {
-                        path: '/vistadetalle/:id',
+                        path: '/vista-detalle-blog/:id',
                         element: <BlogDetailView />,
+                        loader: fetchEvent,
+                    },
+                    {
+                        path: '/vista-detalle-recurso/:id',
+                        element: <ResourceDetailView />,
+                        loader: fetchResource,
                     },
                     {
                         path: '/admin/editar/horario/:id',
@@ -229,4 +236,14 @@ async function fetchResources() {
 async function fetchResource({ params }) {
     const Resource = await resourceHandler.loadResource(params.id);
     return { Resource };
+}
+
+async function fetchEvents() {
+    const Events = await eventHandler.loadEvents();
+    return { Events };
+}
+
+async function fetchEvent({ params }) {
+    const Event = await eventHandler.loadEvent(params.id);
+    return { Event };
 }

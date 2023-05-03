@@ -14,32 +14,14 @@ const apiClient = axios.create({
 
 export const resourceService = {
     async getResources() {
-        try {
-            let response = await apiClient.get("/GetAllResources");
-            if (response.status === 200) {
-                let allResources = response.data;
-                return allResources;
-            } else {
-                alert("Upsi, hubo un error al traer los recursos.");
-            }
-        } catch (error) {
-            console.log(error);
-            alert("Error al obtener los recursos.");
-        }
+        let response = await apiClient.get("/GetAllResources");
+        let allResources = response.data;
+        return allResources;
     },
     async getResource(id) {
-        try {
-            let response = await apiClient.get(`/GetResourceById?id=${id}`);
-            if (response.status === 200) {
-                let resource = response.data;
-                return resource;
-            } else {
-                alert("Upsi, hubo un error al traer el recurso.");
-            }
-        } catch (error) {
-            console.log(error);
-            alert("Error al obtener el recurso.");
-        }
+        let response = await apiClient.get(`/GetResourceById?id=${id}`);
+        let resource = response.data;
+        return resource;
     },
     async submitResource(newResource) {
         let config = {
@@ -51,26 +33,12 @@ export const resourceService = {
             }
         }
         let response = await apiClient.post("/InsertResource", newResource, config);
-        if (response.status == 200) {
-            alert("Recurso insertado correctamente con id " + response.data);
-        } else {
-            alert("Upsi...hubo un error al insertar el recurso");
-        }
+        return response.data;
     },
     async deleteResource(id) {
-        try {
-            await apiClient.delete(`/DeleteResource?id=${id}`);
-        } catch (error) {
-            console.log(error);
-            alert("Error al eliminar el evento.");
-        }
+        await apiClient.delete(`/DeleteResource?id=${id}`);
     },
     async updateResource(id, updatedResource) {
-        try {
-            await apiClient.patch(`/UpdateResource?id=${id}`, updatedResource);
-        } catch (error) {
-            console.log(error);
-            alert("Error al actualizar el recurso.");
-        }
+        await apiClient.patch(`/UpdateResource?id=${id}`, updatedResource);
     }
 };
