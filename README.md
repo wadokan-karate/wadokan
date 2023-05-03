@@ -10,6 +10,11 @@
 <h2 align="justify"> 📝Project description:</h2>
 <p align="justify">This pedagogical project was created as a final presentation of the full stack bootcamp of Factoria F5 and Fundación Don Bosco-Sevilla. The goal is to create a website for a real client: Karate Wadokan. Our team created a desktop and responsive website, where the client can publish and change their schedules and class calendar by center/class, upload images, edit and delete these images, edit texts and manage documents sent by students.</p>
 
+<h2 align="justify"> 🔧Stacks:</h2>
+<h4 align="justify"> Frontend:</h4><p align="justify">| Node.js | NPM | React |JavaScript | CSS3 | HTML5 | C# | Tailwind CSS |</p>
+<h4 align="justify"> Backend:</h4> <p align="justify">| C# | ASP.NET Core 6 | Entity Framework 7 | SQL Server|</p>
+
+
 <h2>📟 Layout</h2>
 
 The layout of the Karate Wadokan application screens was developed by the team through the Figma online tool, a prototyping software focused on UI Design (interface design). You can access the layout through this link:https://www.figma.com/file/1Pz6A4MBJIwHg7uqkudDzf/Wadokan-Web?node-id=0-1&t=CpLJ6f4Zo8PoK3qf-0.
@@ -22,11 +27,6 @@ The layout of the Karate Wadokan application screens was developed by the team t
 
 
 
-
-
-
-<h2 align="justify"> 🔧Stacks:</h2>
-<p align="justify">| Node.js | NPM | React |JavaScript | CSS3 | HTML5 | C# | ASP.NET Core 6 | Entity Framework 7 | SQL Server| Tailwind CSS |</p>
 
 
 <h2 align="justify">🚀 Available Scripts:</h2>
