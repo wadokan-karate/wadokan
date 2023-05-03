@@ -12,3 +12,12 @@
     color: black;
     padding: 1%;
 }
+
+.cardContainer{
+    margin: 0 auto;
+    width: 95vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
