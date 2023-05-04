@@ -20,11 +20,18 @@
 The layout of the Karate Wadokan application screens was developed by the team through the Figma online tool, a prototyping software focused on UI Design (interface design). You can access the layout through this link:https://www.figma.com/file/1Pz6A4MBJIwHg7uqkudDzf/Wadokan-Web?node-id=0-1&t=CpLJ6f4Zo8PoK3qf-0.
 
 ### Layout Web
-<div align="center" width=10><img src="https://user-images.githubusercontent.com/117834971/234877972-73dc236f-fa9c-48f3-be0a-50a614630bd5.png"></div>
+
+<div align="center" width=3><img src="https://user-images.githubusercontent.com/117834971/236321368-332d13c9-8f47-4c4f-892d-2eff1dc83e5a.png"></div>
+
+
+
+
+
 
 ### Layout Mobile
-<div align="center" width=10><img src="https://user-images.githubusercontent.com/117834971/234878018-4eac70d0-c4a4-448a-9fd0-4a494920a1b2.png"></div>
 
+
+<div align="center" width=3><img src="https://user-images.githubusercontent.com/117834971/236321678-9b2de1eb-5ddf-4cf0-abc7-67a0748bfaca.png"></div>
 
 
 
