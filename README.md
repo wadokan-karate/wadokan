@@ -10,23 +10,23 @@
 <h2 align="justify"> 📝Project description:</h2>
 <p align="justify">This pedagogical project was created as a final presentation of the full stack bootcamp of Factoria F5 and Fundación Don Bosco-Sevilla. The goal is to create a website for a real client: Karate Wadokan. Our team created a desktop and responsive website, where the client can publish and change their schedules and class calendar by center/class, upload images, edit and delete these images, edit texts and manage documents sent by students.</p>
 
+<h2 align="justify"> 🔧Stacks:</h2>
+<h4 align="justify"> Frontend:</h4><p align="justify">| Node.js | NPM | React |JavaScript | CSS3 | HTML5 | C# | Tailwind CSS |</p>
+<h4 align="justify"> Backend:</h4> <p align="justify">| C# | ASP.NET Core 6 | Entity Framework 7 | SQL Server|</p>
+
+
 <h2>📟 Layout</h2>
 
 The layout of the Karate Wadokan application screens was developed by the team through the Figma online tool, a prototyping software focused on UI Design (interface design). You can access the layout through this link:https://www.figma.com/file/1Pz6A4MBJIwHg7uqkudDzf/Wadokan-Web?node-id=0-1&t=CpLJ6f4Zo8PoK3qf-0.
 
 ### Layout Web
-<div align="center" width=50><img src="https://user-images.githubusercontent.com/117834971/234877972-73dc236f-fa9c-48f3-be0a-50a614630bd5.png"></div>
+<div align="center" width=10><img src="https://user-images.githubusercontent.com/117834971/234877972-73dc236f-fa9c-48f3-be0a-50a614630bd5.png"></div>1
 
 ### Layout Mobile
-<div align="center" width=50><img src="https://user-images.githubusercontent.com/117834971/234878018-4eac70d0-c4a4-448a-9fd0-4a494920a1b2.png"></div>
+<div align="center" width=10><img src="https://user-images.githubusercontent.com/117834971/234878018-4eac70d0-c4a4-448a-9fd0-4a494920a1b2.png"></div>
 
 
 
-
-
-
-<h2 align="justify"> 🔧Stacks:</h2>
-<p align="justify">| Node.js | NPM | React |JavaScript | CSS3 | HTML5 | C# | ASP.NET Core 6 | Entity Framework 7 | SQL Server| Tailwind CSS |</p>
 
 
 <h2 align="justify">🚀 Available Scripts:</h2>
@@ -34,10 +34,22 @@ The layout of the Karate Wadokan application screens was developed by the team t
 
 
 <h2 align="justify"> :computer: How to install the project (Front):</h2>
-<p align="justify">1) Clone the repository: https://github.com/wadokan-karate/wadokan.git</p>
-<p align="justify">2) Install dependencies:npm i or npm install</p>
-<p align="justify">3) npm install -g json-server</p>
-<p align="justify">5) npm run dev</p>
+<p align="justify">1)   Clone the repository: https://github.com/wadokan-karate/wadokan.git</p>
+<p align="justify">2)   Install dependencies:npm i or npm install</p>
+<p align="justify">3)   npm install -g json-server</p>
+<p align="justify">4)   npm install react-player</p>
+<p align="justify">5)   npm install @fortawesome/react-fontawesome</p>
+<p align="justify">6)   npm i @material-tailwind/react</p>
+<p align="justify">7)   npm install -D tailwindcss postcss autoprefixer </p>
+<p align="justify">8)   npx tailwindcss init -p </p>
+<p align="justify">9)   npm install flowbite flowbite-react</p>
+<p align="justify">10)  npm install tailwindcss@latest</p>
+<p align="justify">11)  npm install @headlessui/react @heroicons/react</p>
+<p align="justify">12)  npm install react-hook-form</p>
+<p align="justify">13)  npm install googleapis</p>
+<p align="justify">14)  npm install @headlessui/react</p>
+
+<p align="justify">15) npm run dev</p>
 
 
 <h2 align="justify"> :computer: How to install the project (Back):</h2>
@@ -87,9 +99,9 @@ It must be noted that, even though the Wadokan Front project may be run using js
 
 <h2 align="justify">  🧪Next Steps:</h2>
 
-<p align="justify"> - Set up a functional Login service </p>
-<p align="justify"> - Improve validation process and security service as a whole </p> 
-<p align="justify"> - Implement categories filter in the navigation sidebar </p>  
+<p align="justify"> -  </p>
+<p align="justify"> -  </p> 
+<p align="justify"> -  </p>  
 
 <h2 align="justify"> 📚Methodology:</h2>
 
