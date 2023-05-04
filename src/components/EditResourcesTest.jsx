@@ -9,7 +9,6 @@ import '../style/Form.css';
 
 
 const EditResourcesTest = () => {
-
   const {id} = useParams();
   const [resource, setResource] = useState({});
 
@@ -102,42 +101,34 @@ useEffect(() => {
 
   const [alertVariant, setAlertVariant] = useState("success");
 const [alertMessage, setAlertMessage] = useState("");
-//comentando
+
   if (!resource) {
       return <div>Loading...</div>;
     }
-    return (
-      <section className="bg-darkgrey dark:bg-gray-900">
-        <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white bg-wadokanBlue">Edita tus recursos</h2>
-          <p className="mb-8 lg:mb-16 font-light text-center text-black dark:text-gray-400 sm:text-xl">Aqui puedes modificar cualquier apartado de recursos</p>
 
-          <form onSubmit={handleSubmit} className="form space-y-8">
-            <div>
-              <label for='name' className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Título del recurso</label>
-              <input onChange={handleNameChange} placeholder={resource.name} id="name" type="text"  name="name" className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" />
-            </div>
+return (
+  <div id='container'>
+  <form onSubmit={handleSubmit} className="form">
+    <fieldset>
+      <label for="name">Título del recurso</label>
+      <input onChange={handleNameChange} placeholder={resource.name} id="name"  />
 
-            <div>
-              
-              <label for="description" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Descripción<noframes></noframes></label>
-              <textarea onChange={handleDescriptionChange} placeholder={resource.description} id="description"  rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" ></textarea>
+      <label for="description">Descripción del recurso</label>
+      <input onChange={handleDescriptionChange} placeholder={resource.description} id="description"  />
 
-            </div>
+      <label for="video">URL vídeo del recurso</label>
+      <input onChange={handleVideoChange} placeholder={resource.video} id="video"  />
 
-            <div>
-              <label htmlFor="pictureResource" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Foto</label>
-              <input id="pictureResource" type="file" onChange={handleImageChange} name="pictureResource" className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" />
-            </div>
+      <fieldset>
+      <label htmlFor="pictureResource">Foto del recurso</label>
+      <input id="pictureResource" type="file" onChange={handleImageChange} />
+      </fieldset>
+        
 
-            <div>
-              <label for="video" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Url del vídeo</label>
-              <input onChange={handleVideoChange} placeholder={resource.video} id="video" name="video" className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" />
-            </div>
-
-            <div id='buttons' style={{display:'flex', flexDirection: 'row'}}>
+    </fieldset>
+          <div id='buttons' style={{display:'flex', flexDirection: 'row'}}>
               <input onClick={handleAddClick} id="submit" type="submit" value="GUARDAR" />
-              <Link to="/admin/recursos" style={{textDecoration:'none'}}><input id="return" type="button" value="VOLVER" /></Link>
+              <Link to="/admin/noticias" style={{textDecoration:'none'}}><input id="return" type="button" value="VOLVER" /></Link>
           </div>
 
           <Alert show={showAlert} variant={alertVariant} onClose={handleAlertClose} style={{backgroundColor: '#2196F3', marginTop:'2vh'}} dismissible>
@@ -153,9 +144,8 @@ const [alertMessage, setAlertMessage] = useState("");
       </div>
       
     </Alert>
-          </form>
-        </div>
-      </section>
-    );
-  };
-  export default EditResourcesTest;
+  </form>
+ </div>)
+};
+
+export default EditResourcesTest;

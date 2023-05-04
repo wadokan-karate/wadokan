@@ -30,7 +30,7 @@ export default function Cardblog() {
   return (
     <>
       {event.map((item) => (
-        <Card className="max-w-[24rem] overflow-hidden m-2">
+        <Card className="CardContainer max-w-[24rem] overflow-hidden m-2">
           <CardHeader
             floated={false}
             shadow={false}

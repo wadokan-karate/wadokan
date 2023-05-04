@@ -8,6 +8,8 @@ import PakosGym from '../assets/img/SlideHome/PakosGym.png';
 import ImgDojoLogo from '../assets/img/SlideHome/LogoDojo.png';
 import DojoMontequinto from '../assets/img/SlideHome/DojoMontequinto.png';
 import MariaCaminoSlide from '../assets/img/SlideHome/MariaCaminoSlide.png';
+import NiñosLosPalacios from '../assets/img/SlideHome/NiñosLosPalacios.png';
+import SlideSamu from '../assets/img/SlideHome/SildeSamu.png';
 
 
 
@@ -16,20 +18,20 @@ function Carousel() {
   const slides = [
 
     {
-      url: CintoBlack,
+      url: SlideSamu,
     },
     {
       url:ImgDojoLogo,
+    },
+    {
+      url: NiñosLosPalacios,
     },
     {
       url: DojoMontequinto,
     },
     {
       url: PakosGym,
-    },
-    {
-        url: FraseFoto,
-    },    
+    },  
     {
         url: LogoName,
     },
@@ -54,7 +56,7 @@ function Carousel() {
   };
 
   return (
-    <div className=' CarouselBox max-w-[1400px] h-[480px] w-full m-auto'>
+    <div className=' CarouselBox max-w-[1405px] h-[480px] w-full m-auto'>
       
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}

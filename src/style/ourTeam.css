@@ -38,6 +38,7 @@ background-size: cover;
 }
 .foto2{
     background-color: aliceblue;
+    background-image: url(../src/assets/Cristina.png);
     width: 15.625rem;
     height: 15.625rem;
     border-radius: 150%;
@@ -85,24 +86,40 @@ background-size: cover;
     .photoContainer{
         display: flex;
         flex-direction: row;
+       
+        
         
     }
-    .foto{
+    .foto1{
+        margin-top:15%;
        height: 12.5rem;
+       width: 12.5rem;
+       background-image: url(../src/assets/VeroResponsive.png);
     }
+    .foto2{
+        height: 12.5rem;
+        background-image: url(../src/assets/CristinaResponsive.png);
+     }
 
     .teachersSection{
-        margin: 0 auto;;
+        margin: 0 auto;
+        margin-bottom: 5%;
+        
     }
     .teacherPhotoContainer{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
+        display: flex !important;
+        flex-direction: column !important;
+        margin-top: 10%;
+        margin-left: 10%;
+        
+        
     }
     .teacherPhotodivider{
         margin: 5%;
     }
-    
-
+    .TrainerBox{
+        display: flex !important;
+        flex-direction: column !important;
+    }
    
   }
