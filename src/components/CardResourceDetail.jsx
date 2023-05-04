@@ -40,7 +40,7 @@ import ReactPlayer from "react-player";
                 <div className="Video">
                    <ReactPlayer url={video} />
                 </div>
-                <Link to="/blog-recursos" style={{textDecoration:'none', textAlign: 'center'}}><input id="return" type="button" value="VOLVER" /></Link>
+                <Link to={`/vista-detalle-recurso/${item.id}`} style={{textDecoration:'none', textAlign: 'center'}}><input id="return" type="button" value="VOLVER" /></Link>
             </Card>
       </Card>
     );
