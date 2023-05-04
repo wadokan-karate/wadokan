@@ -90,7 +90,7 @@ const BottomCarousel = () => {
                                     </Slide>
                                     <Slide index={6}>
                                         <div className="flex flex-shrink-0 relative w-full sm:w-auto">
-                                            <img src="src\assets\img\BottomCarousel\YoPatada.jpg" alt="sitting area" className="object-cover object-center w-full" />
+                                            <img src="src\assets\img\BottomCarousel\FotoSamu.jpg" alt="sitting area" className="object-cover object-center w-full" />
                                             <div className="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                                 <h2 className="lg:text-xl leading-4 text-base lg:leading-5 text-white">Karate</h2>
                                                 <div className="flex h-full items-end pb-6">
@@ -166,7 +166,7 @@ const BottomCarousel = () => {
                 </CarouselProvider>
 
                 {/* Carousel for tablet and medium size devices */}
-                <CarouselProvider className="lg:hidden md:block hidden" naturalSlideWidth={100} isIntrinsicHeight={true} totalSlides={12} visibleSlides={2} step={1} infinite={true}>
+                {/* <CarouselProvider className="lg:hidden md:block hidden" naturalSlideWidth={100} isIntrinsicHeight={true} totalSlides={12} visibleSlides={2} step={1} infinite={true}>
                     <div className="w-full relative flex items-center justify-center">
                         <ButtonBack role="button" aria-label="slide backward" className="absolute z-30 left-0 ml-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer" id="prev">
                             <svg width={8} height={14} viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -317,10 +317,10 @@ const BottomCarousel = () => {
                             </svg>
                         </ButtonNext>
                     </div>
-                </CarouselProvider>
+                </CarouselProvider> */}
 
                 {/* Carousel for mobile and Small size Devices */}
-                <CarouselProvider className="block md:hidden " naturalSlideWidth={100} isIntrinsicHeight={true} totalSlides={12} visibleSlides={1} step={1} infinite={true}>
+                {/* <CarouselProvider className="block md:hidden " naturalSlideWidth={100} isIntrinsicHeight={true} totalSlides={12} visibleSlides={1} step={1} infinite={true}>
                     <div className="w-full relative flex items-center justify-center">
                         <ButtonBack role="button" aria-label="slide backward" className="absolute z-30 left-0 ml-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer" id="prev">
                             <svg width={8} height={14} viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -471,7 +471,7 @@ const BottomCarousel = () => {
                             </svg>
                         </ButtonNext>
                     </div>
-                </CarouselProvider>
+                </CarouselProvider> */}
             </div>
         </div>
     

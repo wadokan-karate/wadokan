@@ -46,11 +46,22 @@ const HealthInsurance = () => {
 
         </ul>
 
-        <p className=" text-wadokanBlue text-center text-md mt-4 text-lg font-semibold">Correo de la Delegación Sevillana: sevillakarate@gmail.com</p>
+        <p className=" text-wadokanBlue text-center mb-14 text-md mt-4 text-lg font-semibold">Correo de la Delegación Sevillana: sevillakarate@gmail.com</p>
          
-       <p className="text-md mt-4 text-lg ">Para consultar con más detalle Descargar el documento oficial PDF que se adjunta a continuación:</p>
-             
-         <div> <img src={SeguroMedico} className="Healthimg" alt="Img de una mano vendada" /></div>
+       <p className="text-md mt-4 mb-14 text-lg ">Para consultar con más detalle Descargar el documento oficial PDF que se adjunta a continuación:</p>
+
+      <div className=" text-center mb-16 text-lg font-semibold">
+       <a className="w-4 h-4 px-2 py-2 bg-wadokanBlue  text-grey  hover:text-white' : 'text-grey hover:bg-gray-700 hover:text-white rounded-md" href="https://drive.google.com/file/d/1nYe3013W6hbUxBeDfRiJyoQhWFfbuHAw/view?usp=sharing" target="_blank">Protocolo de Actuación</a>
+      </div>    
+
+      <p className="font-semibold ">*Aquellos deportistas que participan en la Liga IMD también existe un protocolo de actuación y un seguro de accidentes deportivos. Accede al enlace con la explicación debajo de este texto:</p>
+
+      <div className='Solicitud bg-wadokanBlue text-center mt-12 ml-80 mr-80 pt-2 pb-2 rounded-md font-bold hover:text-gray-200'>
+      <a className=' hover:text-white' href="https://imd.sevilla.org/informacion-imd/seguro-de-accidentes-deportivos" target='_blank'>
+       ENLACE SEGURO DEPORTIVO IMD</a>
+     </div> 
+
+       <div> <img src={SeguroMedico} className="Healthimg" alt="Img de una mano vendada" /></div>
        </div>
     );
   };

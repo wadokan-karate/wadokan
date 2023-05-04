@@ -21,7 +21,7 @@ import ReactPlayer from "react-player";
     return <div>Loading...</div>;
   }
   
-  const { name, image, description, video }= resource;
+  const { name, image, description, video } = resource;
 
     return (
         <Card href="#">

@@ -32,7 +32,8 @@ export const resourceHandler = {
             "description": updatedResource.description,
             "image": updatedResource.image,
             "video": updatedResource.video,
-            "id": updatedResource.id
+            "id": updatedResource.id,
+            "isActive": true,
         }
         console.log(updatedResourceStructure)
 

@@ -29,7 +29,7 @@ import AVresources from "../pages/AVresources";
 import AVschedule from "../pages/AVschedule";
 // acept both changes
 import BlogDetailView from "../pages/BlogDetailView";
-import ResourceDetailView from "../pages/BlogDetailView";
+import ResourceDetailView from "../pages/ResourceDetailView";
 import EditViewSchedule from "../pages/EditViewschedule";
 import EditViewResoruces from "../pages/EditViewresources";
 import EditViewOurTeam from "../pages/EditViewourteam";

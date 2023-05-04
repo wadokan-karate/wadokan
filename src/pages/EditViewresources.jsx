@@ -6,7 +6,9 @@ const EditViewResoruces = () => {
 
     return (
         
+             <>
 
+    
                 <div className="container-licence">
                     <div className='flex'>
                         <SidebarAdmin/>
@@ -14,7 +16,7 @@ const EditViewResoruces = () => {
                     </div>
                     
                 </div>  
-            
+            </>
         
     );
 };

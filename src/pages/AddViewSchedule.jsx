@@ -6,7 +6,8 @@ const AddViewSchedule= () => {
 
     return (
         
-
+            <>
+            
                 <div className="container-licence">
                     <div className='flex'>
                         <SidebarAdmin/>
@@ -14,7 +15,7 @@ const AddViewSchedule= () => {
                     </div>
                     
                 </div>  
-            
+            </>
         
     );
 };
