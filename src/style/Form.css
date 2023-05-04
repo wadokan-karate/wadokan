@@ -1,0 +1,76 @@
+.containerForm{
+    background-color: #929292;
+    margin: 5vh 15vw;
+    padding: 5vh 5vh;
+    text-align: center;
+}
+
+.containerForm h2{
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-size: larger;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 2vh;
+    background-color: #2196F3;
+    padding: 1vh;
+}
+
+label{
+    margin-top: 2vh;
+    margin-right: 1vw;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: large;
+    text-transform: uppercase;
+}
+
+.containerLabel{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2vh;
+    margin-left: 3vw;
+}
+
+input{
+    height: 4vh;
+    border-radius: 5px;
+    margin-top: 1.5vh;
+    margin-right: 1vw;
+    width: 20vw;
+    font-family: 'Montserrat';
+}
+
+input[type=file] {
+    border-radius: 5px;
+    font-family: 'Montserrat';
+}
+
+#name {
+    width: 40vw;
+}
+
+#buttons{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin-left: 22vw;
+    margin-top: 2vh;
+}
+
+input[type=button] {
+    background-color: #2196F3;
+    color: white;
+    width: 10vw;
+}
+
+input[type=submit] {
+    background-color: #2196F3;
+    color: white;
+    width: 10vw;
+}
+
+textarea{
+    border-radius: 5px;
+}

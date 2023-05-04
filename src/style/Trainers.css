@@ -1,0 +1,17 @@
+#containerTrainers{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#ourTeam {
+  width: 8vw;
+  margin: 1vh 2vh;
+
+}
+
+@media (max-width: 00px) {
+  #containerTrainers{
+    display: flex;
+    flex-direction: column;
+  }
+}

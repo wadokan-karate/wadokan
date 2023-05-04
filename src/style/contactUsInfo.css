@@ -1,0 +1,108 @@
+.ContactUsInfoContainer{
+ 
+    background-color: lightgray;
+    font-family: 'Montserrat';
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    padding-bottom: 4%;
+
+}
+
+#InfoMapContainer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    margin-right: 4%;
+
+}
+
+.MapContainer{
+    width: 100%;
+    height: 75vh;
+}
+
+.wadokanContactInfo{
+ 
+    text-align: start;
+    margin-top: 10%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.iconsContact{
+  width: 5vw;
+  margin: auto;
+}
+
+.titleContact{
+  margin-bottom: 1vh;
+  margin-top: -10.5vh;
+}
+
+.textContact{
+  margin-top: 0.5vh;
+}
+
+#emailIcon {
+  cursor: pointer;
+}
+
+#emailIcon:hover {
+  content: url(../src/assets/img/email2.png);
+}
+
+.textContact{
+  margin-top: 0.5vh;
+}
+
+#phoneIcon {
+  cursor: pointer;
+}
+
+#phoneIcon:hover {
+  content: url(../src/assets/img/llamada2.png);
+}
+
+@media (max-width: 768px) {
+    #InfoMapContainer {
+      display: flex;
+      flex-direction: column;
+    }
+
+
+
+  }
+
+  @media only screen and (max-width: 767px) {
+    #InfoMapContainer {
+      height: 100%;
+      padding: 4%;
+      margin-left: 2%;
+      border-radius: none;
+      
+    }
+
+    .wadokanContactInfo{
+        margin: 0;
+        text-align: center;
+    }
+    .iconsContact{
+      width: 14vw;
+      margin: auto;
+    }
+    
+    .titleContact{
+      margin-bottom: 1vh;
+      margin-top: 2vh;
+    }
+
+    .textContact{
+      font-size: medium;
+    }
+
+    .MapContainer{
+      height: 50vh;
+  }
+  }

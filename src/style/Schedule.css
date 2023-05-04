@@ -1,0 +1,99 @@
+#schedulesTitle{
+
+    text-align: center  !important;
+    font-family: 'Shojumaru'  !important;
+    font-size: 40px  !important;
+    margin-top: 3vh  !important;
+}
+
+
+
+#containerSchedule{
+    
+    background-color: #2196F3  !important;
+    text-align: center !important;
+    padding-top:1vh !important;
+    padding-bottom: 8vh !important;
+    margin-top: 7vh !important;
+    margin-bottom: 8vh !important;
+  
+}
+
+#containerSchedule p{
+    font-family: 'Montserrat' !important;
+    color: white !important;
+    font-size: large !important;
+    margin-bottom: 2vh !important;
+    margin-top: 3vh !important;
+    text-align: center !important;
+    
+}
+
+select {
+
+    margin-bottom: 5vh !important;
+    margin-top: 2vh !important;
+    margin-left: 2vw !important;
+    margin-right: 2vw !important;
+    height: 4vh !important;
+    width: 19vw !important;
+    border-radius: 5px !important;
+    border: solid #3E3E3E 2px !important;
+    font-family: 'Montserrat' !important;
+    font-size: medium !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+    
+}
+
+table{
+    background-color: white !important;
+    border: solid 3px black !important;
+    width: 80vw !important;
+    margin: auto !important;
+    font-family: 'Montserrat' !important;
+    font-size:large !important;
+}
+
+#cityTitle{
+    background-color: #3E3E3E !important;
+    border-bottom: solid black 2px !important;
+    color: white !important;
+    height: 6vh !important;
+    font-size: x-large !important;
+    text-transform: uppercase !important;
+}
+
+#locationTitle{
+    background-color: #878787 !important;
+    color: white !important;
+    border-bottom: solid black 2px !important;
+    height: 5vh !important;
+    font-size: larger !important;
+    text-transform: uppercase !important;
+}
+
+.dayTitle{
+    background-color: #2196F3 !important;
+    color: white !important;
+    border: solid black !important;
+    height: 5vh !important;
+    text-transform: uppercase !important;
+}
+
+th{
+    background-color: #2196F3 !important;
+}
+
+td{
+    border: solid 2px black !important;
+    height: 7vh !important;
+    width: 6vw !important;
+}
+
+
+@media (max-width: 500px) {
+    .responsive{
+        font-size: .6875rem !important;
+    }
+  }

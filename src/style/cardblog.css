@@ -1,0 +1,11 @@
+#cardImage{
+    height: 33vh;
+    width: 33vw;
+    object-fit: contain;
+}
+
+.relative{
+    margin-bottom: 6%;
+    margin-top: 2%;
+    text-align: center;
+}

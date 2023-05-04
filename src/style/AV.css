@@ -1,0 +1,57 @@
+.containerAdmin{
+    padding: 3vh;
+}
+
+table {
+    margin-top: 3vh;
+}
+
+th {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+td {
+    text-align: center;
+    margin: auto;
+}
+
+.icons {
+    width: 1.3vw;
+}
+
+#iconsCell {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.buttonsCell {
+    height: 5vh;
+    padding: 3vh 0.7vw;
+    
+}
+
+.buttonAdd {
+   padding: 3%;
+   margin-bottom: 2%;
+}
+
+.buttonAdd p{
+    color: black;
+    font-size:large;
+    margin-left: -0.5vw;
+}
+
+#tdAdminPhoto {
+    width: 7vw;
+    height: auto;
+    text-align: center;
+    margin: auto;
+}
+
+#tdAdminVideo{
+    text-align: center;
+    margin: auto;
+}

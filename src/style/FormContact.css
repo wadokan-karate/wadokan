@@ -1,0 +1,27 @@
+.FormContactContainer{
+    
+    background-color: lightgray;
+   
+   
+}
+
+.FormContainer{
+    
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%; 
+    
+
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    .FormImgBox {
+       display: none;
+    }
+
+    .HeaderContact{
+        font-size:x-large;
+    }
+}
